@@ -1,0 +1,10 @@
+# Install the matching CUDA PyTorch wheels separately; see scripts/setup_desktop.sh.
+h5py
+matplotlib
+imageio
+scikit-image
+opencv-python-headless
+onnx
+onnxruntime
+pytest
+huggingface-hub
