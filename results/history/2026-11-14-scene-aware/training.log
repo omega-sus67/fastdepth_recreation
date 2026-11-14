@@ -1,0 +1,390 @@
+Training original seed 42
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "result_checkpoint_sha256": "7e64e949ccfe2e1c528398a7db2396f95e2e5108b3776f1d53790e89ec1730ec",
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "710433e23048f249f409812fbb6a3e7b866b49fc00408e37edad3fd200d98d6e",
+  "train_mean_image_mae": 0.18610822110485503,
+  "elapsed_seconds": 52.550978436999685,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training weight seed 42
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "30ed18e499ba83d214dcba61b4b63966f253e55eb736e4c11ea19c5aef538d70",
+  "result_checkpoint_sha256": "6a12ec469d2f1da89eeee2f3115dc05d0f027350ce0220e5bea276d6e474c716",
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "710433e23048f249f409812fbb6a3e7b866b49fc00408e37edad3fd200d98d6e",
+  "train_mean_image_mae": 0.18649631966152175,
+  "elapsed_seconds": 54.353493297000114,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training average_ablation seed 42
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "2d009308ed7c92296b7a256eb26c8431b55301ca17c617881fc08aadeac462a6",
+  "result_checkpoint_sha256": "541bd3c3fdfa2a558191cf923ec7561234271df3d44807fdbf0595b022133510",
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "710433e23048f249f409812fbb6a3e7b866b49fc00408e37edad3fd200d98d6e",
+  "train_mean_image_mae": 0.18751571966584935,
+  "elapsed_seconds": 53.0098148940001,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training scene_aware seed 42
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "f9bb38f780472067d3b2eea38fbc239e053ac88a81c99ae739af12b3b970900b",
+  "result_checkpoint_sha256": "2d49963b1e1c3b9d81d38b4a61cb81ef08b145ed29d1abc6c98c3b322891b970",
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "710433e23048f249f409812fbb6a3e7b866b49fc00408e37edad3fd200d98d6e",
+  "train_mean_image_mae": 0.18664883037825458,
+  "elapsed_seconds": 54.871942255999784,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training random seed 42
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "664332f257b008a37f732b35ee3daf5105aa9013e9cc2cddfe740b72a9cc44d7",
+  "result_checkpoint_sha256": "1591053f5160960aec4b012206af491934dc27fd4e84b1a9693290ffe69fe47d",
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "710433e23048f249f409812fbb6a3e7b866b49fc00408e37edad3fd200d98d6e",
+  "train_mean_image_mae": 0.18721166898245187,
+  "elapsed_seconds": 54.9644307399999,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training original seed 43
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "result_checkpoint_sha256": "9a8d425d3c61a78c158b6116caf6e8c97b2b89a48f4703a6e13524165942c176",
+  "seed": 43,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "a103138e209e225bd5be6957bbe72ba79e7c50235e950e409c77653a639a58f4",
+  "train_mean_image_mae": 0.1882788486453751,
+  "elapsed_seconds": 53.27557482200018,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training weight seed 43
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "30ed18e499ba83d214dcba61b4b63966f253e55eb736e4c11ea19c5aef538d70",
+  "result_checkpoint_sha256": "9ccc9bd34c21fe58d7e93021dd0be91e370ab3fe00b4c61b711d755f4ada826f",
+  "seed": 43,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "a103138e209e225bd5be6957bbe72ba79e7c50235e950e409c77653a639a58f4",
+  "train_mean_image_mae": 0.18850628859135304,
+  "elapsed_seconds": 55.77613594700006,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training average_ablation seed 43
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "2d009308ed7c92296b7a256eb26c8431b55301ca17c617881fc08aadeac462a6",
+  "result_checkpoint_sha256": "c2aa8fe64de856c86f26c9fbd4403216fcc8be65f247e29bf10e5451ca178a39",
+  "seed": 43,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "a103138e209e225bd5be6957bbe72ba79e7c50235e950e409c77653a639a58f4",
+  "train_mean_image_mae": 0.18903206418006088,
+  "elapsed_seconds": 53.29950402099985,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training scene_aware seed 43
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "f9bb38f780472067d3b2eea38fbc239e053ac88a81c99ae739af12b3b970900b",
+  "result_checkpoint_sha256": "a1f96a501bfdc0500fded7b47ca85a2ac40241c74d1baa884eeb388607148a87",
+  "seed": 43,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "a103138e209e225bd5be6957bbe72ba79e7c50235e950e409c77653a639a58f4",
+  "train_mean_image_mae": 0.18865075280541813,
+  "elapsed_seconds": 53.892935019000106,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training random seed 43
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "8bed5de10d6b669a0116729fda313f5092d5a5636e24202a4e55ab6ba4b59d77",
+  "result_checkpoint_sha256": "96cde89705519031a848d0b7f15d4de5bff05865d2683ddfe67a46e75be50847",
+  "seed": 43,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "a103138e209e225bd5be6957bbe72ba79e7c50235e950e409c77653a639a58f4",
+  "train_mean_image_mae": 0.18935970858533857,
+  "elapsed_seconds": 55.65888472100005,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training original seed 44
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "result_checkpoint_sha256": "6ca4d5e9570d2b0d63c2b29b5884694e45d783f3df2ee8985479a2303f1114bc",
+  "seed": 44,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "9acc8689477ee3a6e0eca5aa9551e3401d0835ab47de0085ceaf6f33a1a44411",
+  "train_mean_image_mae": 0.18678544177666234,
+  "elapsed_seconds": 54.74157179700023,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training weight seed 44
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "30ed18e499ba83d214dcba61b4b63966f253e55eb736e4c11ea19c5aef538d70",
+  "result_checkpoint_sha256": "2dca7f0619324ab3d8ee455a2f14c9e4756e45f645224dfcd57270ac09e6f92e",
+  "seed": 44,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "9acc8689477ee3a6e0eca5aa9551e3401d0835ab47de0085ceaf6f33a1a44411",
+  "train_mean_image_mae": 0.18725882610230915,
+  "elapsed_seconds": 50.7493953940002,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training average_ablation seed 44
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "2d009308ed7c92296b7a256eb26c8431b55301ca17c617881fc08aadeac462a6",
+  "result_checkpoint_sha256": "c2974c42577cad761d1140895fa9ee0a4d199eee869956aaa321d0de4202d391",
+  "seed": 44,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "9acc8689477ee3a6e0eca5aa9551e3401d0835ab47de0085ceaf6f33a1a44411",
+  "train_mean_image_mae": 0.18805916376279513,
+  "elapsed_seconds": 50.78891846099987,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training scene_aware seed 44
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "f9bb38f780472067d3b2eea38fbc239e053ac88a81c99ae739af12b3b970900b",
+  "result_checkpoint_sha256": "89940082c33fe351c20271d0a7c0f3a2d68a9763da076d0e9f73c64add746f6e",
+  "seed": 44,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "9acc8689477ee3a6e0eca5aa9551e3401d0835ab47de0085ceaf6f33a1a44411",
+  "train_mean_image_mae": 0.18728270556218019,
+  "elapsed_seconds": 52.05589482200003,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}
+Training random seed 44
+400/1857 training images
+800/1857 training images
+1200/1857 training images
+1600/1857 training images
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "e22c13fa82e7da8814bc36487c19d0a9c67b2e79594795bf8159aca64ce44a2c",
+  "result_checkpoint_sha256": "5304811c83193f41cb417d35736fef662eebec2ef5a4c50807218b13609d34ff",
+  "seed": 44,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "9acc8689477ee3a6e0eca5aa9551e3401d0835ab47de0085ceaf6f33a1a44411",
+  "train_mean_image_mae": 0.18921786613309005,
+  "elapsed_seconds": 55.20246487400027,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}

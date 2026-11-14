@@ -1,0 +1,9 @@
+{
+  "purpose": "Single-channel loss ablation and gradual physical pruning of the first decoder width",
+  "declared_before_scoring": "2026-11-14",
+  "source_checkpoint": "checkpoints/converted/community-skipadd-pruned.pth",
+  "manifest": "data/nyu_depth_v2/multiscene_2026-11-14/manifest.json",
+  "selection": "Rank 200 channels by masked-MAE increase when individually zeroed at the input of the second decoder pointwise layer, using training samples only. Lower increases removed first; tie by index. Test widths 192, 184, 176, each independently from the original using this fixed ranking; this is a gradual width sweep, not iterative rescoring.",
+  "recovery": "One epoch, Adam 1e-5, batch size 1, seed 42, BN evaluation mode, matched unpruned control; tune on the separate two-scene group.",
+  "limits": "Scores are single-channel not joint ablations; subset is small and locally correlated. Tuning scenes and final evaluation scene identities may overlap in content; no Orin latency claim."
+}

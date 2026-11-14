@@ -1,0 +1,61 @@
+{
+  "scope": "Desktop PyTorch FP32 model-only, 50 warmups and 300 calls per run; two forward/reverse ordered passes, no Orin claim",
+  "runs": {
+    "control": [
+      {
+        "path": "results/benchmarks/2026-11-14-ablation-1-control/summary.json",
+        "sha256": "baf4fcb5daf55d817eb54a4a121f32631ac62a994384f2f6c97b70b72c4d0057",
+        "median_ms": 5.3505044999999996,
+        "p95_ms": 5.63083875
+      },
+      {
+        "path": "results/benchmarks/2026-11-14-ablation-2-control/summary.json",
+        "sha256": "68df54f17f109fceeb96b923991e9cddc477cd25b3b3cfe5ceef04a4c088acd0",
+        "median_ms": 5.443820499999999,
+        "p95_ms": 5.750471350000001
+      }
+    ],
+    "192": [
+      {
+        "path": "results/benchmarks/2026-11-14-ablation-1-192/summary.json",
+        "sha256": "3c702e2a102ecaeb3f7f2fbe4e3902c9cf34fa62578930d26f33230a9f226de5",
+        "median_ms": 5.36116,
+        "p95_ms": 5.6914426
+      },
+      {
+        "path": "results/benchmarks/2026-11-14-ablation-2-192/summary.json",
+        "sha256": "8806a34e24bef016bbd907622b56fd6669069c3e9d005e8c85199429f503c32e",
+        "median_ms": 5.535132,
+        "p95_ms": 6.123171300000001
+      }
+    ],
+    "184": [
+      {
+        "path": "results/benchmarks/2026-11-14-ablation-1-184/summary.json",
+        "sha256": "ceb9e9e4cb682a9984aaa71e02036318032cc01df001238feda2ca15373df582",
+        "median_ms": 5.4590035,
+        "p95_ms": 5.8184233
+      },
+      {
+        "path": "results/benchmarks/2026-11-14-ablation-2-184/summary.json",
+        "sha256": "8dcfa851318f72ec3de8afa2e5457ecc6bab59a49dcf4bca33ef0c45dccb1cc7",
+        "median_ms": 5.5361535,
+        "p95_ms": 5.9148046
+      }
+    ],
+    "176": [
+      {
+        "path": "results/benchmarks/2026-11-14-ablation-1-176/summary.json",
+        "sha256": "1d5fd5a673858aaa2da30f18c15cb6434374bbe33cb7945bd86103a8c14b8d75",
+        "median_ms": 5.442423,
+        "p95_ms": 5.7588494
+      },
+      {
+        "path": "results/benchmarks/2026-11-14-ablation-2-176/summary.json",
+        "sha256": "2462796e81dce363346bb10a0f2e1db323145aab8e7e5b9a822f3e34805b3287",
+        "median_ms": 5.4530025,
+        "p95_ms": 5.8869726
+      }
+    ]
+  }
+}

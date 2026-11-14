@@ -1,0 +1,10 @@
+{
+  "purpose": "Use expanded samples from the same six scenes for matched control and first-decoder width recovery, after scoring but before any candidate tuning run",
+  "declared_before_tuning_runs": "2026-11-14",
+  "amendment": "The initial experiment specified the 32-image training and 16-image tuning manifest. A larger bounded acquisition succeeded after the 32-image ablation scan; use the expanded 128-image training and 64-image tuning manifest for all control and candidate recovery runs. The ablation ranking remains from the original 32 training images. The two samples per scene set shares a subset of images, and no tuning results from the new scenes were inspected when making this change.",
+  "score_file": "results/training/2026-11-14-ablation-scores.json",
+  "recovery_manifest": "data/nyu_depth_v2/multiscene_2026-11-14-expanded/manifest.json",
+  "widths": [192, 184, 176],
+  "recovery": {"epochs": 1, "seed": 42, "optimizer": "Adam", "learning_rate": 0.00001, "batch_size": 1, "freeze_bn": true},
+  "limitations": "Four training and two tuning scenes, correlated frames, same first scene in each shard, unknown evaluation scene identities; no Orin latency claim."
+}

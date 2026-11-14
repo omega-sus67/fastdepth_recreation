@@ -1,0 +1,41 @@
+{
+  "scope": "RTX 3060 Laptop GPU, fixed batch 1 zero input, FP16-enabled TensorRT, default CUDA stream, synchronized wall-clock model-only, excluding preprocessing and transfers.",
+  "config_sha256": "3ebf4bb3a2319e7fbffd8b658d315796aa753f706e4f6484381dbcd5a1ee848b",
+  "engine_config_sha256": "a40d81b854ef593ea19f71007a010b0b05508093c8c53003a0ab7951f1e9d3c3",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "tensorrt": "10.3.0",
+  "warmups": 50,
+  "calls_per_run": 300,
+  "runs": [
+    {
+      "run": 1,
+      "model": "original",
+      "engine_sha256": "098fb5918dfc285362c46135cd88f9507bc1068ec49942f65e51ae0ecfbe8306",
+      "median_ms": 0.38489399999999996,
+      "p95_ms": 0.40662405
+    },
+    {
+      "run": 2,
+      "model": "scene_aware",
+      "engine_sha256": "3379d8fdad03ca2238adb2e6c8cbb021dc3f0e73f6c5ac31ebc003d094f00d82",
+      "median_ms": 0.326095,
+      "p95_ms": 0.38570625000000003
+    },
+    {
+      "run": 3,
+      "model": "scene_aware",
+      "engine_sha256": "3379d8fdad03ca2238adb2e6c8cbb021dc3f0e73f6c5ac31ebc003d094f00d82",
+      "median_ms": 0.330172,
+      "p95_ms": 0.40993750000000007
+    },
+    {
+      "run": 4,
+      "model": "original",
+      "engine_sha256": "098fb5918dfc285362c46135cd88f9507bc1068ec49942f65e51ae0ecfbe8306",
+      "median_ms": 0.326886,
+      "p95_ms": 0.3671581
+    }
+  ],
+  "limitations": "Two nonrandomized replay passes and one engine build per model; uncontrolled thermal and power state; default stream can add synchronization; not Orin."
+}

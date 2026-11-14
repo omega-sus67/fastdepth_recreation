@@ -1,0 +1,58 @@
+{
+  "reference_source": "https://github.com/scipy/scipy/blob/v1.1.0/scipy/misc/pilutil.py",
+  "source_sha256": "2115336ef6812bd90ec9d8a4481c6769c633476f658f298a4a1ccd418e8ffe47",
+  "method": "SciPy 1.1.0 functions; decorators removed, ndarray.tostring replaced by equivalent tobytes and Pillow type-check shim; current NumPy/Pillow",
+  "limitation": "Not a historical SciPy/Pillow binary environment; five real files plus one synthetic case; comparison uses float32 cast matching upstream ToTensor.",
+  "cases": [
+    {
+      "case": "synthetic-pattern",
+      "rgb_uint8_reconstructed_equal": true,
+      "rgb_float_max_abs_diff": 2.9685450542160652e-08,
+      "rgb_after_legacy_float32_cast_exact_equal": true,
+      "depth_exact_equal": true,
+      "depth_max_abs_diff": 0.0
+    },
+    {
+      "case": "00001.h5",
+      "rgb_uint8_reconstructed_equal": true,
+      "rgb_float_max_abs_diff": 2.9685450542160652e-08,
+      "rgb_after_legacy_float32_cast_exact_equal": true,
+      "depth_exact_equal": true,
+      "depth_max_abs_diff": 0.0
+    },
+    {
+      "case": "00002.h5",
+      "rgb_uint8_reconstructed_equal": true,
+      "rgb_float_max_abs_diff": 2.9685450542160652e-08,
+      "rgb_after_legacy_float32_cast_exact_equal": true,
+      "depth_exact_equal": true,
+      "depth_max_abs_diff": 0.0
+    },
+    {
+      "case": "00009.h5",
+      "rgb_uint8_reconstructed_equal": true,
+      "rgb_float_max_abs_diff": 2.9685450542160652e-08,
+      "rgb_after_legacy_float32_cast_exact_equal": true,
+      "depth_exact_equal": true,
+      "depth_max_abs_diff": 0.0
+    },
+    {
+      "case": "00014.h5",
+      "rgb_uint8_reconstructed_equal": true,
+      "rgb_float_max_abs_diff": 2.9685450542160652e-08,
+      "rgb_after_legacy_float32_cast_exact_equal": true,
+      "depth_exact_equal": true,
+      "depth_max_abs_diff": 0.0
+    },
+    {
+      "case": "00015.h5",
+      "rgb_uint8_reconstructed_equal": true,
+      "rgb_float_max_abs_diff": 2.9685450542160652e-08,
+      "rgb_after_legacy_float32_cast_exact_equal": true,
+      "depth_exact_equal": true,
+      "depth_max_abs_diff": 0.0
+    }
+  ],
+  "all_pixel_coordinates_match": true,
+  "all_final_tensors_exact": true
+}

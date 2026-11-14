@@ -1,0 +1,296 @@
+{
+  "scope": "Saved run pairing checks; no claim of cross-platform determinism or evaluation independence",
+  "protocol_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "comparison_sha256": "79239d187b0f7ecee1949ef1c4474d2e4cfc28f87d579adbee55c30a1046f825",
+  "candidate_manifest_sha256": "56030ad0b4b1b54e47ca0ffe06925e90541952172f7df1adc0ea3230996b7f6b",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "expected_runs": 15,
+  "runs": [
+    {
+      "model": "original_42",
+      "summary": "results/training/2026-11-14-scene-deterministic-original-42/summary.json",
+      "summary_sha256": "688837e37e2e04262bcc639332edc8aa64235a052cf933b18d84a33ca11eb4bb",
+      "checkpoint_sha256": "3f3a16c03ea2396b85d928b66b873b0ac6e47d1a2fa0300a40fcfb0dc20ec34a",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "weight_42",
+      "summary": "results/training/2026-11-14-scene-deterministic-weight-42/summary.json",
+      "summary_sha256": "feb860b0186fe6bf355d79395ec9f9bd164bebaeb9762317a32ba5f089ab401a",
+      "checkpoint_sha256": "cf1b626caa8eca78e5c0675d9dd0f5c26653f5f33293e670835ce9f24c748d5a",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "average_ablation_42",
+      "summary": "results/training/2026-11-14-scene-deterministic-average_ablation-42/summary.json",
+      "summary_sha256": "3cf476cb228e3a4b373c7ebc6153ea6838485e1e55be8a8055098c57d31056eb",
+      "checkpoint_sha256": "b878e947e9302aa51ba2f0dc9069452b2d9053fe81d48d3fdaa9aca46046f03f",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "scene_aware_42",
+      "summary": "results/training/2026-11-14-scene-deterministic-scene_aware-42/summary.json",
+      "summary_sha256": "dbff0d324da058745dc878e73559323cf0f27b98f6f0ee6a8caf4ded3366c167",
+      "checkpoint_sha256": "bc3714e846c975ad56c475d85f942a067b1408004a78a954e6bf0da4b3ef631a",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "random_42",
+      "summary": "results/training/2026-11-14-scene-deterministic-random-42/summary.json",
+      "summary_sha256": "923d56670e02f5465efc0012b6670428a44cdc31ebdbf66d71752d2861d1606a",
+      "checkpoint_sha256": "7bf7f58caf91e89a9b94dc7f83c1a600a16ddceb2bdfba6b0690995f046f8677",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "original_43",
+      "summary": "results/training/2026-11-14-deterministic-original-43-1/summary.json",
+      "summary_sha256": "11e6036694626e987bbf766d9521a0a547f49024a2792ec0710465fb1287bb51",
+      "checkpoint_sha256": "dfa0e9cf3c58b60053ad67b6452dc3753e02a87daaa5b4ecce6519468c90464f",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "weight_43",
+      "summary": "results/training/2026-11-14-scene-deterministic-weight-43/summary.json",
+      "summary_sha256": "4bce4189394b4321d8bddfb1970be482432be77fcf31f02aabe03146c924056f",
+      "checkpoint_sha256": "c2fc3099716d2e90cd591d5bc528a1f1c28e8749ac3282e34bcb1fb9f5ed3c7d",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "average_ablation_43",
+      "summary": "results/training/2026-11-14-scene-deterministic-average_ablation-43/summary.json",
+      "summary_sha256": "af98503b6e872cfac4c2e980a972d3ace517904547ee4fac48106fc93f04c5ff",
+      "checkpoint_sha256": "1c5fe5f85e64c94a57f00b59c29dba73c3b38bfc57438e6ca7bb5519ff48b794",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "scene_aware_43",
+      "summary": "results/training/2026-11-14-scene-deterministic-scene_aware-43/summary.json",
+      "summary_sha256": "af528e73239991d2c8725e41462a681aabc4204ef662184360063d38a2831e97",
+      "checkpoint_sha256": "6299bfb3c284df3d08892239037fc795a695f362616fd8a4eae2960ec55637ab",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "random_43",
+      "summary": "results/training/2026-11-14-scene-deterministic-random-43/summary.json",
+      "summary_sha256": "dd3413340cece966392257b32491457ff380d382bfd1bae817dfbaf67a0ff7e5",
+      "checkpoint_sha256": "6093294c76c688267ab24a0d394822efabc7e161c3f1ef4d63eca40782f1a546",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "original_44",
+      "summary": "results/training/2026-11-14-scene-deterministic-original-44/summary.json",
+      "summary_sha256": "bafa0473dcf29edd25b532e934e0190a09188481a62f1f3d6a98214d50987f71",
+      "checkpoint_sha256": "6fc8840cb26847f50ef1962e3b968a943ab0af2fa47b760c25521db0f0b09f18",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "weight_44",
+      "summary": "results/training/2026-11-14-scene-deterministic-weight-44/summary.json",
+      "summary_sha256": "cf53b71d8309fc36c20a35cd00afecb872baf790858c0eec66e50c8f701aa47b",
+      "checkpoint_sha256": "d0cb3b87e8029b53f6567361773a5b02ebfc088baca7dc37745cead2e19c6930",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "average_ablation_44",
+      "summary": "results/training/2026-11-14-scene-deterministic-average_ablation-44/summary.json",
+      "summary_sha256": "fcc5bc0c499706f26374b334e1bf9399a7682ddf5a1d3f45d2fcde2a51bf2d5e",
+      "checkpoint_sha256": "ad1fa6dbef575a5d1a8c6ea93d0fd04ae7a8e59af1085bd874e89849c24c8857",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "scene_aware_44",
+      "summary": "results/training/2026-11-14-scene-deterministic-scene_aware-44/summary.json",
+      "summary_sha256": "371bd71a5f66362b79481933f1092e93a37cda84dddf2abc331d01d112ffbe1c",
+      "checkpoint_sha256": "ae73c1b5cb6ec363bd1acaaba61aaf08213f9d85308de65a175d5c8abd32adca",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    },
+    {
+      "model": "random_44",
+      "summary": "results/training/2026-11-14-scene-deterministic-random-44/summary.json",
+      "summary_sha256": "2d6c8da45691bd82d4c34a9bdd53cfc3ac7a061dcead0651b5ad7ae749d32b5f",
+      "checkpoint_sha256": "a1c86549a35ccb2cfe1638b2c9e68676bf37e4538f232e32f602939e21459648",
+      "checks": {
+        "seed": true,
+        "protocol": true,
+        "manifest": true,
+        "source": true,
+        "result": true,
+        "samples": true,
+        "batch": true,
+        "deterministic": true,
+        "cublas": true,
+        "bn": true,
+        "loss_finite": true
+      }
+    }
+  ],
+  "errors": []
+}

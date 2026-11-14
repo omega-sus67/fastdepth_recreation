@@ -1,0 +1,817 @@
+{
+  "scope": "Architecture trace of a converted community checkpoint on one synthetic input; no accuracy or target performance claim",
+  "checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "torch": "2.9.1+cu128",
+  "device": "cpu",
+  "seed": 42,
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "encoder": [
+    {
+      "name": "conv0",
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        16,
+        112,
+        112
+      ],
+      "parameters": 464,
+      "convolutions": [
+        {
+          "in": 3,
+          "out": 16,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            2,
+            2
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv1",
+      "input_shape": [
+        1,
+        16,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        56,
+        112,
+        112
+      ],
+      "parameters": 1184,
+      "convolutions": [
+        {
+          "in": 16,
+          "out": 16,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 16,
+          "bias": false
+        },
+        {
+          "in": 16,
+          "out": 56,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv2",
+      "input_shape": [
+        1,
+        56,
+        112,
+        112
+      ],
+      "output_shape": [
+        1,
+        88,
+        56,
+        56
+      ],
+      "parameters": 5720,
+      "convolutions": [
+        {
+          "in": 56,
+          "out": 56,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            2,
+            2
+          ],
+          "groups": 56,
+          "bias": false
+        },
+        {
+          "in": 56,
+          "out": 88,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv3",
+      "input_shape": [
+        1,
+        88,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        120,
+        56,
+        56
+      ],
+      "parameters": 11768,
+      "convolutions": [
+        {
+          "in": 88,
+          "out": 88,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 88,
+          "bias": false
+        },
+        {
+          "in": 88,
+          "out": 120,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv4",
+      "input_shape": [
+        1,
+        120,
+        56,
+        56
+      ],
+      "output_shape": [
+        1,
+        144,
+        28,
+        28
+      ],
+      "parameters": 18888,
+      "convolutions": [
+        {
+          "in": 120,
+          "out": 120,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            2,
+            2
+          ],
+          "groups": 120,
+          "bias": false
+        },
+        {
+          "in": 120,
+          "out": 144,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv5",
+      "input_shape": [
+        1,
+        144,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "parameters": 38960,
+      "convolutions": [
+        {
+          "in": 144,
+          "out": 144,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 144,
+          "bias": false
+        },
+        {
+          "in": 144,
+          "out": 256,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv6",
+      "input_shape": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "output_shape": [
+        1,
+        408,
+        14,
+        14
+      ],
+      "parameters": 108080,
+      "convolutions": [
+        {
+          "in": 256,
+          "out": 256,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            2,
+            2
+          ],
+          "groups": 256,
+          "bias": false
+        },
+        {
+          "in": 256,
+          "out": 408,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv7",
+      "input_shape": [
+        1,
+        408,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        376,
+        14,
+        14
+      ],
+      "parameters": 158648,
+      "convolutions": [
+        {
+          "in": 408,
+          "out": 408,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 408,
+          "bias": false
+        },
+        {
+          "in": 408,
+          "out": 376,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv8",
+      "input_shape": [
+        1,
+        376,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        272,
+        14,
+        14
+      ],
+      "parameters": 106952,
+      "convolutions": [
+        {
+          "in": 376,
+          "out": 376,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 376,
+          "bias": false
+        },
+        {
+          "in": 376,
+          "out": 272,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv9",
+      "input_shape": [
+        1,
+        272,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        288,
+        14,
+        14
+      ],
+      "parameters": 81904,
+      "convolutions": [
+        {
+          "in": 272,
+          "out": 272,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 272,
+          "bias": false
+        },
+        {
+          "in": 272,
+          "out": 288,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv10",
+      "input_shape": [
+        1,
+        288,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        296,
+        14,
+        14
+      ],
+      "parameters": 89008,
+      "convolutions": [
+        {
+          "in": 288,
+          "out": 288,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 288,
+          "bias": false
+        },
+        {
+          "in": 288,
+          "out": 296,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv11",
+      "input_shape": [
+        1,
+        296,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        328,
+        14,
+        14
+      ],
+      "parameters": 101000,
+      "convolutions": [
+        {
+          "in": 296,
+          "out": 296,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 296,
+          "bias": false
+        },
+        {
+          "in": 296,
+          "out": 328,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv12",
+      "input_shape": [
+        1,
+        328,
+        14,
+        14
+      ],
+      "output_shape": [
+        1,
+        480,
+        7,
+        7
+      ],
+      "parameters": 162008,
+      "convolutions": [
+        {
+          "in": 328,
+          "out": 328,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            2,
+            2
+          ],
+          "groups": 328,
+          "bias": false
+        },
+        {
+          "in": 328,
+          "out": 480,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    },
+    {
+      "name": "conv13",
+      "input_shape": [
+        1,
+        480,
+        7,
+        7
+      ],
+      "output_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "parameters": 252064,
+      "convolutions": [
+        {
+          "in": 480,
+          "out": 480,
+          "kernel": [
+            3,
+            3
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 480,
+          "bias": false
+        },
+        {
+          "in": 480,
+          "out": 512,
+          "kernel": [
+            1,
+            1
+          ],
+          "stride": [
+            1,
+            1
+          ],
+          "groups": 1,
+          "bias": false
+        }
+      ]
+    }
+  ],
+  "decoder": [
+    {
+      "name": "decode_conv1",
+      "input_shape": [
+        1,
+        512,
+        7,
+        7
+      ],
+      "before_upsample_shape": [
+        1,
+        200,
+        7,
+        7
+      ],
+      "upsampled_shape": [
+        1,
+        200,
+        14,
+        14
+      ],
+      "skip_from": null,
+      "output_shape": [
+        1,
+        200,
+        14,
+        14
+      ],
+      "parameters": 116624
+    },
+    {
+      "name": "decode_conv2",
+      "input_shape": [
+        1,
+        200,
+        14,
+        14
+      ],
+      "before_upsample_shape": [
+        1,
+        256,
+        14,
+        14
+      ],
+      "upsampled_shape": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "skip_from": "conv5",
+      "output_shape": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "parameters": 57112
+    },
+    {
+      "name": "decode_conv3",
+      "input_shape": [
+        1,
+        256,
+        28,
+        28
+      ],
+      "before_upsample_shape": [
+        1,
+        120,
+        28,
+        28
+      ],
+      "upsampled_shape": [
+        1,
+        120,
+        56,
+        56
+      ],
+      "skip_from": "conv3",
+      "output_shape": [
+        1,
+        120,
+        56,
+        56
+      ],
+      "parameters": 37872
+    },
+    {
+      "name": "decode_conv4",
+      "input_shape": [
+        1,
+        120,
+        56,
+        56
+      ],
+      "before_upsample_shape": [
+        1,
+        56,
+        56,
+        56
+      ],
+      "upsampled_shape": [
+        1,
+        56,
+        112,
+        112
+      ],
+      "skip_from": "conv1",
+      "output_shape": [
+        1,
+        56,
+        112,
+        112
+      ],
+      "parameters": 10072
+    },
+    {
+      "name": "decode_conv5",
+      "input_shape": [
+        1,
+        56,
+        112,
+        112
+      ],
+      "before_upsample_shape": [
+        1,
+        16,
+        112,
+        112
+      ],
+      "upsampled_shape": [
+        1,
+        16,
+        224,
+        224
+      ],
+      "skip_from": null,
+      "output_shape": [
+        1,
+        16,
+        224,
+        224
+      ],
+      "parameters": 2440
+    }
+  ],
+  "head": {
+    "name": "decode_conv6",
+    "input_shape": [
+      1,
+      16,
+      224,
+      224
+    ],
+    "output_shape": [
+      1,
+      1,
+      224,
+      224
+    ],
+    "operations": [
+      "Conv2d(16,1,kernel=1,bias=False)",
+      "BatchNorm2d(1)",
+      "ReLU"
+    ],
+    "parameters": 18
+  },
+  "encoder_parameters": 1136648,
+  "decoder_parameters_including_head": 224138,
+  "total_parameters": 1360786,
+  "manual_forward_max_abs_difference": 0.0
+}

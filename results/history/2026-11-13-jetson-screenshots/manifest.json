@@ -1,0 +1,16 @@
+{
+  "date_recorded": "2026-11-13",
+  "scope": "User-supplied screenshots of a chat summary; no direct board telemetry",
+  "sources": [
+    {
+      "original": "papers/WhatsApp Image 2026-11-13 at 12.13.16.jpeg",
+      "snapshot": "results/history/2026-11-13-jetson-screenshots/WhatsApp Image 2026-11-13 at 12.13.16.jpeg",
+      "sha256": "b33088260023d7a86db57ae1f9bab16f2cba530053b7065b2491fc2174216166"
+    },
+    {
+      "original": "papers/WhatsApp Image 2026-11-13 at 12.13.17.jpeg",
+      "snapshot": "results/history/2026-11-13-jetson-screenshots/WhatsApp Image 2026-11-13 at 12.13.17.jpeg",
+      "sha256": "b5b679732b15083be34c923d054401977f59f74975cac57f24e5f9115656968c"
+    }
+  ]
+}

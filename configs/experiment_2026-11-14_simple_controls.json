@@ -1,0 +1,10 @@
+{
+  "purpose": "Two explainable matched follow-ups: weight-magnitude versus loss-ablation ranking, and batch-normalization mode during recovery",
+  "declared_before_new_runs": "2026-11-14",
+  "context": "Previous 192-channel ablation and expanded tuning results have already been inspected; these comparisons are exploratory, not independent confirmation.",
+  "dataset": "data/nyu_depth_v2/multiscene_2026-11-14-expanded/manifest.json",
+  "first_comparison": "Prune the first decoder from 200 to 192 with the existing downstream pointwise L1-weight score; compare against the prior 192-channel ablation-score candidate and original control. Use frozen BN for one epoch.",
+  "second_comparison": "Train the existing 192-channel ablation candidate with normal BN mode for one epoch, comparing against its prior frozen-BN run. Mode changes both statistics used in forward/backward and updates to running buffers; affine parameters remain trainable in both.",
+  "common_settings": {"seed": 42, "optimizer": "Adam", "learning_rate": 0.00001, "epochs": 1, "batch_size": 1, "loss": "mean absolute error on finite positive target pixels"},
+  "selection_note": "No held-out 654-image candidate comparisons. The tuning set has been inspected repeatedly and has only two scenes; no Orin claim."
+}

@@ -1,0 +1,6 @@
+[11/14/2026-16:38:58] [TRT] [W] Using default stream in enqueueV3() may lead to performance issues due to additional calls to cudaStreamSynchronize() by TensorRT to ensure correct synchronization. Please use non-default stream instead.
+1/4 original: 0.384894 ms
+[11/14/2026-16:38:59] [TRT] [W] Using default stream in enqueueV3() may lead to performance issues due to additional calls to cudaStreamSynchronize() by TensorRT to ensure correct synchronization. Please use non-default stream instead.
+2/4 scene_aware: 0.326095 ms
+3/4 scene_aware: 0.330172 ms
+4/4 original: 0.326886 ms

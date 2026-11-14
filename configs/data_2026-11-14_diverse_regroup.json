@@ -1,0 +1,11 @@
+{
+  "purpose": "Conservatively group possible same-room letter suffixes into the same split",
+  "declared_before_regroup": "2026-11-14",
+  "input_manifest": "data/nyu_depth_v2/diverse_2026-11-14/manifest.json",
+  "exclude_prior_manifest": "data/nyu_depth_v2/multiscene_2026-11-14-expanded/manifest.json",
+  "grouping_rule": "Remove trailing lowercase letter suffix after the last numeric character of the scene name; keep identical resulting group IDs in one split and exclude IDs matching previous scenes.",
+  "seed": 42,
+  "tune_group_fraction": 0.2,
+  "reason": "Inspection found suffix variants across train/tune and one variant of a previously used location; suffix-based grouping is a conservative naming heuristic, not independently confirmed scene identity.",
+  "limitations": "Different scene names can still refer to the same place; exclusion and grouping do not establish evaluation-scene identity or eliminate near-duplicates."
+}

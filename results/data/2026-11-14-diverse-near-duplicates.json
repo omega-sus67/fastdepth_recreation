@@ -1,0 +1,26 @@
+{
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "hash": "64-bit horizontal dHash after grayscale 9x8 LANCZOS resize",
+  "threshold_hamming_distance_at_most": 3,
+  "pairs": {
+    "train_tune": {
+      "pairs_checked": 826365,
+      "flagged_pairs": 0,
+      "minimum_distance": 7,
+      "examples_first_30": []
+    },
+    "train_evaluation": {
+      "pairs_checked": 1214478,
+      "flagged_pairs": 0,
+      "minimum_distance": 7,
+      "examples_first_30": []
+    },
+    "tune_evaluation": {
+      "pairs_checked": 291030,
+      "flagged_pairs": 0,
+      "minimum_distance": 8,
+      "examples_first_30": []
+    }
+  },
+  "limitations": "A low hash distance is only a visual similarity flag, not proof of duplicate; some near duplicates may have larger distances; not a scene identity check."
+}

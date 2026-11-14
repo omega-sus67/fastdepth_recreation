@@ -1,0 +1,8 @@
+{
+  "scope": "One exploratory GPU resume comparison, same data/order/config; no general determinism guarantee",
+  "epochs": 2,
+  "max_state_abs_difference": 0.0,
+  "exact_equal": true,
+  "uninterrupted": "results/training/2026-11-13-control-uninterrupted2/checkpoint.pth",
+  "resumed": "results/training/2026-11-13-control-resumed2/checkpoint.pth"
+}

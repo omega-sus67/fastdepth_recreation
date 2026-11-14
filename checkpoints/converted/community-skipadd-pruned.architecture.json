@@ -1,0 +1,2333 @@
+{
+  "type": "MobileNetSkipAdd",
+  "parameters": {
+    "output_size": [
+      224,
+      224
+    ]
+  },
+  "children": [
+    [
+      "conv0",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 3,
+                "out_channels": 16,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  2,
+                  2
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 16,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv1",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 16,
+                "out_channels": 16,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 16,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 16,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 16,
+                "out_channels": 56,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 56,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv2",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 56,
+                "out_channels": 56,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  2,
+                  2
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 56,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 56,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 56,
+                "out_channels": 88,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 88,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv3",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 88,
+                "out_channels": 88,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 88,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 88,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 88,
+                "out_channels": 120,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 120,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv4",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 120,
+                "out_channels": 120,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  2,
+                  2
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 120,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 120,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 120,
+                "out_channels": 144,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 144,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv5",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 144,
+                "out_channels": 144,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 144,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 144,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 144,
+                "out_channels": 256,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 256,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv6",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 256,
+                "out_channels": 256,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  2,
+                  2
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 256,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 256,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 256,
+                "out_channels": 408,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 408,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv7",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 408,
+                "out_channels": 408,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 408,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 408,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 408,
+                "out_channels": 376,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 376,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv8",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 376,
+                "out_channels": 376,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 376,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 376,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 376,
+                "out_channels": 272,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 272,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv9",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 272,
+                "out_channels": 272,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 272,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 272,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 272,
+                "out_channels": 288,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 288,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv10",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 288,
+                "out_channels": 288,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 288,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 288,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 288,
+                "out_channels": 296,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 296,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv11",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 296,
+                "out_channels": 296,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 296,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 296,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 296,
+                "out_channels": 328,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 328,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv12",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 328,
+                "out_channels": 328,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  2,
+                  2
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 328,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 328,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 328,
+                "out_channels": 480,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 480,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "conv13",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 480,
+                "out_channels": 480,
+                "kernel_size": [
+                  3,
+                  3
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  1,
+                  1
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 480,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 480,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "3",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 480,
+                "out_channels": 512,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "4",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 512,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "5",
+            {
+              "type": "ReLU6",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "decode_conv1",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 512,
+                      "out_channels": 512,
+                      "kernel_size": [
+                        5,
+                        5
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        2,
+                        2
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 512,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 512,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 512,
+                      "out_channels": 200,
+                      "kernel_size": [
+                        1,
+                        1
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        0,
+                        0
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 1,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 200,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "decode_conv2",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 200,
+                      "out_channels": 200,
+                      "kernel_size": [
+                        5,
+                        5
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        2,
+                        2
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 200,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 200,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 200,
+                      "out_channels": 256,
+                      "kernel_size": [
+                        1,
+                        1
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        0,
+                        0
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 1,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 256,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "decode_conv3",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 256,
+                      "out_channels": 256,
+                      "kernel_size": [
+                        5,
+                        5
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        2,
+                        2
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 256,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 256,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 256,
+                      "out_channels": 120,
+                      "kernel_size": [
+                        1,
+                        1
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        0,
+                        0
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 1,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 120,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "decode_conv4",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 120,
+                      "out_channels": 120,
+                      "kernel_size": [
+                        5,
+                        5
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        2,
+                        2
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 120,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 120,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 120,
+                      "out_channels": 56,
+                      "kernel_size": [
+                        1,
+                        1
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        0,
+                        0
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 1,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 56,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "decode_conv5",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 56,
+                      "out_channels": 56,
+                      "kernel_size": [
+                        5,
+                        5
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        2,
+                        2
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 56,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 56,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "Sequential",
+              "parameters": {},
+              "children": [
+                [
+                  "0",
+                  {
+                    "type": "Conv2d",
+                    "parameters": {
+                      "in_channels": 56,
+                      "out_channels": 16,
+                      "kernel_size": [
+                        1,
+                        1
+                      ],
+                      "stride": [
+                        1,
+                        1
+                      ],
+                      "padding": [
+                        0,
+                        0
+                      ],
+                      "dilation": [
+                        1,
+                        1
+                      ],
+                      "groups": 1,
+                      "bias": false,
+                      "padding_mode": "zeros"
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "1",
+                  {
+                    "type": "BatchNorm2d",
+                    "parameters": {
+                      "num_features": 16,
+                      "eps": 1e-05,
+                      "momentum": 0.1,
+                      "affine": true,
+                      "track_running_stats": true
+                    },
+                    "children": []
+                  }
+                ],
+                [
+                  "2",
+                  {
+                    "type": "ReLU",
+                    "parameters": {
+                      "inplace": true
+                    },
+                    "children": []
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      "decode_conv6",
+      {
+        "type": "Sequential",
+        "parameters": {},
+        "children": [
+          [
+            "0",
+            {
+              "type": "Conv2d",
+              "parameters": {
+                "in_channels": 16,
+                "out_channels": 1,
+                "kernel_size": [
+                  1,
+                  1
+                ],
+                "stride": [
+                  1,
+                  1
+                ],
+                "padding": [
+                  0,
+                  0
+                ],
+                "dilation": [
+                  1,
+                  1
+                ],
+                "groups": 1,
+                "bias": false,
+                "padding_mode": "zeros"
+              },
+              "children": []
+            }
+          ],
+          [
+            "1",
+            {
+              "type": "BatchNorm2d",
+              "parameters": {
+                "num_features": 1,
+                "eps": 1e-05,
+                "momentum": 0.1,
+                "affine": true,
+                "track_running_stats": true
+              },
+              "children": []
+            }
+          ],
+          [
+            "2",
+            {
+              "type": "ReLU",
+              "parameters": {
+                "inplace": true
+              },
+              "children": []
+            }
+          ]
+        ]
+      }
+    ]
+  ]
+}

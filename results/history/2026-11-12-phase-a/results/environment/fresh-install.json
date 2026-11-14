@@ -1,0 +1,160 @@
+{
+  "recorded_at_utc": "2026-11-12T16:57:33.888002+00:00",
+  "scope": "Desktop dependency and synthetic runtime checks; not model accuracy or Orin validation.",
+  "python": {
+    "version": "3.12.3",
+    "executable": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/bin/python",
+    "prefix": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop",
+    "base_prefix": "/usr"
+  },
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": {
+      "version": "2.9.1+cu128",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/torch/__init__.py"
+    },
+    "torchvision": {
+      "version": "0.24.1+cu128",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/torchvision/__init__.py"
+    },
+    "numpy": {
+      "version": "2.5.4",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/numpy/__init__.py"
+    },
+    "h5py": {
+      "version": "3.16.0",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/h5py/__init__.py"
+    },
+    "matplotlib": {
+      "version": "3.11.2",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/matplotlib/__init__.py"
+    },
+    "imageio": {
+      "version": "2.38.1",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/imageio/__init__.py"
+    },
+    "scikit-image": {
+      "version": "0.26.0",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/skimage/__init__.py"
+    },
+    "opencv-python-headless": {
+      "version": "5.0.0",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/cv2/__init__.py"
+    },
+    "onnx": {
+      "version": "1.23.2",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/onnx/__init__.py"
+    },
+    "onnxruntime": {
+      "version": "1.31.1",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/onnxruntime/__init__.py"
+    },
+    "onnxscript": {
+      "version": "0.7.2",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/onnxscript/__init__.py"
+    },
+    "scipy": {
+      "version": "1.18.1",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/scipy/__init__.py"
+    },
+    "PyYAML": {
+      "version": "6.0.3",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/yaml/__init__.py"
+    },
+    "tqdm": {
+      "version": "4.70.1",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/tqdm/__init__.py"
+    },
+    "pytest": {
+      "version": "9.2.0",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/pytest/__init__.py"
+    },
+    "huggingface-hub": {
+      "version": "2.4.0",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/huggingface_hub/__init__.py"
+    },
+    "tensorrt": {
+      "version": "10.3.0",
+      "loaded_from": "/tmp/edgeai-phase-a-fresh-kn36o08x/.venv-desktop/lib/python3.12/site-packages/tensorrt/__init__.py"
+    }
+  },
+  "checks": {
+    "pytorch_cpu": {
+      "status": "passed",
+      "matrix_value": 16,
+      "synthetic_conv_shape": [
+        1,
+        1,
+        8,
+        8
+      ]
+    },
+    "pytorch_cuda": {
+      "status": "passed",
+      "matrix_value": 128.0,
+      "expected": 128
+    },
+    "onnxruntime_cpu": {
+      "status": "passed",
+      "providers": [
+        "AzureExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "tested_provider": "CPUExecutionProvider",
+      "output_shape": [
+        1,
+        3,
+        8,
+        8
+      ],
+      "max_abs_error": 0.0
+    },
+    "pytorch_onnx_export": {
+      "status": "passed",
+      "exporter": "torch.onnx dynamo",
+      "opset": 18,
+      "max_abs_error": 1.1920928955078125e-07
+    },
+    "tensorrt_cuda": {
+      "status": "passed",
+      "precision": "FP32",
+      "synthetic_output_shape": [
+        1,
+        3,
+        8,
+        8
+      ],
+      "engine_bytes": 3020,
+      "max_abs_error": 0.0
+    }
+  },
+  "shared_package_paths": [],
+  "external_site_packages": [],
+  "pythonpath_environment": null,
+  "cuda": {
+    "available": true,
+    "pytorch_build": "12.8",
+    "device": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "total_memory_bytes": 6086262784,
+    "compute_capability": "8.6"
+  },
+  "nvidia_smi": "name, driver_version, memory.total [MiB]\nNVIDIA GeForce RTX 3060 Laptop GPU, 580.178.04, 6144 MiB",
+  "project": {
+    "vendored_source_present": true,
+    "checkpoint_files": [],
+    "validation_archives": 0
+  },
+  "failures": [],
+  "passed": true,
+  "verification": {
+    "method": "Clean source snapshot and newly created independent virtual environment; no copied/shared Python packages",
+    "command": "bash scripts/setup_desktop.sh --locked --with-tensorrt",
+    "package_count": 70,
+    "notes": "Official wheels were installed using a warm download cache. Dataset/checkpoint copies were not needed for runtime checks.",
+    "source_sha256": {
+      "scripts/setup_desktop.sh": "b21a6f27e8cbb035dacbb754cee81a1c6883ca75433066181e105bcf9afa72cd",
+      "scripts/check_environment.py": "0c8f6fd32dbc884dbc04a5de19e237e20730cf3cff50a24fa96bc0c82bdfc43b",
+      "requirements-desktop-lock.txt": "7076e6f4581b64b8bfab560372d288e622180187d4147c7e162f07cdc74825a8"
+    }
+  }
+}

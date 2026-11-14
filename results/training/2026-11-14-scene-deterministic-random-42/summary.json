@@ -1,0 +1,23 @@
+{
+  "scope": "one-epoch training only; tuning not evaluated here",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "664332f257b008a37f732b35ee3daf5105aa9013e9cc2cddfe740b72a9cc44d7",
+  "result_checkpoint_sha256": "7bf7f58caf91e89a9b94dc7f83c1a600a16ddceb2bdfba6b0690995f046f8677",
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 1857,
+  "batch_size": 4,
+  "optimizer_steps": 465,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "710433e23048f249f409812fbb6a3e7b866b49fc00408e37edad3fd200d98d6e",
+  "deterministic_requested": true,
+  "cublas_workspace_config": ":4096:8",
+  "train_mean_image_mae": 0.18731596813961968,
+  "elapsed_seconds": 55.89333187000011,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}

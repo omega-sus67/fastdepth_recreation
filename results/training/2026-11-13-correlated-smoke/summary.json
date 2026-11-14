@@ -1,0 +1,39 @@
+{
+  "scope": "preliminary correlated-scene smoke test; not final training, pruning or generalization evidence",
+  "source_manifest": "/home/omega_sus/Desktop/5thSem/mlLab/edgeaiProject/data/nyu_depth_v2/preliminary_2026-11-13/manifest.json",
+  "train_files": [
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00001.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00006.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00011.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00016.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00021.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00026.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00031.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00036.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00041.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00046.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00051.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00056.h5"
+  ],
+  "tune_files": [
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00061.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00066.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00071.h5",
+    "data/nyu_depth_v2/preliminary_2026-11-13/basement_0001a/00076.h5"
+  ],
+  "scene_separation": false,
+  "exact_validation_hash_overlap": false,
+  "validation_scene_overlap": "unverified",
+  "seed": 42,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "history": [
+    {
+      "epoch": 1,
+      "train_mae": 1.0100958198308945,
+      "tune_mae": 0.656980350613594
+    }
+  ],
+  "source_checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "result_checkpoint_sha256": "31500b2e4c47d1a932ddd3ffdd74459704c5ead54f8f6ad32f3cbbf5cc6b0f8c"
+}

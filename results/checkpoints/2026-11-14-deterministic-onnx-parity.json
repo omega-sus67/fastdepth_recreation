@@ -1,0 +1,19 @@
+{
+  "scope": "Two deterministic checkpoint ONNX parity checks on one training image; not Orin or complete-set parity",
+  "models": {
+    "original": {
+      "path": "exports/2026-11-14-deterministic-original-42/parity.json",
+      "sha256": "49cb5f188baf52bf8049d0c6d2ad57ed8fb276af2f9dfe5105a1cd9e676b9028",
+      "sample_path": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/train/bathroom_0001/00006.h5",
+      "within_tolerance": true,
+      "max_abs_error": 5.245208740234375e-06
+    },
+    "scene_aware": {
+      "path": "exports/2026-11-14-deterministic-scene_aware-42/parity.json",
+      "sha256": "debe17461af9f4bfe04e463b3ac05cff3700378b6b2c586f4d55ac862948481d",
+      "sample_path": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/train/bathroom_0001/00006.h5",
+      "within_tolerance": true,
+      "max_abs_error": 2.1457672119140625e-06
+    }
+  }
+}

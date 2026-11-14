@@ -1,0 +1,114 @@
+{
+  "scope": "Two ordered desktop PyTorch FP32 model-only runs; 50 warmups and 200 calls; not Orin or end-to-end",
+  "config_sha256": "72395572252ea95539e6403932c8b11c0f6e02d495c901b53411a54a0ff28dd3",
+  "limitations": [
+    "Two non-randomized forward/reverse passes",
+    "Power and temperature uncontrolled",
+    "CPU-only test suite ran during the first part of timing and may have affected contention",
+    "Not TensorRT or Orin"
+  ],
+  "models": {
+    "original": {
+      "checkpoint": "checkpoints/converted/community-skipadd-pruned.pth",
+      "runs": [
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-1-original/summary.json",
+          "sha256": "75bfad8dd49668cdbff75f529a42d6d71dffbe8fb418f67f6fd2745008b5259f",
+          "median_ms": 5.3515695,
+          "p95_ms": 5.500049399999999
+        },
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-2-original/summary.json",
+          "sha256": "117b63411374e9ad46c7ce8f1a875a4703c880c25a761aa560bf7a072bad23ae",
+          "median_ms": 5.5213885000000005,
+          "p95_ms": 6.04538655
+        }
+      ]
+    },
+    "weight192": {
+      "checkpoint": "results/training/2026-11-14-weight-192-frozenbn/checkpoint.pth",
+      "runs": [
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-1-weight192/summary.json",
+          "sha256": "18486619ab3b2ed238ee12706d27decc85a93ad85150c920044dbe334e8f9dd8",
+          "median_ms": 5.5778505,
+          "p95_ms": 6.0600634
+        },
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-2-weight192/summary.json",
+          "sha256": "43a1f3b55750769291931dc3535776a9473e8f3396e9b3cfda65573b9831f273",
+          "median_ms": 5.3472585,
+          "p95_ms": 5.4928775
+        }
+      ]
+    },
+    "ablation192": {
+      "checkpoint": "results/training/2026-11-14-expanded-192/checkpoint.pth",
+      "runs": [
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-1-ablation192/summary.json",
+          "sha256": "2c625344649b7f2c48fe7a21cbba1c2fcf58487e34165bc5cb1a1cfdb6aeda6d",
+          "median_ms": 5.352322,
+          "p95_ms": 5.555402
+        },
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-2-ablation192/summary.json",
+          "sha256": "ed973fc84ab3691f3b07642c9c76c788ac1d144c8d9d9a3cc1d90684f2891d74",
+          "median_ms": 5.497721500000001,
+          "p95_ms": 6.386485399999999
+        }
+      ]
+    },
+    "ablation184": {
+      "checkpoint": "results/training/2026-11-14-expanded-184/checkpoint.pth",
+      "runs": [
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-1-ablation184/summary.json",
+          "sha256": "b617e1a08b76b0cc1b32e05e497624a067916a61d3fd1c4364ac77a8aa8725ac",
+          "median_ms": 5.499962,
+          "p95_ms": 6.08250815
+        },
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-2-ablation184/summary.json",
+          "sha256": "8a3a4150bd222b20f9bcf668c7621589de6c8fff138ab4aa2b8cd29221f06f56",
+          "median_ms": 5.431303,
+          "p95_ms": 5.6073473
+        }
+      ]
+    },
+    "ablation176": {
+      "checkpoint": "results/training/2026-11-14-expanded-176/checkpoint.pth",
+      "runs": [
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-1-ablation176/summary.json",
+          "sha256": "111b799fd4fd6a86f0ee5dada370a7cef6f7df4ad29e1c221c7ef1c9f39f2c02",
+          "median_ms": 5.324745500000001,
+          "p95_ms": 5.684695199999999
+        },
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-2-ablation176/summary.json",
+          "sha256": "6b50d80c26054bff588e2d98d1400d5be06f43ce1541d5e1641cadd7ef5f689a",
+          "median_ms": 5.579867999999999,
+          "p95_ms": 6.1698200000000005
+        }
+      ]
+    },
+    "weight160": {
+      "checkpoint": "results/training/2026-11-13-firstdecoder160-frozenbn/checkpoint.pth",
+      "runs": [
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-1-weight160/summary.json",
+          "sha256": "6044a74efa88c352a3e966b4aebe71de88baf850b923e1b295ad34af4a64673b",
+          "median_ms": 5.5668264999999995,
+          "p95_ms": 5.95174795
+        },
+        {
+          "path": "results/benchmarks/2026-11-14-new-model-2-weight160/summary.json",
+          "sha256": "d656210fb372fc898a57b3c9d5f52d67386a15e547916d98c90258ac05dcba7f",
+          "median_ms": 5.550636,
+          "p95_ms": 5.7560025
+        }
+      ]
+    }
+  }
+}

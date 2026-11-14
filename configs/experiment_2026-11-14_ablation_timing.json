@@ -1,0 +1,10 @@
+{
+  "purpose": "Exploratory desktop model-only timing of all fixed widths and the original control",
+  "declared_after_tuning_inspection": "2026-11-14",
+  "order": ["control", "192", "184", "176", "176", "184", "192", "control"],
+  "checkpoints": "Untrained candidate checkpoints and original source checkpoint; timing tests architecture, not fine-tuning weights.",
+  "runtime": "PyTorch FP32, RTX 3060 Laptop GPU, batch 1, preallocated zero tensor",
+  "warmup_per_run": 50,
+  "calls_per_run": 300,
+  "limitations": "One forward and one reverse ordering; uncontrolled power and temperature; not TensorRT, Orin or end-to-end timing."
+}

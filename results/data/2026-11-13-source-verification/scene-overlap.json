@@ -1,0 +1,16 @@
+{
+  "scene_names": {
+    "train": "basement_0001a",
+    "tune": "bedroom_0017"
+  },
+  "train_tune_scene_disjoint": true,
+  "counts": {
+    "train": 16,
+    "tune": 16,
+    "evaluation": 654
+  },
+  "exact_rgb_overlap_train_tune_count": 0,
+  "exact_rgb_overlap_with_evaluation": [],
+  "limitation": "Exact decoded RGB/depth matches only; near-duplicates, camera-frame similarity and evaluation scene identities remain unverified.",
+  "manifest_sha256": "ba9bb7850d663dd7140542a6c629a8f72930bd038579f11c7f689088c02ba42a"
+}

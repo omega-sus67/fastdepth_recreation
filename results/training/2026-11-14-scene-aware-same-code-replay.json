@@ -1,0 +1,53 @@
+{
+  "scope": "Two same-code same-seed original-model replays; model-state tensors only",
+  "first_sha256": "77586524b11ddd745f781f73bff0d8cd6500cb7a6b215a342346fde20afc015b",
+  "second_sha256": "306f77b46ee1338530b3e893ce10f582d02463c520d04da3c4e6b368059fce7b",
+  "same_training_order": true,
+  "state_tensors": 228,
+  "changed_tensor_count": 114,
+  "exact_equal": false,
+  "max_abs_difference": 0.000815806066384539,
+  "largest_10": [
+    {
+      "name": "conv12.3.weight",
+      "max_abs_difference": 0.000815806066384539
+    },
+    {
+      "name": "conv11.3.weight",
+      "max_abs_difference": 0.0005302872741594911
+    },
+    {
+      "name": "conv12.4.bias",
+      "max_abs_difference": 0.0005263714119791985
+    },
+    {
+      "name": "conv12.4.weight",
+      "max_abs_difference": 0.000486176460981369
+    },
+    {
+      "name": "conv13.3.weight",
+      "max_abs_difference": 0.0004461155040189624
+    },
+    {
+      "name": "conv5.3.weight",
+      "max_abs_difference": 0.00040666080894879997
+    },
+    {
+      "name": "conv12.0.weight",
+      "max_abs_difference": 0.00039088260382413864
+    },
+    {
+      "name": "decode_conv2.1.0.weight",
+      "max_abs_difference": 0.0003846961772069335
+    },
+    {
+      "name": "conv13.0.weight",
+      "max_abs_difference": 0.0003611228457884863
+    },
+    {
+      "name": "decode_conv1.1.0.weight",
+      "max_abs_difference": 0.00033581629395484924
+    }
+  ],
+  "limitation": "Same code and seed does not establish identical full environment; mechanism not isolated; optimizer/RNG states not compared."
+}

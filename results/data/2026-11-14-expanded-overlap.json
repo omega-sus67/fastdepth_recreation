@@ -1,0 +1,24 @@
+{
+  "scene_names": {
+    "train": [
+      "basement_0001a",
+      "bedroom_0017",
+      "bedroom_0062",
+      "bedroom_0125b"
+    ],
+    "tune": [
+      "dining_room_0007",
+      "dining_room_0034"
+    ]
+  },
+  "train_tune_scene_disjoint": true,
+  "counts": {
+    "train": 128,
+    "tune": 64,
+    "evaluation": 654
+  },
+  "exact_rgb_overlap_train_tune_count": 0,
+  "exact_rgb_overlap_with_evaluation": [],
+  "limitation": "Exact decoded RGB/depth matches only; near-duplicates, camera-frame similarity and evaluation scene identities remain unverified.",
+  "manifest_sha256": "efc7c95a8bef1725f74fc935747233e7c89575ae6520163710b55ffbd65e888d"
+}

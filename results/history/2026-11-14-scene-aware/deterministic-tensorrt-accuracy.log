@@ -1,0 +1,21 @@
+50/445 tuning images
+100/445 tuning images
+150/445 tuning images
+200/445 tuning images
+250/445 tuning images
+300/445 tuning images
+350/445 tuning images
+400/445 tuning images
+445/445 tuning images
+{
+  "original": {
+    "trt_mean_image_rmse": 0.2826689566027337,
+    "pytorch_mean_image_rmse": 0.2824329918941383,
+    "max_abs": 2.1105852127075195
+  },
+  "scene_aware": {
+    "trt_mean_image_rmse": 0.28338961219478004,
+    "pytorch_mean_image_rmse": 0.2832734352733136,
+    "max_abs": 0.16672945022583008
+  }
+}

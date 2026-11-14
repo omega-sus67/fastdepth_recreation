@@ -1,0 +1,97 @@
+{
+  "scope": "Four sample loader and model forward smoke test; no training and no accuracy or generalization claim",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "device": "cuda",
+  "torch": "2.9.1+cu128",
+  "samples": [
+    {
+      "group": "train",
+      "path": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/train/bathroom_0001/00006.h5",
+      "sha256": "57daeb94fa7b7d1884751e1bb52ecd52a839b024d43d73ce4b9e5f4821a2413f",
+      "x_shape": [
+        3,
+        224,
+        224
+      ],
+      "target_shape": [
+        1,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        1,
+        224,
+        224
+      ],
+      "output_finite": true
+    },
+    {
+      "group": "train",
+      "path": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/train/study_room_0005a/00336.h5",
+      "sha256": "c1184b6c336311e4f43a8359aa71b04afbe846a94717e862b6bd2ef986fd698a",
+      "x_shape": [
+        3,
+        224,
+        224
+      ],
+      "target_shape": [
+        1,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        1,
+        224,
+        224
+      ],
+      "output_finite": true
+    },
+    {
+      "group": "tune",
+      "path": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0002/00011.h5",
+      "sha256": "905b69135beec9f19174873e161133e75eca919d24f865927c8ebcb59cbb0fcd",
+      "x_shape": [
+        3,
+        224,
+        224
+      ],
+      "target_shape": [
+        1,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        1,
+        224,
+        224
+      ],
+      "output_finite": true
+    },
+    {
+      "group": "tune",
+      "path": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/study_0003/00806.h5",
+      "sha256": "19ad7a2ab2b44049a39f168b331b0ca2def5cbf1f970d75a895c9f6136449867",
+      "x_shape": [
+        3,
+        224,
+        224
+      ],
+      "target_shape": [
+        1,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        1,
+        224,
+        224
+      ],
+      "output_finite": true
+    }
+  ]
+}

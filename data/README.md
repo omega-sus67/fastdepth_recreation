@@ -1,0 +1,20 @@
+# Dataset navigation
+
+The project uses NYU Depth V2-derived images from a public mirror. We have **not downloaded the complete training dataset**. The historical split relationship and full depth conversion chain of the local mirror remain unverified. See [dataset and preprocessing notes](../docs/learning/dataset_preprocessing.md) for source, transformations and limitations.
+
+| Location | Role | Status and caution |
+| --- | --- | --- |
+| [nyu_depth_v2/raw/](nyu_depth_v2/raw/) | Downloaded validation archives | The local archives match hashes for the pinned mirror revision; this is not independent authentication against the original MIT download. |
+| [nyu_depth_v2/extracted/val/official/](nyu_depth_v2/extracted/val/official/) | Local 654-file evaluation collection | Reserved for evaluation, not for training or repeated candidate selection; its exact original split and scene identities remain uncertain. |
+| [diverse_2026-11-14-regrouped/](nyu_depth_v2/diverse_2026-11-14-regrouped/) | New exploratory training/tuning data | 1,857 training pairs from 98 named scenes and 445 tuning pairs from 26 named scenes; use its [manifest](nyu_depth_v2/diverse_2026-11-14-regrouped/manifest.json), [exact overlap](../results/data/2026-11-14-diverse-regrouped-overlap.json), [group audit](../results/data/2026-11-14-diverse-group-audit.json) and [visual similarity screen](../results/data/2026-11-14-diverse-near-duplicates.json). Scene identity and near-duplicate risks are not completely resolved. |
+| [diverse_2026-11-14/](nyu_depth_v2/diverse_2026-11-14/) | Historical initial split of the new acquisition | 2,304 pairs from 125 named scenes. Possible same-location name variants occurred in different splits; preserved for traceability, superseded by the regrouped manifest. |
+| [diverse_2026-11-14-pilot/](nyu_depth_v2/diverse_2026-11-14-pilot/) | Historical acquisition pilot | 48 pairs from 12 named scenes; use only for reproducing the pilot. |
+| [multiscene_2026-11-14-expanded/](nyu_depth_v2/multiscene_2026-11-14-expanded/) | Earlier exploratory training and tuning data | 128 training images from four scenes and 64 tuning images from two other scenes; see its [manifest](nyu_depth_v2/multiscene_2026-11-14-expanded/manifest.json) and [overlap report](../results/data/2026-11-14-expanded-overlap.json). Existing experiment results use this earlier subset. |
+| [multiscene_2026-11-14/](nyu_depth_v2/multiscene_2026-11-14/) | Earlier, smaller multi-scene subset | Eight images per scene; the 32 training images were used to calculate the current ablation scores. Its images are included in the expanded subset. |
+| [scene_split_2026-11-13-retry/](nyu_depth_v2/scene_split_2026-11-13-retry/) | Earlier exploratory training/tuning subset | 16 images in each of two scenes. One earlier tuning scene later became a training scene in the expanded subset, so results across these experiments are not independent. |
+| [scene_split_2026-11-13/](nyu_depth_v2/scene_split_2026-11-13/) | Historical acquisition attempt | An initial partial acquisition and its failure record; preserved for the progress history. |
+| [preliminary_2026-11-13/](nyu_depth_v2/preliminary_2026-11-13/) | Historical smoke-test data | Earlier samples from one scene; the old train/tuning split is correlated and unsuitable for a generalization claim. |
+
+Both the earlier expanded and new regrouped subsets were checked for exact decoded RGB matches between training/tuning and against the 654 evaluation images; none were found. The new subset also has a coarse perceptual-hash screen with no flags at distance ≤3. Neither check proves there are no near duplicates or overlapping evaluation scenes. The new sample is drawn from bounded archive windows, so it is not a uniform sample of NYU scenes or frames.
+
+Manifests and experiment records contain project-relative paths and hashes. Keep existing files and historical attempts in place when organizing data; adding a new subset requires its own manifest and overlap checks. See [scripts](../scripts/README.md) for acquisition and verification commands.

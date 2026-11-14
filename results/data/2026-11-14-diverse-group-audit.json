@@ -1,0 +1,51 @@
+{
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "location_group_rule": "strip trailing lowercase letters after last digit; heuristic only",
+  "same_group_train_tune": [],
+  "overlap_with_previously_excluded_groups": [],
+  "counts": {
+    "train": {
+      "named_scenes": 98,
+      "location_groups": 94,
+      "samples": 1857
+    },
+    "tune": {
+      "named_scenes": 26,
+      "location_groups": 24,
+      "samples": 445
+    }
+  },
+  "scene_types": {
+    "train": {
+      "bathroom": 8,
+      "bedroom": 23,
+      "cafe": 1,
+      "classroom": 3,
+      "conference_room": 1,
+      "dinette": 1,
+      "dining_room": 10,
+      "furniture_store": 6,
+      "home_office": 1,
+      "kitchen": 14,
+      "living_room": 14,
+      "office": 6,
+      "office_kitchen": 1,
+      "printer_room": 1,
+      "reception_room": 2,
+      "student_lounge": 1,
+      "study": 3,
+      "study_room": 2
+    },
+    "tune": {
+      "bathroom": 3,
+      "bedroom": 6,
+      "classroom": 1,
+      "dining_room": 2,
+      "home_office": 1,
+      "kitchen": 5,
+      "living_room": 5,
+      "playroom": 2,
+      "study": 1
+    }
+  }
+}

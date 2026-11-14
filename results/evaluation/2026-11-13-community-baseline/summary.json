@@ -1,0 +1,26 @@
+{
+  "scope": "Desktop community checkpoint, local validation subset; original split identity and depth units remain unverified",
+  "variant": "mobilenet-nnconv5dw-skipadd-pruned",
+  "checkpoint_source": "community_mirror_unverified",
+  "checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "device": "cuda",
+  "torch": "2.9.1+cu128",
+  "python": "3.12.3",
+  "samples": 654,
+  "manifest_sha256": "b45aa37d77f90ccdd84f620a64a6d5b95c69362801db0f1a4aac89a9f40cdc6a",
+  "preprocessing": "Pillow nearest: 480x640 -> 250x333 -> center crop 228x304 -> 224x224; RGB /255; depth float32",
+  "depth_units": "unverified, values treated as native dataset units",
+  "pooled": {
+    "valid_pixels": 32815104,
+    "nonpositive_predictions": 8884,
+    "rmse": 0.7211589224955154,
+    "mae": 0.4289633163811314,
+    "rel": 0.1651631956558098,
+    "delta1": 0.7710646902109468,
+    "r2": 0.7198583079012507,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "mean_image_rmse": 0.6037366517524553,
+  "mean_image_delta1": 0.7710646902109469
+}

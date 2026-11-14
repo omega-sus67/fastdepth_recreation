@@ -1,0 +1,12 @@
+{
+  "scope": "One mismatch diagnostic; not general scene identity proof",
+  "local_file": "00567.h5",
+  "inferred_official_index": 566,
+  "official_scene": "kitchen_0057",
+  "mean_absolute_byte_difference": 0.06141059027777778,
+  "max_absolute_byte_difference": 89,
+  "different_values": 3957,
+  "total_values": 921600,
+  "fraction_equal": 0.9957063802083334,
+  "remote_bytes_fetched": 27636401
+}

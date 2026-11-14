@@ -1,0 +1,21 @@
+{
+  "purpose": "Compare previously created checkpoints on the new multi-scene tuning split without further training",
+  "declared_before_run": "2026-11-14",
+  "manifest": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/manifest.json",
+  "overlap_report": "results/data/2026-11-14-diverse-regrouped-overlap.json",
+  "group": "tune",
+  "metrics": ["pooled valid-pixel RMSE, MAE, REL, delta1, R2", "mean per-image RMSE", "per-scene mean per-image RMSE"],
+  "models": [
+    {"name": "original", "checkpoint": "checkpoints/converted/community-skipadd-pruned.pth", "description": "Unmodified community checkpoint; already pruned upstream"},
+    {"name": "original_trained", "checkpoint": "results/training/2026-11-14-expanded-control/checkpoint.pth", "description": "Original checkpoint after one frozen-BN epoch on the prior six-scene split"},
+    {"name": "weight_192_untrained", "checkpoint": "checkpoints/candidates/2026-11-14-weight-192/candidate.pth", "description": "Weight-ranked 192-channel candidate before recovery"},
+    {"name": "weight_192_trained", "checkpoint": "results/training/2026-11-14-weight-192-frozenbn/checkpoint.pth", "description": "Weight-ranked 192-channel candidate after one frozen-BN epoch on prior split"},
+    {"name": "ablation_192_untrained", "checkpoint": "checkpoints/candidates/2026-11-14-ablation-192/candidate.pth", "description": "Loss-ablation-ranked 192-channel candidate before recovery"},
+    {"name": "ablation_192_trained", "checkpoint": "results/training/2026-11-14-expanded-192/checkpoint.pth", "description": "Ablation-ranked 192-channel candidate after one frozen-BN epoch on prior split"},
+    {"name": "ablation_184_trained", "checkpoint": "results/training/2026-11-14-expanded-184/checkpoint.pth", "description": "Ablation-ranked 184-channel candidate after one frozen-BN epoch on prior split"},
+    {"name": "ablation_176_trained", "checkpoint": "results/training/2026-11-14-expanded-176/checkpoint.pth", "description": "Ablation-ranked 176-channel candidate after one frozen-BN epoch on prior split"},
+    {"name": "ablation_192_normal_bn", "checkpoint": "results/training/2026-11-14-ablation-192-normalbn/checkpoint.pth", "description": "Ablation-ranked 192-channel candidate after one normal-BN epoch on prior split"},
+    {"name": "weight_160_trained", "checkpoint": "results/training/2026-11-13-firstdecoder160-frozenbn/checkpoint.pth", "description": "Weight-ranked 160-channel candidate after one frozen-BN epoch on the earlier two-scene split"}
+  ],
+  "limitations": "Existing models were selected or trained on the previous small dataset, not retrained on this new training split. This new tuning set becomes inspected after this comparison. Unknown original checkpoint training provenance and unknown evaluation-scene identities prevent a strong independence claim. No target-device speed or final evaluation metrics."
+}

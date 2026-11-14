@@ -1,0 +1,165 @@
+50/445 tuning samples
+100/445 tuning samples
+150/445 tuning samples
+200/445 tuning samples
+250/445 tuning samples
+300/445 tuning samples
+350/445 tuning samples
+400/445 tuning samples
+445/445 tuning samples
+{
+  "original_untrained": {
+    "pooled_rmse": 0.3637039676541537,
+    "mean_image_rmse": 0.30009062267212716,
+    "delta1": 0.9609619373460405,
+    "mean_scene_rmse": 0.27799856974000325,
+    "worst_scene": "kitchen_0050"
+  },
+  "weight_untrained": {
+    "pooled_rmse": 0.3756152904391701,
+    "mean_image_rmse": 0.3063963031333489,
+    "delta1": 0.9602242184958815,
+    "mean_scene_rmse": 0.2834723045291143,
+    "worst_scene": "kitchen_0050"
+  },
+  "average_ablation_untrained": {
+    "pooled_rmse": 0.3374297667398838,
+    "mean_image_rmse": 0.2905743537357166,
+    "delta1": 0.9598465783158693,
+    "mean_scene_rmse": 0.27270786093963584,
+    "worst_scene": "kitchen_0050"
+  },
+  "scene_aware_untrained": {
+    "pooled_rmse": 0.3293087961816092,
+    "mean_image_rmse": 0.28423678090728516,
+    "delta1": 0.9612733042703137,
+    "mean_scene_rmse": 0.2667014155497792,
+    "worst_scene": "kitchen_0050"
+  },
+  "random_42_untrained": {
+    "pooled_rmse": 0.37104872950663875,
+    "mean_image_rmse": 0.3055916493375387,
+    "delta1": 0.9593759840257978,
+    "mean_scene_rmse": 0.2840242180700076,
+    "worst_scene": "kitchen_0050"
+  },
+  "original_42": {
+    "pooled_rmse": 0.32118961938148255,
+    "mean_image_rmse": 0.2824329918941383,
+    "delta1": 0.9599606604120905,
+    "mean_scene_rmse": 0.26758021777388613,
+    "worst_scene": "kitchen_0050"
+  },
+  "weight_42": {
+    "pooled_rmse": 0.32398177182976967,
+    "mean_image_rmse": 0.28443490471412114,
+    "delta1": 0.959439051967397,
+    "mean_scene_rmse": 0.2692833516464364,
+    "worst_scene": "kitchen_0050"
+  },
+  "average_ablation_42": {
+    "pooled_rmse": 0.31530783996531003,
+    "mean_image_rmse": 0.280680053125798,
+    "delta1": 0.9600639979341524,
+    "mean_scene_rmse": 0.26800995592746774,
+    "worst_scene": "kitchen_0050"
+  },
+  "scene_aware_42": {
+    "pooled_rmse": 0.32128998172264656,
+    "mean_image_rmse": 0.2832734352733136,
+    "delta1": 0.9591380233098571,
+    "mean_scene_rmse": 0.2690545897789484,
+    "worst_scene": "kitchen_0050"
+  },
+  "random_42": {
+    "pooled_rmse": 0.32501713494051154,
+    "mean_image_rmse": 0.28462278441630423,
+    "delta1": 0.9583094270320394,
+    "mean_scene_rmse": 0.27037075854624676,
+    "worst_scene": "kitchen_0050"
+  },
+  "random_43_untrained": {
+    "pooled_rmse": 0.374174304343246,
+    "mean_image_rmse": 0.3071265555508985,
+    "delta1": 0.959514941165556,
+    "mean_scene_rmse": 0.28461260762253066,
+    "worst_scene": "kitchen_0050"
+  },
+  "original_43": {
+    "pooled_rmse": 0.3293089187257633,
+    "mean_image_rmse": 0.2845968942567885,
+    "delta1": 0.9595814401476431,
+    "mean_scene_rmse": 0.2696205391147243,
+    "worst_scene": "kitchen_0050"
+  },
+  "weight_43": {
+    "pooled_rmse": 0.33388445626286345,
+    "mean_image_rmse": 0.2861747136909741,
+    "delta1": 0.9596135835795819,
+    "mean_scene_rmse": 0.2696926970520038,
+    "worst_scene": "kitchen_0050"
+  },
+  "average_ablation_43": {
+    "pooled_rmse": 0.32764312836367016,
+    "mean_image_rmse": 0.28486488790756304,
+    "delta1": 0.9587876960179389,
+    "mean_scene_rmse": 0.2691255349878402,
+    "worst_scene": "kitchen_0050"
+  },
+  "scene_aware_43": {
+    "pooled_rmse": 0.3284085790554505,
+    "mean_image_rmse": 0.28434446412660624,
+    "delta1": 0.9591393325226748,
+    "mean_scene_rmse": 0.2694088188924456,
+    "worst_scene": "kitchen_0050"
+  },
+  "random_43": {
+    "pooled_rmse": 0.33027868163523494,
+    "mean_image_rmse": 0.28572528758376464,
+    "delta1": 0.9584165116114762,
+    "mean_scene_rmse": 0.26961706905154076,
+    "worst_scene": "kitchen_0050"
+  },
+  "random_44_untrained": {
+    "pooled_rmse": 0.37619375351384254,
+    "mean_image_rmse": 0.31287839663800454,
+    "delta1": 0.9583058154104732,
+    "mean_scene_rmse": 0.29231580858075934,
+    "worst_scene": "kitchen_0050"
+  },
+  "original_44": {
+    "pooled_rmse": 0.321538099292458,
+    "mean_image_rmse": 0.28213319438622564,
+    "delta1": 0.9596993144465088,
+    "mean_scene_rmse": 0.266694446247121,
+    "worst_scene": "kitchen_0050"
+  },
+  "weight_44": {
+    "pooled_rmse": 0.3256422569714006,
+    "mean_image_rmse": 0.283858264436895,
+    "delta1": 0.9599138899128087,
+    "mean_scene_rmse": 0.26828292808431325,
+    "worst_scene": "kitchen_0050"
+  },
+  "average_ablation_44": {
+    "pooled_rmse": 0.3244502722623717,
+    "mean_image_rmse": 0.28443373841231673,
+    "delta1": 0.9578539112620067,
+    "mean_scene_rmse": 0.26775259139031404,
+    "worst_scene": "kitchen_0050"
+  },
+  "scene_aware_44": {
+    "pooled_rmse": 0.3216714898780732,
+    "mean_image_rmse": 0.28193872998547537,
+    "delta1": 0.9594082177482759,
+    "mean_scene_rmse": 0.26666816402771487,
+    "worst_scene": "kitchen_0050"
+  },
+  "random_44": {
+    "pooled_rmse": 0.3242712927656175,
+    "mean_image_rmse": 0.28472467645860744,
+    "delta1": 0.9588329767233247,
+    "mean_scene_rmse": 0.2685497406547351,
+    "worst_scene": "kitchen_0050"
+  }
+}

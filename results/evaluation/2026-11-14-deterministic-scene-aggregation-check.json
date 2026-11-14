@@ -1,0 +1,9 @@
+{
+  "scope": "Reconstruct aggregate RMSE from per-image records; not a proof of model correctness or independent test data",
+  "summary_sha256": "9385ba582594040f8930d29637c168d578cbbcf2acbfdcdf1d4d1b9e2e9dfd63",
+  "per_image_sha256": "b064f533632ddf8920c3de7bc5d1bccce2412d84fd269bfe9b5de92a75776a47",
+  "models": 22,
+  "rows": 9790,
+  "max_absolute_difference": 2.220446049250313e-16,
+  "errors": []
+}

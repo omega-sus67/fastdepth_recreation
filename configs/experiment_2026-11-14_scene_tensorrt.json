@@ -1,0 +1,16 @@
+{
+  "purpose": "Desktop FP16-enabled TensorRT check for all four pruning methods and the original at fixed seed 42",
+  "declared_before_engine_builds_and_tuning_comparison": "2026-11-14",
+  "manifest": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/manifest.json",
+  "overlap_report": "results/data/2026-11-14-diverse-regrouped-overlap.json",
+  "models": [
+    {"name":"original","checkpoint":"results/training/2026-11-14-scene-aware-original-42/checkpoint.pth","engine":"results/benchmarks/2026-11-14-scene-trt-original/desktop.engine"},
+    {"name":"weight","checkpoint":"results/training/2026-11-14-scene-aware-weight-42/checkpoint.pth","engine":"results/benchmarks/2026-11-14-scene-trt-weight/desktop.engine"},
+    {"name":"average_ablation","checkpoint":"results/training/2026-11-14-scene-aware-average_ablation-42/checkpoint.pth","engine":"results/benchmarks/2026-11-14-scene-trt-average_ablation/desktop.engine"},
+    {"name":"scene_aware","checkpoint":"results/training/2026-11-14-scene-aware-scene_aware-42/checkpoint.pth","engine":"results/benchmarks/2026-11-14-scene-trt-scene_aware/desktop.engine"},
+    {"name":"random","checkpoint":"results/training/2026-11-14-scene-aware-random-42/checkpoint.pth","engine":"results/benchmarks/2026-11-14-scene-trt-random/desktop.engine"}
+  ],
+  "performance_scope":"Desktop RTX 3060 TensorRT FP16-enabled engine, batch one, fixed input size; 50 warmups and 500 synchronized model-only calls per build, one build per model; no Orin or end-to-end inference claim.",
+  "parity_scope":"Compare each engine with its PyTorch checkpoint on all 445 tuning images, same preprocessing and masks, record pooled metrics, mean-image RMSE and output differences. FP16 tactic enabling does not force every layer to FP16.",
+  "limitations":"Seed 42 is predetermined for all engines; accuracy selection and runtime measured on desktop, one engine build per model. Prior NYU model pretraining overlap is unknown; target-board deployment remains untested."
+}

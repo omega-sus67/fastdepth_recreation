@@ -1,0 +1,7 @@
+# Desktop x86_64 CUDA 12 runtime, aligned with the provisional TensorRT 10.3 target.
+# On Jetson use the actual JetPack TensorRT installation instead of these wheels.
+--extra-index-url https://pypi.nvidia.com
+# Install the actual wheels explicitly: the legacy meta-package hides dependency installation.
+tensorrt-cu12-bindings==10.3.0
+tensorrt-cu12-libs==10.3.0
+tensorrt-cu12==10.3.0

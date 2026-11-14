@@ -1,0 +1,14 @@
+{
+  "scope": "Byte comparison to local downloaded Hugging Face archives, not independently to original MIT archive",
+  "source": "https://huggingface.co/datasets/sayakpaul/nyu_depth_v2",
+  "revision": "50579a0b591445f91bf7269b28611ad1cc6a05d2",
+  "archive_counts": {
+    "val-000000.tar": 645,
+    "val-000001.tar": 9
+  },
+  "member_count": 654,
+  "local_count": 654,
+  "extra_local": [],
+  "missing_local": [],
+  "errors": []
+}

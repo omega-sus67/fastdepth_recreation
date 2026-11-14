@@ -1,0 +1,53 @@
+{
+  "scope": "Replay one original-model seed after loss-function refactor; model-state tensors only",
+  "original_checkpoint_sha256": "9a8d425d3c61a78c158b6116caf6e8c97b2b89a48f4703a6e13524165942c176",
+  "replay_checkpoint_sha256": "77586524b11ddd745f781f73bff0d8cd6500cb7a6b215a342346fde20afc015b",
+  "same_training_order": true,
+  "state_tensors": 228,
+  "changed_tensor_count": 114,
+  "exact_equal": false,
+  "max_abs_difference": 0.0006082332693040371,
+  "largest_10": [
+    {
+      "name": "conv11.3.weight",
+      "max_abs_difference": 0.0006082332693040371
+    },
+    {
+      "name": "conv12.3.weight",
+      "max_abs_difference": 0.0005901939875911921
+    },
+    {
+      "name": "conv13.3.weight",
+      "max_abs_difference": 0.0005110539495944977
+    },
+    {
+      "name": "conv12.4.bias",
+      "max_abs_difference": 0.00042154546827077866
+    },
+    {
+      "name": "conv12.4.weight",
+      "max_abs_difference": 0.00038357265293598175
+    },
+    {
+      "name": "conv6.3.weight",
+      "max_abs_difference": 0.00038298708386719227
+    },
+    {
+      "name": "conv7.3.weight",
+      "max_abs_difference": 0.00037186616100370884
+    },
+    {
+      "name": "conv5.3.weight",
+      "max_abs_difference": 0.0003626870457082987
+    },
+    {
+      "name": "decode_conv3.1.0.weight",
+      "max_abs_difference": 0.0003417888656258583
+    },
+    {
+      "name": "decode_conv1.0.0.weight",
+      "max_abs_difference": 0.00033555312802491244
+    }
+  ],
+  "limitation": "A difference does not identify the cause; GPU nondeterminism, environment/runtime effects or a code change are possibilities. Optimizer and RNG states were not compared. This is not a general determinism test."
+}

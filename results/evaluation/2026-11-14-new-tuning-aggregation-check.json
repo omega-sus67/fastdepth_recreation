@@ -1,0 +1,9 @@
+{
+  "scope": "Independently reconstruct image, scene and pooled RMSE from saved per-image records; does not validate ground-truth units or model correctness",
+  "summary_sha256": "24c9749adf8e07336bfa9a460ac9aeef7c3a79323d7fdf2ea47967b560b56d70",
+  "per_image_sha256": "d47e19c3a7d9f7df620b10774b38a1e6b261ded5a691409c7fea9a2213195981",
+  "models": 10,
+  "rows": 4450,
+  "max_absolute_difference": 2.7755575615628914e-16,
+  "errors": []
+}

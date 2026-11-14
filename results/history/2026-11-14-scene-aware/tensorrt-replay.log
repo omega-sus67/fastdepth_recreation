@@ -1,0 +1,15 @@
+[11/14/2026-16:09:28] [TRT] [W] Using default stream in enqueueV3() may lead to performance issues due to additional calls to cudaStreamSynchronize() by TensorRT to ensure correct synchronization. Please use non-default stream instead.
+1/10 original: 0.388433 ms
+[11/14/2026-16:09:29] [TRT] [W] Using default stream in enqueueV3() may lead to performance issues due to additional calls to cudaStreamSynchronize() by TensorRT to ensure correct synchronization. Please use non-default stream instead.
+2/10 weight: 0.331621 ms
+[11/14/2026-16:09:29] [TRT] [W] Using default stream in enqueueV3() may lead to performance issues due to additional calls to cudaStreamSynchronize() by TensorRT to ensure correct synchronization. Please use non-default stream instead.
+3/10 average_ablation: 0.316647 ms
+[11/14/2026-16:09:29] [TRT] [W] Using default stream in enqueueV3() may lead to performance issues due to additional calls to cudaStreamSynchronize() by TensorRT to ensure correct synchronization. Please use non-default stream instead.
+4/10 scene_aware: 0.324578 ms
+[11/14/2026-16:09:29] [TRT] [W] Using default stream in enqueueV3() may lead to performance issues due to additional calls to cudaStreamSynchronize() by TensorRT to ensure correct synchronization. Please use non-default stream instead.
+5/10 random: 0.319277 ms
+6/10 random: 0.316352 ms
+7/10 scene_aware: 0.316602 ms
+8/10 average_ablation: 0.317574 ms
+9/10 weight: 0.333769 ms
+10/10 original: 0.324522 ms

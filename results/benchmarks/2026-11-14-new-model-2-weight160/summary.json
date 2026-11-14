@@ -1,0 +1,22 @@
+{
+  "scope": "model-only; preallocated zero tensor; excludes preprocessing, transfers, capture, rendering",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "runtime": "PyTorch FP32",
+  "torch": "2.9.1+cu128",
+  "python": "3.12.3",
+  "checkpoint_sha256": "093fc8f07a1abb535353759b5797f20e98d10e908f8795906d3a2cfcf3fd4ced",
+  "model_source": "project_pruning_candidate",
+  "shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "warmup": 50,
+  "samples": 200,
+  "median_ms": 5.550636,
+  "p95_ms": 5.7560025,
+  "p99_ms": 6.030048969999998,
+  "comparison_note": "Desktop exploratory timing; not Orin performance or the 33 ms end-to-end target."
+}

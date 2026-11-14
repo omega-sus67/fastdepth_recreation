@@ -1,0 +1,61 @@
+{
+  "scope": "exploratory tiny scene-grouped tuning only; evaluation scene identity unknown; not Orin or final accuracy",
+  "initial_checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "result_checkpoint_sha256": "1012655d2e7e5ec1d8a1cf3b9cf2ff00d9eabcdf0a7522e32669ce52e61442f2",
+  "manifest_sha256": "ba9bb7850d663dd7140542a6c629a8f72930bd038579f11c7f689088c02ba42a",
+  "overlap_report_sha256": "32c5102075c4f9b29e5375c318d36ed1ac843d4ad7143998dafb0112282b78f6",
+  "scene_names": {
+    "train": "basement_0001a",
+    "tune": "bedroom_0017"
+  },
+  "device": "cuda",
+  "torch": "2.9.1+cu128",
+  "seed": 42,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "loss": "mean absolute error on finite positive targets",
+  "batch_size": 1,
+  "epochs": 1,
+  "start_epoch": 0,
+  "tuning_before": {
+    "pooled": {
+      "valid_pixels": 802816,
+      "nonpositive_predictions": 0,
+      "rmse": 0.11791386693741676,
+      "mae": 0.08873003513709053,
+      "rel": 0.06401344375971486,
+      "delta1": 0.9738408302774235,
+      "r2": 0.8005655700240578,
+      "aggregation": "pooled valid pixels",
+      "ratio_epsilon": 1e-06
+    },
+    "mean_image_rmse": 0.11683776757179538
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_mae": 0.9757840819656849,
+      "tuning": {
+        "pooled": {
+          "valid_pixels": 802816,
+          "nonpositive_predictions": 0,
+          "rmse": 0.4036601669680239,
+          "mae": 0.37365152626889353,
+          "rel": 0.2462514533786688,
+          "delta1": 0.31072250677614793,
+          "r2": -1.3372338256025227,
+          "aggregation": "pooled valid pixels",
+          "ratio_epsilon": 1e-06
+        },
+        "mean_image_rmse": 0.40098880625383243
+      }
+    }
+  ],
+  "elapsed_seconds": 2.2474883329996374,
+  "limitations": [
+    "Only 16 training and 16 tuning samples from one scene each",
+    "Validation scene overlap unknown",
+    "Depth units not independently confirmed",
+    "Not a board-aware search"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "scope": "Bounded exact RGB matching; not full original labeled file verification",
+  "official_url": "https://horatio.cs.nyu.edu/mit/silberman/nyu_depth_v2/nyu_depth_v2_labeled.mat",
+  "official_bytes": 2972037809,
+  "local_evaluation_files": 654,
+  "official_images_total": 1449,
+  "checked_first_n": 16,
+  "orientation": "official 3x640x480 transposed to 3x480x640",
+  "matches": [
+    {
+      "zero_based_official_index": 0,
+      "scene": "kitchen_0004",
+      "local_evaluation_files": [
+        "00001.h5"
+      ],
+      "rgb_sha256": "c5c228c9ed9c13cfec07c2aba5f56e887dc58581e9766255c9fd99ca2ddb7e3d"
+    },
+    {
+      "zero_based_official_index": 1,
+      "scene": "kitchen_0004",
+      "local_evaluation_files": [
+        "00002.h5"
+      ],
+      "rgb_sha256": "ed5a26ec7027cc6fdc9fd99b9dcc4b711d6e474206dd86d14734950a6abd41ad"
+    },
+    {
+      "zero_based_official_index": 8,
+      "scene": "office_0005",
+      "local_evaluation_files": [
+        "00009.h5"
+      ],
+      "rgb_sha256": "6118bb6bb89fc9e5dcde60782be98edb43334b902668f5bfc330cc8cd9605f48"
+    },
+    {
+      "zero_based_official_index": 13,
+      "scene": "office_0007",
+      "local_evaluation_files": [
+        "00014.h5"
+      ],
+      "rgb_sha256": "363742a9d852c7121bfe85fe35492f16067bdf176214ad615639399144592076"
+    },
+    {
+      "zero_based_official_index": 14,
+      "scene": "office_0008",
+      "local_evaluation_files": [
+        "00015.h5"
+      ],
+      "rgb_sha256": "2372fb73c08c2cc079a117e6ac6ced865bead761409d6a5754575bba5a96a52b"
+    },
+    {
+      "zero_based_official_index": 15,
+      "scene": "office_0008",
+      "local_evaluation_files": [
+        "00016.h5"
+      ],
+      "rgb_sha256": "39e42c7f529f3c8397100772c7b0586350326395af8d267592d4168f66ea4fa2"
+    }
+  ],
+  "checked": [
+    {
+      "zero_based_official_index": 0,
+      "rgb_sha256": "c5c228c9ed9c13cfec07c2aba5f56e887dc58581e9766255c9fd99ca2ddb7e3d"
+    },
+    {
+      "zero_based_official_index": 1,
+      "rgb_sha256": "ed5a26ec7027cc6fdc9fd99b9dcc4b711d6e474206dd86d14734950a6abd41ad"
+    },
+    {
+      "zero_based_official_index": 2,
+      "rgb_sha256": "283a52b93910c574688bacf2c8bfd93edfe88288fcec1ba9c3556f9cda077714"
+    },
+    {
+      "zero_based_official_index": 3,
+      "rgb_sha256": "f424b29a316a683e2c6e752546d28847e86af1ae2c9ad8e26064c713af666ff4"
+    },
+    {
+      "zero_based_official_index": 4,
+      "rgb_sha256": "2b07658b6cbf2efab23f539e022f79671ea7387287c4d83709dfd14530245bf5"
+    },
+    {
+      "zero_based_official_index": 5,
+      "rgb_sha256": "cf5b0751f3022f820da89863c1561f69eecd191caebb5023d06c331e55ce9c0d"
+    },
+    {
+      "zero_based_official_index": 6,
+      "rgb_sha256": "280dca956ba99f04e39236535360f89b50f2dc8f9c43f910d1754943036b24f4"
+    },
+    {
+      "zero_based_official_index": 7,
+      "rgb_sha256": "2d4e3d232a6c138127371ed466db9f95cf88e045b002ec13d3847bff34add8ee"
+    },
+    {
+      "zero_based_official_index": 8,
+      "rgb_sha256": "6118bb6bb89fc9e5dcde60782be98edb43334b902668f5bfc330cc8cd9605f48"
+    },
+    {
+      "zero_based_official_index": 9,
+      "rgb_sha256": "3da271aae9e081bde9bf0dedad8957dde60256d1d87f0e7b857ef171e2d1a990"
+    },
+    {
+      "zero_based_official_index": 10,
+      "rgb_sha256": "6508b2e848bc667ef47ddcbe5e6b0298bfc0617507c0dc9bdbf437d665b5a337"
+    },
+    {
+      "zero_based_official_index": 11,
+      "rgb_sha256": "218f7761059c3bea8e6ef2413a6d5f5b8bd3ce401ada506cdf9ff49f785750bb"
+    },
+    {
+      "zero_based_official_index": 12,
+      "rgb_sha256": "e9124dfbdf665496d2d7482e92fd570f69e3733d8fc594bc041666c31a2fcb62"
+    },
+    {
+      "zero_based_official_index": 13,
+      "rgb_sha256": "363742a9d852c7121bfe85fe35492f16067bdf176214ad615639399144592076"
+    },
+    {
+      "zero_based_official_index": 14,
+      "rgb_sha256": "2372fb73c08c2cc079a117e6ac6ced865bead761409d6a5754575bba5a96a52b"
+    },
+    {
+      "zero_based_official_index": 15,
+      "rgb_sha256": "39e42c7f529f3c8397100772c7b0586350326395af8d267592d4168f66ea4fa2"
+    }
+  ],
+  "remote_requests": 7,
+  "remote_bytes_fetched": 27636401,
+  "limitation": "No match in an inspected prefix does not rule out matches among remaining official images; no near-duplicate or checkpoint-training provenance verification."
+}

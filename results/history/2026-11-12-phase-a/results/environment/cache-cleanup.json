@@ -1,0 +1,48 @@
+{
+  "recorded_at_utc": "2026-11-12T16:58:55.600628+00:00",
+  "scope": "Only pip/uv package caches and project source bytecode/test caches; installed environments, model/data artifacts, and Hugging Face caches preserved.",
+  "before_cache_allocated_bytes": {
+    "pip": 7364165632,
+    "uv": 20311289856
+  },
+  "before_filesystem_free_bytes": 33068974080,
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "pip",
+        "cache",
+        "purge"
+      ],
+      "exit_code": 0,
+      "stdout": "Files removed: 3570\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "cache",
+        "clean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Clearing cache at: /home/omega_sus/.cache/uv\nRemoved 89627 files (18.8GiB)\n"
+    }
+  ],
+  "project_cache_directories_removed": [
+    "scripts/__pycache__",
+    "src/fastdepth_project/__pycache__",
+    "tests/__pycache__",
+    "third_party/fast-depth/__pycache__",
+    "third_party/fast-depth/imagenet/__pycache__",
+    ".pytest_cache"
+  ],
+  "after_cache_allocated_bytes": {
+    "pip": 0,
+    "uv": 0
+  },
+  "after_filesystem_free_bytes": 49155956736,
+  "filesystem_free_bytes_increase": 16086982656,
+  "remaining_empty_pip_cache_tree_removed": true
+}

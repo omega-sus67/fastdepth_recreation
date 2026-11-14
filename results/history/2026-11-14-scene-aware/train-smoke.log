@@ -1,0 +1,21 @@
+{
+  "scope": "partial smoke, not comparison",
+  "config_sha256": "dab81ae361b9002de71a528c7babe8ed77254853cd3d92915b21075827d966b5",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "initial_checkpoint_sha256": "f9bb38f780472067d3b2eea38fbc239e053ac88a81c99ae739af12b3b970900b",
+  "result_checkpoint_sha256": "78ce1b6814eeea3ffa70e1c61075e65eb59249d824281fe8221e1e7cfa6e5efd",
+  "seed": 42,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "training_samples": 8,
+  "batch_size": 4,
+  "optimizer_steps": 2,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "freeze_batch_norm_statistics": true,
+  "order_sha256": "b759a083309b534e7dc02512b569426e9ea2034dc05f604ed673cb87953a3383",
+  "train_mean_image_mae": 0.18102188408374786,
+  "elapsed_seconds": 1.2416535329998624,
+  "limitations": "BN eval mode changes statistics used and buffer updates; original pretraining and evaluation scene identities are unknown. This script saves state but does not implement resume."
+}

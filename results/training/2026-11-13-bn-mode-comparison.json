@@ -1,0 +1,14 @@
+{
+  "scope": "Single matched 16-image training/16-image tuning-scene ablation on RTX 3060; not final accuracy or causal isolation of only one BN operation",
+  "bn_buffer_count": 114,
+  "normal_changed_bn_buffers": 114,
+  "frozen_changed_bn_buffers": 0,
+  "normal_training_mode": "uses batch statistics and updates running statistics",
+  "frozen_mode": "uses stored running statistics during forward, prevents running-stat updates; affine parameters remain trainable",
+  "base_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "normal_sha256": "1012655d2e7e5ec1d8a1cf3b9cf2ff00d9eabcdf0a7522e32669ce52e61442f2",
+  "frozen_sha256": "ea1ccd8610ab5f20c788c618baf6df089b42ab807cac93f0526d46917fe42322",
+  "normal_summary": "results/training/2026-11-13-scene-control/summary.json",
+  "frozen_summary": "results/training/2026-11-13-control-frozenbn/summary.json",
+  "frozen_changed_bn_affine_parameters": 76
+}

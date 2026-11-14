@@ -1,0 +1,21 @@
+{
+  "scope": "Desktop TensorRT model-only; preallocated zero tensor; excludes preprocessing and transfers",
+  "precision": "fp32",
+  "precision_note": "FP16 flag not enabled; TensorRT default TF32 setting was not recorded.",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "tensorrt": "10.3.0",
+  "torch": "2.9.1+cu128",
+  "checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "onnx_sha256": "2b1eb9da74437739966089e17324f4876955b818d0aa863b39ab5a1a7311cda2",
+  "engine_sha256": "b623a202e2133c0cc5ce8db54d2bdd8e5c9cddb88784cf1882743438699576a4",
+  "warmup": 50,
+  "samples": 500,
+  "median_ms": 0.520262,
+  "p95_ms": 0.54977505,
+  "p99_ms": 0.57113167,
+  "sample": "00001.h5",
+  "sample_max_abs_diff_vs_pytorch": 0.001997232437133789,
+  "sample_mean_abs_diff_vs_pytorch": 0.00026016810443252325,
+  "model_source": "community_mirror_unverified",
+  "limitations": "One desktop run and one parity sample; not Orin performance, full-set accuracy or end-to-end 33 ms target."
+}

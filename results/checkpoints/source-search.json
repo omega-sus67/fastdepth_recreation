@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-12",
+  "timezone": "Asia/Kolkata",
+  "sources": [
+    {
+      "source": "https://github.com/dwofk/fast-depth/issues/72",
+      "finding": "Broken-weight report; comments point to Hagaik92/FastDepth, which describes itself as a reimplementation rather than original authors weights."
+    },
+    {
+      "source": "https://github.com/Hagaik92/FastDepth",
+      "revision": "7c729b37ff324879984cfe60241bf71758ecb0da",
+      "finding": "Several separately trained models are available. Not substituted for the four original FastDepth checkpoints; no declared repository license was returned by GitHub."
+    },
+    {
+      "source": "https://huggingface.co/STMicroelectronics/fastdepth",
+      "revision": "d760fca25f96f5e6fb87ae201b1b79d5873af9b2",
+      "finding": "Model card links quantized TFLite deployments derived from PINTO. No original PyTorch weights are stored in this HF repository."
+    },
+    {
+      "source": "https://huggingface.co/tala-kamel1/fast-depth",
+      "revision": "ddb8538a2a45a125fb9778f803be6b601422076c",
+      "finding": "Only README and .gitattributes were listed; no checkpoint file."
+    },
+    {
+      "source": "https://github.com/PINTO0309/PINTO_model_zoo/tree/94052704c64559534e36e765ea3f1e8e642f823e/146_FastDepth",
+      "finding": "Converted model archive is reachable (724201074 bytes). Bounded 32 MiB inspection found ONNX/TFLite/OpenVINO/TF assets; the full archive was not downloaded and original PyTorch weights were not established."
+    },
+    {
+      "source": "https://web.archive.org/cdx/search/cdx?url=datasets.lids.mit.edu/fastdepth/results/*.pth.tar&output=json&filter=statuscode:200&collapse=urlkey",
+      "finding": "CDX query returned an empty result list."
+    },
+    {
+      "source": "https://github.com/beihaixingchen/fast-depth/blob/bca2e09002f4e214f76b024881988967b8561865/best_result.pth.tar",
+      "finding": "Community fork candidate acquired and converted. Pruned MobileNetSkipAdd, 1360786 parameters; legacy claimed RMSE/delta1 align with upstream references but were not remeasured. Original author checksum not available."
+    },
+    {
+      "source": "https://api.github.com/repos/dwofk/fast-depth/forks?per_page=100&sort=newest",
+      "forks_listed": 187,
+      "finding": "Inspected file trees of the largest listed forks; identified the community pruned candidate and encoder-only weights, not all four original depth checkpoints."
+    }
+  ]
+}

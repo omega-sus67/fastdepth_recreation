@@ -1,0 +1,19 @@
+{
+  "purpose": "Exploratory matched control: test whether freezing batch-normalization running statistics changes fine-tuning behavior",
+  "created_before_run": "2026-11-13",
+  "baseline": "results/training/2026-11-13-scene-control/summary.json",
+  "checkpoint": "checkpoints/converted/community-skipadd-pruned.pth",
+  "manifest": "data/nyu_depth_v2/scene_split_2026-11-13-retry/manifest.json",
+  "fixed_settings": {
+    "epochs": 1,
+    "seed": 42,
+    "learning_rate": 1e-05,
+    "optimizer": "Adam",
+    "batch_size": 1,
+    "loss": "masked MAE"
+  },
+  "changed_factor": "batch-normalization eval mode: uses stored running statistics in forward and stops running-stat updates; affine scale/bias remain trainable",
+  "selection": "Compare only on the 16-image tuning scene; do not use final evaluation for iterative selection",
+  "limitations": "Tiny training and tuning scenes; evaluation scene overlap unknown; this single comparison cannot establish a universal mechanism",
+  "post_run_clarification": "The pre-run description was clarified after execution: BN eval mode also uses stored running statistics in forward; the executed flag and fixed hyperparameters were unchanged."
+}

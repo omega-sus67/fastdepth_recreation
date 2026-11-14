@@ -1,0 +1,17 @@
+{
+  "purpose": "Compare desktop PyTorch FP32 model-only latency for the original and representative recovered pruning candidates",
+  "declared_before_timing": "2026-11-14",
+  "timing_note": "Two ordered passes: original, weight192, ablation192, ablation184, ablation176, weight160 and reverse. These are not randomized and do not isolate runtime thermal effects.",
+  "models": [
+    {"name":"original","checkpoint":"checkpoints/converted/community-skipadd-pruned.pth"},
+    {"name":"weight192","checkpoint":"results/training/2026-11-14-weight-192-frozenbn/checkpoint.pth"},
+    {"name":"ablation192","checkpoint":"results/training/2026-11-14-expanded-192/checkpoint.pth"},
+    {"name":"ablation184","checkpoint":"results/training/2026-11-14-expanded-184/checkpoint.pth"},
+    {"name":"ablation176","checkpoint":"results/training/2026-11-14-expanded-176/checkpoint.pth"},
+    {"name":"weight160","checkpoint":"results/training/2026-11-13-firstdecoder160-frozenbn/checkpoint.pth"}
+  ],
+  "runtime":"PyTorch FP32, batch 1, preallocated zero tensor on RTX 3060 Laptop GPU; excludes input handling and rendering",
+  "warmups":50,
+  "calls_per_run":200,
+  "limits":"No controlled power or temperature; two runs; desktop GPU only; not end-to-end or Orin."
+}

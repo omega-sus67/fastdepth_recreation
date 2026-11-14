@@ -1,0 +1,71 @@
+{
+  "scope": "exploratory tiny scene-grouped tuning only; evaluation scene identity unknown; not Orin or final accuracy",
+  "initial_checkpoint_sha256": "60d4a53fbc1bbfc008e648d85d52a8b87d5f05e1e8445e0361c5ace00ac7d0bf",
+  "result_checkpoint_sha256": "9fd7f80f06c337a810c80fbd871ad658174cab54ab72c46555b6123db47bc7b3",
+  "manifest_sha256": "efc7c95a8bef1725f74fc935747233e7c89575ae6520163710b55ffbd65e888d",
+  "overlap_report_sha256": "7941816a4388b288059e6db9c1e7015fa9e5b0d9be3b83f4364f5a8435c5ab16",
+  "scene_names": {
+    "train": [
+      "basement_0001a",
+      "bedroom_0017",
+      "bedroom_0062",
+      "bedroom_0125b"
+    ],
+    "tune": [
+      "dining_room_0007",
+      "dining_room_0034"
+    ]
+  },
+  "device": "cuda",
+  "torch": "2.9.1+cu128",
+  "seed": 42,
+  "learning_rate": 1e-05,
+  "optimizer": "Adam",
+  "loss": "mean absolute error on finite positive targets",
+  "batch_size": 1,
+  "epochs": 1,
+  "start_epoch": 0,
+  "freeze_batch_norm_statistics": true,
+  "batch_norm_note": "eval mode uses stored running statistics during forward and prevents updates; affine weights remain trainable",
+  "tuning_before": {
+    "pooled": {
+      "valid_pixels": 3154217,
+      "nonpositive_predictions": 33509,
+      "rmse": 0.9812057979131895,
+      "mae": 0.5614696227220998,
+      "rel": 0.1418252388940385,
+      "delta1": 0.8181478953413794,
+      "r2": 0.6609107691143352,
+      "aggregation": "pooled valid pixels",
+      "ratio_epsilon": 1e-06
+    },
+    "mean_image_rmse": 0.9093946337987164
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_mae": 0.1800460860831663,
+      "tuning": {
+        "pooled": {
+          "valid_pixels": 3154217,
+          "nonpositive_predictions": 6698,
+          "rmse": 0.611295807599338,
+          "mae": 0.3447671334334447,
+          "rel": 0.1027922453144897,
+          "delta1": 0.8955915208116626,
+          "r2": 0.8683876570856196,
+          "aggregation": "pooled valid pixels",
+          "ratio_epsilon": 1e-06
+        },
+        "mean_image_rmse": 0.5877360949697379
+      }
+    }
+  ],
+  "elapsed_seconds": 7.719014252999841,
+  "limitations": [
+    "Training samples: 128; tuning samples: 64; scene coverage is recorded separately",
+    "Validation scene overlap unknown",
+    "Depth units not independently confirmed",
+    "Not a board-aware search"
+  ]
+}

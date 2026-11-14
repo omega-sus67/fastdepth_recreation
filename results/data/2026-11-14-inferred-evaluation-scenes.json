@@ -1,0 +1,3289 @@
+{
+  "scope": "Inferred filename-to-official-index scene mapping; only the prefix matches were independently verified",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "prefix_evidence_sha256": "ec0cbea640c20aa69362b446fb8d12837f8e0014f6952c9ab620c7700def0d76",
+  "evidence_exact_matches": 6,
+  "mapping_rule": "local five-digit filename number minus one equals original NYU labeled image index",
+  "group_rule": "strip trailing lowercase suffix after final number; heuristic, not verified location identity",
+  "evaluation_files": 654,
+  "inferred_evaluation_scene_count": 215,
+  "potential_overlap": {
+    "train": [],
+    "tune": []
+  },
+  "mapping": [
+    {
+      "local_evaluation_file": "00001.h5",
+      "inferred_official_zero_based_index": 0,
+      "inferred_scene": "kitchen_0004"
+    },
+    {
+      "local_evaluation_file": "00002.h5",
+      "inferred_official_zero_based_index": 1,
+      "inferred_scene": "kitchen_0004"
+    },
+    {
+      "local_evaluation_file": "00009.h5",
+      "inferred_official_zero_based_index": 8,
+      "inferred_scene": "office_0005"
+    },
+    {
+      "local_evaluation_file": "00014.h5",
+      "inferred_official_zero_based_index": 13,
+      "inferred_scene": "office_0007"
+    },
+    {
+      "local_evaluation_file": "00015.h5",
+      "inferred_official_zero_based_index": 14,
+      "inferred_scene": "office_0008"
+    },
+    {
+      "local_evaluation_file": "00016.h5",
+      "inferred_official_zero_based_index": 15,
+      "inferred_scene": "office_0008"
+    },
+    {
+      "local_evaluation_file": "00017.h5",
+      "inferred_official_zero_based_index": 16,
+      "inferred_scene": "office_0008"
+    },
+    {
+      "local_evaluation_file": "00018.h5",
+      "inferred_official_zero_based_index": 17,
+      "inferred_scene": "office_0008"
+    },
+    {
+      "local_evaluation_file": "00021.h5",
+      "inferred_official_zero_based_index": 20,
+      "inferred_scene": "office_0010"
+    },
+    {
+      "local_evaluation_file": "00028.h5",
+      "inferred_official_zero_based_index": 27,
+      "inferred_scene": "office_0013"
+    },
+    {
+      "local_evaluation_file": "00029.h5",
+      "inferred_official_zero_based_index": 28,
+      "inferred_scene": "office_0013"
+    },
+    {
+      "local_evaluation_file": "00030.h5",
+      "inferred_official_zero_based_index": 29,
+      "inferred_scene": "office_0013"
+    },
+    {
+      "local_evaluation_file": "00031.h5",
+      "inferred_official_zero_based_index": 30,
+      "inferred_scene": "office_0013"
+    },
+    {
+      "local_evaluation_file": "00032.h5",
+      "inferred_official_zero_based_index": 31,
+      "inferred_scene": "office_0013"
+    },
+    {
+      "local_evaluation_file": "00033.h5",
+      "inferred_official_zero_based_index": 32,
+      "inferred_scene": "office_0013"
+    },
+    {
+      "local_evaluation_file": "00034.h5",
+      "inferred_official_zero_based_index": 33,
+      "inferred_scene": "office_0013"
+    },
+    {
+      "local_evaluation_file": "00035.h5",
+      "inferred_official_zero_based_index": 34,
+      "inferred_scene": "office_0014"
+    },
+    {
+      "local_evaluation_file": "00036.h5",
+      "inferred_official_zero_based_index": 35,
+      "inferred_scene": "office_0014"
+    },
+    {
+      "local_evaluation_file": "00037.h5",
+      "inferred_official_zero_based_index": 36,
+      "inferred_scene": "office_0014"
+    },
+    {
+      "local_evaluation_file": "00038.h5",
+      "inferred_official_zero_based_index": 37,
+      "inferred_scene": "office_0014"
+    },
+    {
+      "local_evaluation_file": "00039.h5",
+      "inferred_official_zero_based_index": 38,
+      "inferred_scene": "office_0015"
+    },
+    {
+      "local_evaluation_file": "00040.h5",
+      "inferred_official_zero_based_index": 39,
+      "inferred_scene": "office_0015"
+    },
+    {
+      "local_evaluation_file": "00041.h5",
+      "inferred_official_zero_based_index": 40,
+      "inferred_scene": "office_0015"
+    },
+    {
+      "local_evaluation_file": "00042.h5",
+      "inferred_official_zero_based_index": 41,
+      "inferred_scene": "office_0015"
+    },
+    {
+      "local_evaluation_file": "00043.h5",
+      "inferred_official_zero_based_index": 42,
+      "inferred_scene": "office_0015"
+    },
+    {
+      "local_evaluation_file": "00046.h5",
+      "inferred_official_zero_based_index": 45,
+      "inferred_scene": "bathroom_0003"
+    },
+    {
+      "local_evaluation_file": "00047.h5",
+      "inferred_official_zero_based_index": 46,
+      "inferred_scene": "bathroom_0004"
+    },
+    {
+      "local_evaluation_file": "00056.h5",
+      "inferred_official_zero_based_index": 55,
+      "inferred_scene": "bedroom_0011"
+    },
+    {
+      "local_evaluation_file": "00057.h5",
+      "inferred_official_zero_based_index": 56,
+      "inferred_scene": "bedroom_0011"
+    },
+    {
+      "local_evaluation_file": "00059.h5",
+      "inferred_official_zero_based_index": 58,
+      "inferred_scene": "bedroom_0013"
+    },
+    {
+      "local_evaluation_file": "00060.h5",
+      "inferred_official_zero_based_index": 59,
+      "inferred_scene": "bedroom_0013"
+    },
+    {
+      "local_evaluation_file": "00061.h5",
+      "inferred_official_zero_based_index": 60,
+      "inferred_scene": "bedroom_0013"
+    },
+    {
+      "local_evaluation_file": "00062.h5",
+      "inferred_official_zero_based_index": 61,
+      "inferred_scene": "bedroom_0013"
+    },
+    {
+      "local_evaluation_file": "00063.h5",
+      "inferred_official_zero_based_index": 62,
+      "inferred_scene": "bedroom_0013"
+    },
+    {
+      "local_evaluation_file": "00076.h5",
+      "inferred_official_zero_based_index": 75,
+      "inferred_scene": "bedroom_0018"
+    },
+    {
+      "local_evaluation_file": "00077.h5",
+      "inferred_official_zero_based_index": 76,
+      "inferred_scene": "bedroom_0018"
+    },
+    {
+      "local_evaluation_file": "00078.h5",
+      "inferred_official_zero_based_index": 77,
+      "inferred_scene": "bedroom_0018"
+    },
+    {
+      "local_evaluation_file": "00079.h5",
+      "inferred_official_zero_based_index": 78,
+      "inferred_scene": "bedroom_0018"
+    },
+    {
+      "local_evaluation_file": "00084.h5",
+      "inferred_official_zero_based_index": 83,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00085.h5",
+      "inferred_official_zero_based_index": 84,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00086.h5",
+      "inferred_official_zero_based_index": 85,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00087.h5",
+      "inferred_official_zero_based_index": 86,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00088.h5",
+      "inferred_official_zero_based_index": 87,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00089.h5",
+      "inferred_official_zero_based_index": 88,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00090.h5",
+      "inferred_official_zero_based_index": 89,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00091.h5",
+      "inferred_official_zero_based_index": 90,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00117.h5",
+      "inferred_official_zero_based_index": 116,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00118.h5",
+      "inferred_official_zero_based_index": 117,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00119.h5",
+      "inferred_official_zero_based_index": 118,
+      "inferred_scene": "bookstore_0001"
+    },
+    {
+      "local_evaluation_file": "00125.h5",
+      "inferred_official_zero_based_index": 124,
+      "inferred_scene": "kitchen_0005"
+    },
+    {
+      "local_evaluation_file": "00126.h5",
+      "inferred_official_zero_based_index": 125,
+      "inferred_scene": "kitchen_0005"
+    },
+    {
+      "local_evaluation_file": "00127.h5",
+      "inferred_official_zero_based_index": 126,
+      "inferred_scene": "kitchen_0005"
+    },
+    {
+      "local_evaluation_file": "00128.h5",
+      "inferred_official_zero_based_index": 127,
+      "inferred_scene": "kitchen_0005"
+    },
+    {
+      "local_evaluation_file": "00129.h5",
+      "inferred_official_zero_based_index": 128,
+      "inferred_scene": "kitchen_0005"
+    },
+    {
+      "local_evaluation_file": "00131.h5",
+      "inferred_official_zero_based_index": 130,
+      "inferred_scene": "kitchen_0007"
+    },
+    {
+      "local_evaluation_file": "00132.h5",
+      "inferred_official_zero_based_index": 131,
+      "inferred_scene": "kitchen_0007"
+    },
+    {
+      "local_evaluation_file": "00133.h5",
+      "inferred_official_zero_based_index": 132,
+      "inferred_scene": "kitchen_0007"
+    },
+    {
+      "local_evaluation_file": "00134.h5",
+      "inferred_official_zero_based_index": 133,
+      "inferred_scene": "kitchen_0007"
+    },
+    {
+      "local_evaluation_file": "00137.h5",
+      "inferred_official_zero_based_index": 136,
+      "inferred_scene": "kitchen_0009"
+    },
+    {
+      "local_evaluation_file": "00153.h5",
+      "inferred_official_zero_based_index": 152,
+      "inferred_scene": "living_room_0008"
+    },
+    {
+      "local_evaluation_file": "00154.h5",
+      "inferred_official_zero_based_index": 153,
+      "inferred_scene": "living_room_0008"
+    },
+    {
+      "local_evaluation_file": "00155.h5",
+      "inferred_official_zero_based_index": 154,
+      "inferred_scene": "living_room_0009"
+    },
+    {
+      "local_evaluation_file": "00167.h5",
+      "inferred_official_zero_based_index": 166,
+      "inferred_scene": "living_room_0013"
+    },
+    {
+      "local_evaluation_file": "00168.h5",
+      "inferred_official_zero_based_index": 167,
+      "inferred_scene": "living_room_0013"
+    },
+    {
+      "local_evaluation_file": "00169.h5",
+      "inferred_official_zero_based_index": 168,
+      "inferred_scene": "living_room_0014"
+    },
+    {
+      "local_evaluation_file": "00171.h5",
+      "inferred_official_zero_based_index": 170,
+      "inferred_scene": "bedroom_0003"
+    },
+    {
+      "local_evaluation_file": "00172.h5",
+      "inferred_official_zero_based_index": 171,
+      "inferred_scene": "bedroom_0003"
+    },
+    {
+      "local_evaluation_file": "00173.h5",
+      "inferred_official_zero_based_index": 172,
+      "inferred_scene": "bedroom_0003"
+    },
+    {
+      "local_evaluation_file": "00174.h5",
+      "inferred_official_zero_based_index": 173,
+      "inferred_scene": "bedroom_0003"
+    },
+    {
+      "local_evaluation_file": "00175.h5",
+      "inferred_official_zero_based_index": 174,
+      "inferred_scene": "bedroom_0003"
+    },
+    {
+      "local_evaluation_file": "00176.h5",
+      "inferred_official_zero_based_index": 175,
+      "inferred_scene": "bedroom_0003"
+    },
+    {
+      "local_evaluation_file": "00180.h5",
+      "inferred_official_zero_based_index": 179,
+      "inferred_scene": "bedroom_0005"
+    },
+    {
+      "local_evaluation_file": "00181.h5",
+      "inferred_official_zero_based_index": 180,
+      "inferred_scene": "bedroom_0005"
+    },
+    {
+      "local_evaluation_file": "00182.h5",
+      "inferred_official_zero_based_index": 181,
+      "inferred_scene": "bedroom_0005"
+    },
+    {
+      "local_evaluation_file": "00183.h5",
+      "inferred_official_zero_based_index": 182,
+      "inferred_scene": "bedroom_0006"
+    },
+    {
+      "local_evaluation_file": "00184.h5",
+      "inferred_official_zero_based_index": 183,
+      "inferred_scene": "bedroom_0006"
+    },
+    {
+      "local_evaluation_file": "00185.h5",
+      "inferred_official_zero_based_index": 184,
+      "inferred_scene": "bedroom_0006"
+    },
+    {
+      "local_evaluation_file": "00186.h5",
+      "inferred_official_zero_based_index": 185,
+      "inferred_scene": "bedroom_0006"
+    },
+    {
+      "local_evaluation_file": "00187.h5",
+      "inferred_official_zero_based_index": 186,
+      "inferred_scene": "bedroom_0006"
+    },
+    {
+      "local_evaluation_file": "00188.h5",
+      "inferred_official_zero_based_index": 187,
+      "inferred_scene": "bedroom_0006"
+    },
+    {
+      "local_evaluation_file": "00189.h5",
+      "inferred_official_zero_based_index": 188,
+      "inferred_scene": "bedroom_0007"
+    },
+    {
+      "local_evaluation_file": "00190.h5",
+      "inferred_official_zero_based_index": 189,
+      "inferred_scene": "bedroom_0007"
+    },
+    {
+      "local_evaluation_file": "00191.h5",
+      "inferred_official_zero_based_index": 190,
+      "inferred_scene": "bedroom_0007"
+    },
+    {
+      "local_evaluation_file": "00192.h5",
+      "inferred_official_zero_based_index": 191,
+      "inferred_scene": "bedroom_0007"
+    },
+    {
+      "local_evaluation_file": "00193.h5",
+      "inferred_official_zero_based_index": 192,
+      "inferred_scene": "bedroom_0007"
+    },
+    {
+      "local_evaluation_file": "00194.h5",
+      "inferred_official_zero_based_index": 193,
+      "inferred_scene": "kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00195.h5",
+      "inferred_official_zero_based_index": 194,
+      "inferred_scene": "kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00196.h5",
+      "inferred_official_zero_based_index": 195,
+      "inferred_scene": "kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00197.h5",
+      "inferred_official_zero_based_index": 196,
+      "inferred_scene": "kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00198.h5",
+      "inferred_official_zero_based_index": 197,
+      "inferred_scene": "kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00199.h5",
+      "inferred_official_zero_based_index": 198,
+      "inferred_scene": "kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00200.h5",
+      "inferred_official_zero_based_index": 199,
+      "inferred_scene": "kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00201.h5",
+      "inferred_official_zero_based_index": 200,
+      "inferred_scene": "kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00202.h5",
+      "inferred_official_zero_based_index": 201,
+      "inferred_scene": "kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00207.h5",
+      "inferred_official_zero_based_index": 206,
+      "inferred_scene": "living_room_0002"
+    },
+    {
+      "local_evaluation_file": "00208.h5",
+      "inferred_official_zero_based_index": 207,
+      "inferred_scene": "living_room_0003"
+    },
+    {
+      "local_evaluation_file": "00209.h5",
+      "inferred_official_zero_based_index": 208,
+      "inferred_scene": "living_room_0003"
+    },
+    {
+      "local_evaluation_file": "00210.h5",
+      "inferred_official_zero_based_index": 209,
+      "inferred_scene": "living_room_0003"
+    },
+    {
+      "local_evaluation_file": "00211.h5",
+      "inferred_official_zero_based_index": 210,
+      "inferred_scene": "living_room_0003"
+    },
+    {
+      "local_evaluation_file": "00212.h5",
+      "inferred_official_zero_based_index": 211,
+      "inferred_scene": "living_room_0003"
+    },
+    {
+      "local_evaluation_file": "00220.h5",
+      "inferred_official_zero_based_index": 219,
+      "inferred_scene": "bedroom_0022"
+    },
+    {
+      "local_evaluation_file": "00221.h5",
+      "inferred_official_zero_based_index": 220,
+      "inferred_scene": "bedroom_0024"
+    },
+    {
+      "local_evaluation_file": "00222.h5",
+      "inferred_official_zero_based_index": 221,
+      "inferred_scene": "bedroom_0024"
+    },
+    {
+      "local_evaluation_file": "00250.h5",
+      "inferred_official_zero_based_index": 249,
+      "inferred_scene": "kitchen_0015"
+    },
+    {
+      "local_evaluation_file": "00264.h5",
+      "inferred_official_zero_based_index": 263,
+      "inferred_scene": "living_room_0021"
+    },
+    {
+      "local_evaluation_file": "00271.h5",
+      "inferred_official_zero_based_index": 270,
+      "inferred_scene": "office_0016"
+    },
+    {
+      "local_evaluation_file": "00272.h5",
+      "inferred_official_zero_based_index": 271,
+      "inferred_scene": "office_0017"
+    },
+    {
+      "local_evaluation_file": "00273.h5",
+      "inferred_official_zero_based_index": 272,
+      "inferred_scene": "study_room_0001"
+    },
+    {
+      "local_evaluation_file": "00279.h5",
+      "inferred_official_zero_based_index": 278,
+      "inferred_scene": "study_room_0006"
+    },
+    {
+      "local_evaluation_file": "00280.h5",
+      "inferred_official_zero_based_index": 279,
+      "inferred_scene": "bedroom_0131"
+    },
+    {
+      "local_evaluation_file": "00281.h5",
+      "inferred_official_zero_based_index": 280,
+      "inferred_scene": "bedroom_0131"
+    },
+    {
+      "local_evaluation_file": "00282.h5",
+      "inferred_official_zero_based_index": 281,
+      "inferred_scene": "bedroom_0131"
+    },
+    {
+      "local_evaluation_file": "00283.h5",
+      "inferred_official_zero_based_index": 282,
+      "inferred_scene": "bedroom_0131"
+    },
+    {
+      "local_evaluation_file": "00284.h5",
+      "inferred_official_zero_based_index": 283,
+      "inferred_scene": "classroom_0001"
+    },
+    {
+      "local_evaluation_file": "00285.h5",
+      "inferred_official_zero_based_index": 284,
+      "inferred_scene": "classroom_0001"
+    },
+    {
+      "local_evaluation_file": "00296.h5",
+      "inferred_official_zero_based_index": 295,
+      "inferred_scene": "classroom_0007"
+    },
+    {
+      "local_evaluation_file": "00297.h5",
+      "inferred_official_zero_based_index": 296,
+      "inferred_scene": "classroom_0007"
+    },
+    {
+      "local_evaluation_file": "00298.h5",
+      "inferred_official_zero_based_index": 297,
+      "inferred_scene": "classroom_0007"
+    },
+    {
+      "local_evaluation_file": "00299.h5",
+      "inferred_official_zero_based_index": 298,
+      "inferred_scene": "classroom_0008"
+    },
+    {
+      "local_evaluation_file": "00300.h5",
+      "inferred_official_zero_based_index": 299,
+      "inferred_scene": "classroom_0008"
+    },
+    {
+      "local_evaluation_file": "00301.h5",
+      "inferred_official_zero_based_index": 300,
+      "inferred_scene": "classroom_0009"
+    },
+    {
+      "local_evaluation_file": "00302.h5",
+      "inferred_official_zero_based_index": 301,
+      "inferred_scene": "classroom_0009"
+    },
+    {
+      "local_evaluation_file": "00310.h5",
+      "inferred_official_zero_based_index": 309,
+      "inferred_scene": "classroom_0014"
+    },
+    {
+      "local_evaluation_file": "00311.h5",
+      "inferred_official_zero_based_index": 310,
+      "inferred_scene": "classroom_0014"
+    },
+    {
+      "local_evaluation_file": "00312.h5",
+      "inferred_official_zero_based_index": 311,
+      "inferred_scene": "classroom_0015"
+    },
+    {
+      "local_evaluation_file": "00315.h5",
+      "inferred_official_zero_based_index": 314,
+      "inferred_scene": "classroom_0017"
+    },
+    {
+      "local_evaluation_file": "00316.h5",
+      "inferred_official_zero_based_index": 315,
+      "inferred_scene": "classroom_0017"
+    },
+    {
+      "local_evaluation_file": "00317.h5",
+      "inferred_official_zero_based_index": 316,
+      "inferred_scene": "classroom_0017"
+    },
+    {
+      "local_evaluation_file": "00325.h5",
+      "inferred_official_zero_based_index": 324,
+      "inferred_scene": "classroom_0023"
+    },
+    {
+      "local_evaluation_file": "00326.h5",
+      "inferred_official_zero_based_index": 325,
+      "inferred_scene": "classroom_0023"
+    },
+    {
+      "local_evaluation_file": "00327.h5",
+      "inferred_official_zero_based_index": 326,
+      "inferred_scene": "classroom_0023"
+    },
+    {
+      "local_evaluation_file": "00328.h5",
+      "inferred_official_zero_based_index": 327,
+      "inferred_scene": "classroom_0023"
+    },
+    {
+      "local_evaluation_file": "00329.h5",
+      "inferred_official_zero_based_index": 328,
+      "inferred_scene": "classroom_0024"
+    },
+    {
+      "local_evaluation_file": "00330.h5",
+      "inferred_official_zero_based_index": 329,
+      "inferred_scene": "classroom_0024"
+    },
+    {
+      "local_evaluation_file": "00331.h5",
+      "inferred_official_zero_based_index": 330,
+      "inferred_scene": "classroom_0026"
+    },
+    {
+      "local_evaluation_file": "00332.h5",
+      "inferred_official_zero_based_index": 331,
+      "inferred_scene": "classroom_0026"
+    },
+    {
+      "local_evaluation_file": "00333.h5",
+      "inferred_official_zero_based_index": 332,
+      "inferred_scene": "computer_lab_0001"
+    },
+    {
+      "local_evaluation_file": "00334.h5",
+      "inferred_official_zero_based_index": 333,
+      "inferred_scene": "computer_lab_0001"
+    },
+    {
+      "local_evaluation_file": "00335.h5",
+      "inferred_official_zero_based_index": 334,
+      "inferred_scene": "computer_lab_0001"
+    },
+    {
+      "local_evaluation_file": "00351.h5",
+      "inferred_official_zero_based_index": 350,
+      "inferred_scene": "foyer_0001"
+    },
+    {
+      "local_evaluation_file": "00352.h5",
+      "inferred_official_zero_based_index": 351,
+      "inferred_scene": "foyer_0001"
+    },
+    {
+      "local_evaluation_file": "00355.h5",
+      "inferred_official_zero_based_index": 354,
+      "inferred_scene": "home_office_0001"
+    },
+    {
+      "local_evaluation_file": "00356.h5",
+      "inferred_official_zero_based_index": 355,
+      "inferred_scene": "home_office_0001"
+    },
+    {
+      "local_evaluation_file": "00357.h5",
+      "inferred_official_zero_based_index": 356,
+      "inferred_scene": "home_office_0001"
+    },
+    {
+      "local_evaluation_file": "00358.h5",
+      "inferred_official_zero_based_index": 357,
+      "inferred_scene": "home_office_0001"
+    },
+    {
+      "local_evaluation_file": "00359.h5",
+      "inferred_official_zero_based_index": 358,
+      "inferred_scene": "home_office_0002"
+    },
+    {
+      "local_evaluation_file": "00360.h5",
+      "inferred_official_zero_based_index": 359,
+      "inferred_scene": "home_office_0002"
+    },
+    {
+      "local_evaluation_file": "00361.h5",
+      "inferred_official_zero_based_index": 360,
+      "inferred_scene": "home_office_0002"
+    },
+    {
+      "local_evaluation_file": "00362.h5",
+      "inferred_official_zero_based_index": 361,
+      "inferred_scene": "home_office_0002"
+    },
+    {
+      "local_evaluation_file": "00363.h5",
+      "inferred_official_zero_based_index": 362,
+      "inferred_scene": "home_office_0003"
+    },
+    {
+      "local_evaluation_file": "00364.h5",
+      "inferred_official_zero_based_index": 363,
+      "inferred_scene": "home_office_0003"
+    },
+    {
+      "local_evaluation_file": "00384.h5",
+      "inferred_official_zero_based_index": 383,
+      "inferred_scene": "home_office_0009"
+    },
+    {
+      "local_evaluation_file": "00385.h5",
+      "inferred_official_zero_based_index": 384,
+      "inferred_scene": "home_office_0009"
+    },
+    {
+      "local_evaluation_file": "00386.h5",
+      "inferred_official_zero_based_index": 385,
+      "inferred_scene": "home_office_0009"
+    },
+    {
+      "local_evaluation_file": "00387.h5",
+      "inferred_official_zero_based_index": 386,
+      "inferred_scene": "home_office_0010"
+    },
+    {
+      "local_evaluation_file": "00388.h5",
+      "inferred_official_zero_based_index": 387,
+      "inferred_scene": "home_office_0010"
+    },
+    {
+      "local_evaluation_file": "00389.h5",
+      "inferred_official_zero_based_index": 388,
+      "inferred_scene": "home_office_0010"
+    },
+    {
+      "local_evaluation_file": "00390.h5",
+      "inferred_official_zero_based_index": 389,
+      "inferred_scene": "home_office_0010"
+    },
+    {
+      "local_evaluation_file": "00395.h5",
+      "inferred_official_zero_based_index": 394,
+      "inferred_scene": "home_office_0012"
+    },
+    {
+      "local_evaluation_file": "00396.h5",
+      "inferred_official_zero_based_index": 395,
+      "inferred_scene": "home_office_0012"
+    },
+    {
+      "local_evaluation_file": "00397.h5",
+      "inferred_official_zero_based_index": 396,
+      "inferred_scene": "home_office_0012"
+    },
+    {
+      "local_evaluation_file": "00411.h5",
+      "inferred_official_zero_based_index": 410,
+      "inferred_scene": "office_kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00412.h5",
+      "inferred_official_zero_based_index": 411,
+      "inferred_scene": "office_kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00413.h5",
+      "inferred_official_zero_based_index": 412,
+      "inferred_scene": "office_kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00414.h5",
+      "inferred_official_zero_based_index": 413,
+      "inferred_scene": "office_kitchen_0002"
+    },
+    {
+      "local_evaluation_file": "00430.h5",
+      "inferred_official_zero_based_index": 429,
+      "inferred_scene": "playroom_0005"
+    },
+    {
+      "local_evaluation_file": "00431.h5",
+      "inferred_official_zero_based_index": 430,
+      "inferred_scene": "playroom_0005"
+    },
+    {
+      "local_evaluation_file": "00432.h5",
+      "inferred_official_zero_based_index": 431,
+      "inferred_scene": "playroom_0005"
+    },
+    {
+      "local_evaluation_file": "00433.h5",
+      "inferred_official_zero_based_index": 432,
+      "inferred_scene": "playroom_0005"
+    },
+    {
+      "local_evaluation_file": "00434.h5",
+      "inferred_official_zero_based_index": 433,
+      "inferred_scene": "playroom_0005"
+    },
+    {
+      "local_evaluation_file": "00435.h5",
+      "inferred_official_zero_based_index": 434,
+      "inferred_scene": "playroom_0005"
+    },
+    {
+      "local_evaluation_file": "00441.h5",
+      "inferred_official_zero_based_index": 440,
+      "inferred_scene": "playroom_0007"
+    },
+    {
+      "local_evaluation_file": "00442.h5",
+      "inferred_official_zero_based_index": 441,
+      "inferred_scene": "playroom_0007"
+    },
+    {
+      "local_evaluation_file": "00443.h5",
+      "inferred_official_zero_based_index": 442,
+      "inferred_scene": "playroom_0007"
+    },
+    {
+      "local_evaluation_file": "00444.h5",
+      "inferred_official_zero_based_index": 443,
+      "inferred_scene": "playroom_0008"
+    },
+    {
+      "local_evaluation_file": "00445.h5",
+      "inferred_official_zero_based_index": 444,
+      "inferred_scene": "playroom_0008"
+    },
+    {
+      "local_evaluation_file": "00446.h5",
+      "inferred_official_zero_based_index": 445,
+      "inferred_scene": "playroom_0008"
+    },
+    {
+      "local_evaluation_file": "00447.h5",
+      "inferred_official_zero_based_index": 446,
+      "inferred_scene": "playroom_0008"
+    },
+    {
+      "local_evaluation_file": "00448.h5",
+      "inferred_official_zero_based_index": 447,
+      "inferred_scene": "playroom_0008"
+    },
+    {
+      "local_evaluation_file": "00462.h5",
+      "inferred_official_zero_based_index": 461,
+      "inferred_scene": "reception_room_0003"
+    },
+    {
+      "local_evaluation_file": "00463.h5",
+      "inferred_official_zero_based_index": 462,
+      "inferred_scene": "reception_room_0003"
+    },
+    {
+      "local_evaluation_file": "00464.h5",
+      "inferred_official_zero_based_index": 463,
+      "inferred_scene": "reception_room_0003"
+    },
+    {
+      "local_evaluation_file": "00465.h5",
+      "inferred_official_zero_based_index": 464,
+      "inferred_scene": "reception_room_0003"
+    },
+    {
+      "local_evaluation_file": "00466.h5",
+      "inferred_official_zero_based_index": 465,
+      "inferred_scene": "reception_room_0003"
+    },
+    {
+      "local_evaluation_file": "00469.h5",
+      "inferred_official_zero_based_index": 468,
+      "inferred_scene": "study_0001"
+    },
+    {
+      "local_evaluation_file": "00470.h5",
+      "inferred_official_zero_based_index": 469,
+      "inferred_scene": "study_0001"
+    },
+    {
+      "local_evaluation_file": "00471.h5",
+      "inferred_official_zero_based_index": 470,
+      "inferred_scene": "study_0001"
+    },
+    {
+      "local_evaluation_file": "00472.h5",
+      "inferred_official_zero_based_index": 471,
+      "inferred_scene": "study_0001"
+    },
+    {
+      "local_evaluation_file": "00473.h5",
+      "inferred_official_zero_based_index": 472,
+      "inferred_scene": "study_0001"
+    },
+    {
+      "local_evaluation_file": "00474.h5",
+      "inferred_official_zero_based_index": 473,
+      "inferred_scene": "study_0002"
+    },
+    {
+      "local_evaluation_file": "00475.h5",
+      "inferred_official_zero_based_index": 474,
+      "inferred_scene": "study_0002"
+    },
+    {
+      "local_evaluation_file": "00476.h5",
+      "inferred_official_zero_based_index": 475,
+      "inferred_scene": "study_0002"
+    },
+    {
+      "local_evaluation_file": "00477.h5",
+      "inferred_official_zero_based_index": 476,
+      "inferred_scene": "study_0002"
+    },
+    {
+      "local_evaluation_file": "00508.h5",
+      "inferred_official_zero_based_index": 507,
+      "inferred_scene": "bathroom_0058"
+    },
+    {
+      "local_evaluation_file": "00509.h5",
+      "inferred_official_zero_based_index": 508,
+      "inferred_scene": "bathroom_0058"
+    },
+    {
+      "local_evaluation_file": "00510.h5",
+      "inferred_official_zero_based_index": 509,
+      "inferred_scene": "bathroom_0058"
+    },
+    {
+      "local_evaluation_file": "00511.h5",
+      "inferred_official_zero_based_index": 510,
+      "inferred_scene": "bathroom_0060"
+    },
+    {
+      "local_evaluation_file": "00512.h5",
+      "inferred_official_zero_based_index": 511,
+      "inferred_scene": "bathroom_0060"
+    },
+    {
+      "local_evaluation_file": "00513.h5",
+      "inferred_official_zero_based_index": 512,
+      "inferred_scene": "bathroom_0060"
+    },
+    {
+      "local_evaluation_file": "00515.h5",
+      "inferred_official_zero_based_index": 514,
+      "inferred_scene": "bedroom_0133"
+    },
+    {
+      "local_evaluation_file": "00516.h5",
+      "inferred_official_zero_based_index": 515,
+      "inferred_scene": "bedroom_0133"
+    },
+    {
+      "local_evaluation_file": "00517.h5",
+      "inferred_official_zero_based_index": 516,
+      "inferred_scene": "bedroom_0133"
+    },
+    {
+      "local_evaluation_file": "00518.h5",
+      "inferred_official_zero_based_index": 517,
+      "inferred_scene": "bedroom_0133"
+    },
+    {
+      "local_evaluation_file": "00519.h5",
+      "inferred_official_zero_based_index": 518,
+      "inferred_scene": "bedroom_0133"
+    },
+    {
+      "local_evaluation_file": "00520.h5",
+      "inferred_official_zero_based_index": 519,
+      "inferred_scene": "bedroom_0134"
+    },
+    {
+      "local_evaluation_file": "00521.h5",
+      "inferred_official_zero_based_index": 520,
+      "inferred_scene": "bedroom_0134"
+    },
+    {
+      "local_evaluation_file": "00522.h5",
+      "inferred_official_zero_based_index": 521,
+      "inferred_scene": "bedroom_0134"
+    },
+    {
+      "local_evaluation_file": "00523.h5",
+      "inferred_official_zero_based_index": 522,
+      "inferred_scene": "bedroom_0135"
+    },
+    {
+      "local_evaluation_file": "00524.h5",
+      "inferred_official_zero_based_index": 523,
+      "inferred_scene": "bedroom_0135"
+    },
+    {
+      "local_evaluation_file": "00525.h5",
+      "inferred_official_zero_based_index": 524,
+      "inferred_scene": "bedroom_0135"
+    },
+    {
+      "local_evaluation_file": "00526.h5",
+      "inferred_official_zero_based_index": 525,
+      "inferred_scene": "bedroom_0135"
+    },
+    {
+      "local_evaluation_file": "00531.h5",
+      "inferred_official_zero_based_index": 530,
+      "inferred_scene": "bedroom_0137"
+    },
+    {
+      "local_evaluation_file": "00532.h5",
+      "inferred_official_zero_based_index": 531,
+      "inferred_scene": "bedroom_0137"
+    },
+    {
+      "local_evaluation_file": "00533.h5",
+      "inferred_official_zero_based_index": 532,
+      "inferred_scene": "bedroom_0137"
+    },
+    {
+      "local_evaluation_file": "00537.h5",
+      "inferred_official_zero_based_index": 536,
+      "inferred_scene": "bedroom_0139"
+    },
+    {
+      "local_evaluation_file": "00538.h5",
+      "inferred_official_zero_based_index": 537,
+      "inferred_scene": "bedroom_0139"
+    },
+    {
+      "local_evaluation_file": "00539.h5",
+      "inferred_official_zero_based_index": 538,
+      "inferred_scene": "bedroom_0139"
+    },
+    {
+      "local_evaluation_file": "00549.h5",
+      "inferred_official_zero_based_index": 548,
+      "inferred_scene": "dining_room_0038"
+    },
+    {
+      "local_evaluation_file": "00550.h5",
+      "inferred_official_zero_based_index": 549,
+      "inferred_scene": "dining_room_0038"
+    },
+    {
+      "local_evaluation_file": "00551.h5",
+      "inferred_official_zero_based_index": 550,
+      "inferred_scene": "dining_room_0038"
+    },
+    {
+      "local_evaluation_file": "00555.h5",
+      "inferred_official_zero_based_index": 554,
+      "inferred_scene": "home_office_0014"
+    },
+    {
+      "local_evaluation_file": "00556.h5",
+      "inferred_official_zero_based_index": 555,
+      "inferred_scene": "home_office_0014"
+    },
+    {
+      "local_evaluation_file": "00557.h5",
+      "inferred_official_zero_based_index": 556,
+      "inferred_scene": "home_office_0014"
+    },
+    {
+      "local_evaluation_file": "00558.h5",
+      "inferred_official_zero_based_index": 557,
+      "inferred_scene": "home_office_0014"
+    },
+    {
+      "local_evaluation_file": "00559.h5",
+      "inferred_official_zero_based_index": 558,
+      "inferred_scene": "kitchen_0055"
+    },
+    {
+      "local_evaluation_file": "00560.h5",
+      "inferred_official_zero_based_index": 559,
+      "inferred_scene": "kitchen_0055"
+    },
+    {
+      "local_evaluation_file": "00561.h5",
+      "inferred_official_zero_based_index": 560,
+      "inferred_scene": "kitchen_0056"
+    },
+    {
+      "local_evaluation_file": "00562.h5",
+      "inferred_official_zero_based_index": 561,
+      "inferred_scene": "kitchen_0056"
+    },
+    {
+      "local_evaluation_file": "00563.h5",
+      "inferred_official_zero_based_index": 562,
+      "inferred_scene": "kitchen_0056"
+    },
+    {
+      "local_evaluation_file": "00564.h5",
+      "inferred_official_zero_based_index": 563,
+      "inferred_scene": "kitchen_0056"
+    },
+    {
+      "local_evaluation_file": "00565.h5",
+      "inferred_official_zero_based_index": 564,
+      "inferred_scene": "kitchen_0057"
+    },
+    {
+      "local_evaluation_file": "00566.h5",
+      "inferred_official_zero_based_index": 565,
+      "inferred_scene": "kitchen_0057"
+    },
+    {
+      "local_evaluation_file": "00567.h5",
+      "inferred_official_zero_based_index": 566,
+      "inferred_scene": "kitchen_0057"
+    },
+    {
+      "local_evaluation_file": "00568.h5",
+      "inferred_official_zero_based_index": 567,
+      "inferred_scene": "kitchen_0057"
+    },
+    {
+      "local_evaluation_file": "00569.h5",
+      "inferred_official_zero_based_index": 568,
+      "inferred_scene": "kitchen_0058"
+    },
+    {
+      "local_evaluation_file": "00570.h5",
+      "inferred_official_zero_based_index": 569,
+      "inferred_scene": "kitchen_0058"
+    },
+    {
+      "local_evaluation_file": "00571.h5",
+      "inferred_official_zero_based_index": 570,
+      "inferred_scene": "kitchen_0058"
+    },
+    {
+      "local_evaluation_file": "00579.h5",
+      "inferred_official_zero_based_index": 578,
+      "inferred_scene": "living_room_0081"
+    },
+    {
+      "local_evaluation_file": "00580.h5",
+      "inferred_official_zero_based_index": 579,
+      "inferred_scene": "living_room_0081"
+    },
+    {
+      "local_evaluation_file": "00581.h5",
+      "inferred_official_zero_based_index": 580,
+      "inferred_scene": "living_room_0081"
+    },
+    {
+      "local_evaluation_file": "00582.h5",
+      "inferred_official_zero_based_index": 581,
+      "inferred_scene": "living_room_0081"
+    },
+    {
+      "local_evaluation_file": "00583.h5",
+      "inferred_official_zero_based_index": 582,
+      "inferred_scene": "living_room_0081"
+    },
+    {
+      "local_evaluation_file": "00591.h5",
+      "inferred_official_zero_based_index": 590,
+      "inferred_scene": "living_room_0084"
+    },
+    {
+      "local_evaluation_file": "00592.h5",
+      "inferred_official_zero_based_index": 591,
+      "inferred_scene": "living_room_0084"
+    },
+    {
+      "local_evaluation_file": "00593.h5",
+      "inferred_official_zero_based_index": 592,
+      "inferred_scene": "living_room_0084"
+    },
+    {
+      "local_evaluation_file": "00594.h5",
+      "inferred_official_zero_based_index": 593,
+      "inferred_scene": "living_room_0084"
+    },
+    {
+      "local_evaluation_file": "00603.h5",
+      "inferred_official_zero_based_index": 602,
+      "inferred_scene": "living_room_0087"
+    },
+    {
+      "local_evaluation_file": "00604.h5",
+      "inferred_official_zero_based_index": 603,
+      "inferred_scene": "living_room_0087"
+    },
+    {
+      "local_evaluation_file": "00605.h5",
+      "inferred_official_zero_based_index": 604,
+      "inferred_scene": "living_room_0087"
+    },
+    {
+      "local_evaluation_file": "00606.h5",
+      "inferred_official_zero_based_index": 605,
+      "inferred_scene": "living_room_0087"
+    },
+    {
+      "local_evaluation_file": "00607.h5",
+      "inferred_official_zero_based_index": 606,
+      "inferred_scene": "living_room_0087"
+    },
+    {
+      "local_evaluation_file": "00612.h5",
+      "inferred_official_zero_based_index": 611,
+      "inferred_scene": "office_0020"
+    },
+    {
+      "local_evaluation_file": "00613.h5",
+      "inferred_official_zero_based_index": 612,
+      "inferred_scene": "office_0020"
+    },
+    {
+      "local_evaluation_file": "00617.h5",
+      "inferred_official_zero_based_index": 616,
+      "inferred_scene": "office_0022"
+    },
+    {
+      "local_evaluation_file": "00618.h5",
+      "inferred_official_zero_based_index": 617,
+      "inferred_scene": "office_0022"
+    },
+    {
+      "local_evaluation_file": "00619.h5",
+      "inferred_official_zero_based_index": 618,
+      "inferred_scene": "office_0022"
+    },
+    {
+      "local_evaluation_file": "00620.h5",
+      "inferred_official_zero_based_index": 619,
+      "inferred_scene": "office_0022"
+    },
+    {
+      "local_evaluation_file": "00621.h5",
+      "inferred_official_zero_based_index": 620,
+      "inferred_scene": "office_0022"
+    },
+    {
+      "local_evaluation_file": "00633.h5",
+      "inferred_official_zero_based_index": 632,
+      "inferred_scene": "office_0027"
+    },
+    {
+      "local_evaluation_file": "00634.h5",
+      "inferred_official_zero_based_index": 633,
+      "inferred_scene": "office_0027"
+    },
+    {
+      "local_evaluation_file": "00635.h5",
+      "inferred_official_zero_based_index": 634,
+      "inferred_scene": "office_0027"
+    },
+    {
+      "local_evaluation_file": "00636.h5",
+      "inferred_official_zero_based_index": 635,
+      "inferred_scene": "office_0027"
+    },
+    {
+      "local_evaluation_file": "00637.h5",
+      "inferred_official_zero_based_index": 636,
+      "inferred_scene": "office_0027"
+    },
+    {
+      "local_evaluation_file": "00638.h5",
+      "inferred_official_zero_based_index": 637,
+      "inferred_scene": "office_0027"
+    },
+    {
+      "local_evaluation_file": "00644.h5",
+      "inferred_official_zero_based_index": 643,
+      "inferred_scene": "study_0007"
+    },
+    {
+      "local_evaluation_file": "00645.h5",
+      "inferred_official_zero_based_index": 644,
+      "inferred_scene": "study_0007"
+    },
+    {
+      "local_evaluation_file": "00650.h5",
+      "inferred_official_zero_based_index": 649,
+      "inferred_scene": "bathroom_0008"
+    },
+    {
+      "local_evaluation_file": "00651.h5",
+      "inferred_official_zero_based_index": 650,
+      "inferred_scene": "bathroom_0009"
+    },
+    {
+      "local_evaluation_file": "00656.h5",
+      "inferred_official_zero_based_index": 655,
+      "inferred_scene": "bathroom_0012"
+    },
+    {
+      "local_evaluation_file": "00657.h5",
+      "inferred_official_zero_based_index": 656,
+      "inferred_scene": "bathroom_0012"
+    },
+    {
+      "local_evaluation_file": "00658.h5",
+      "inferred_official_zero_based_index": 657,
+      "inferred_scene": "bathroom_0012"
+    },
+    {
+      "local_evaluation_file": "00663.h5",
+      "inferred_official_zero_based_index": 662,
+      "inferred_scene": "bathroom_0015"
+    },
+    {
+      "local_evaluation_file": "00664.h5",
+      "inferred_official_zero_based_index": 663,
+      "inferred_scene": "bathroom_0015"
+    },
+    {
+      "local_evaluation_file": "00668.h5",
+      "inferred_official_zero_based_index": 667,
+      "inferred_scene": "bathroom_0017"
+    },
+    {
+      "local_evaluation_file": "00669.h5",
+      "inferred_official_zero_based_index": 668,
+      "inferred_scene": "bathroom_0017"
+    },
+    {
+      "local_evaluation_file": "00670.h5",
+      "inferred_official_zero_based_index": 669,
+      "inferred_scene": "bathroom_0017"
+    },
+    {
+      "local_evaluation_file": "00671.h5",
+      "inferred_official_zero_based_index": 670,
+      "inferred_scene": "bathroom_0018"
+    },
+    {
+      "local_evaluation_file": "00672.h5",
+      "inferred_official_zero_based_index": 671,
+      "inferred_scene": "bathroom_0018"
+    },
+    {
+      "local_evaluation_file": "00673.h5",
+      "inferred_official_zero_based_index": 672,
+      "inferred_scene": "bathroom_0018"
+    },
+    {
+      "local_evaluation_file": "00676.h5",
+      "inferred_official_zero_based_index": 675,
+      "inferred_scene": "bathroom_0020"
+    },
+    {
+      "local_evaluation_file": "00677.h5",
+      "inferred_official_zero_based_index": 676,
+      "inferred_scene": "bathroom_0020"
+    },
+    {
+      "local_evaluation_file": "00678.h5",
+      "inferred_official_zero_based_index": 677,
+      "inferred_scene": "bathroom_0021"
+    },
+    {
+      "local_evaluation_file": "00679.h5",
+      "inferred_official_zero_based_index": 678,
+      "inferred_scene": "bathroom_0021"
+    },
+    {
+      "local_evaluation_file": "00680.h5",
+      "inferred_official_zero_based_index": 679,
+      "inferred_scene": "bathroom_0022"
+    },
+    {
+      "local_evaluation_file": "00681.h5",
+      "inferred_official_zero_based_index": 680,
+      "inferred_scene": "bathroom_0022"
+    },
+    {
+      "local_evaluation_file": "00686.h5",
+      "inferred_official_zero_based_index": 685,
+      "inferred_scene": "bathroom_0025"
+    },
+    {
+      "local_evaluation_file": "00687.h5",
+      "inferred_official_zero_based_index": 686,
+      "inferred_scene": "bathroom_0025"
+    },
+    {
+      "local_evaluation_file": "00688.h5",
+      "inferred_official_zero_based_index": 687,
+      "inferred_scene": "bathroom_0026"
+    },
+    {
+      "local_evaluation_file": "00689.h5",
+      "inferred_official_zero_based_index": 688,
+      "inferred_scene": "bathroom_0026"
+    },
+    {
+      "local_evaluation_file": "00690.h5",
+      "inferred_official_zero_based_index": 689,
+      "inferred_scene": "bathroom_0026"
+    },
+    {
+      "local_evaluation_file": "00693.h5",
+      "inferred_official_zero_based_index": 692,
+      "inferred_scene": "bathroom_0029"
+    },
+    {
+      "local_evaluation_file": "00694.h5",
+      "inferred_official_zero_based_index": 693,
+      "inferred_scene": "bathroom_0029"
+    },
+    {
+      "local_evaluation_file": "00697.h5",
+      "inferred_official_zero_based_index": 696,
+      "inferred_scene": "bathroom_0031"
+    },
+    {
+      "local_evaluation_file": "00698.h5",
+      "inferred_official_zero_based_index": 697,
+      "inferred_scene": "bathroom_0031"
+    },
+    {
+      "local_evaluation_file": "00699.h5",
+      "inferred_official_zero_based_index": 698,
+      "inferred_scene": "bathroom_0031"
+    },
+    {
+      "local_evaluation_file": "00706.h5",
+      "inferred_official_zero_based_index": 705,
+      "inferred_scene": "bathroom_0036"
+    },
+    {
+      "local_evaluation_file": "00707.h5",
+      "inferred_official_zero_based_index": 706,
+      "inferred_scene": "bathroom_0036"
+    },
+    {
+      "local_evaluation_file": "00708.h5",
+      "inferred_official_zero_based_index": 707,
+      "inferred_scene": "bathroom_0036"
+    },
+    {
+      "local_evaluation_file": "00709.h5",
+      "inferred_official_zero_based_index": 708,
+      "inferred_scene": "bathroom_0037"
+    },
+    {
+      "local_evaluation_file": "00710.h5",
+      "inferred_official_zero_based_index": 709,
+      "inferred_scene": "bathroom_0037"
+    },
+    {
+      "local_evaluation_file": "00711.h5",
+      "inferred_official_zero_based_index": 710,
+      "inferred_scene": "bathroom_0038"
+    },
+    {
+      "local_evaluation_file": "00712.h5",
+      "inferred_official_zero_based_index": 711,
+      "inferred_scene": "bathroom_0038"
+    },
+    {
+      "local_evaluation_file": "00713.h5",
+      "inferred_official_zero_based_index": 712,
+      "inferred_scene": "bathroom_0038"
+    },
+    {
+      "local_evaluation_file": "00717.h5",
+      "inferred_official_zero_based_index": 716,
+      "inferred_scene": "bathroom_0040"
+    },
+    {
+      "local_evaluation_file": "00718.h5",
+      "inferred_official_zero_based_index": 717,
+      "inferred_scene": "bathroom_0040"
+    },
+    {
+      "local_evaluation_file": "00724.h5",
+      "inferred_official_zero_based_index": 723,
+      "inferred_scene": "bathroom_0043"
+    },
+    {
+      "local_evaluation_file": "00725.h5",
+      "inferred_official_zero_based_index": 724,
+      "inferred_scene": "bathroom_0043"
+    },
+    {
+      "local_evaluation_file": "00726.h5",
+      "inferred_official_zero_based_index": 725,
+      "inferred_scene": "bathroom_0043"
+    },
+    {
+      "local_evaluation_file": "00727.h5",
+      "inferred_official_zero_based_index": 726,
+      "inferred_scene": "bathroom_0044"
+    },
+    {
+      "local_evaluation_file": "00728.h5",
+      "inferred_official_zero_based_index": 727,
+      "inferred_scene": "bathroom_0044"
+    },
+    {
+      "local_evaluation_file": "00731.h5",
+      "inferred_official_zero_based_index": 730,
+      "inferred_scene": "bathroom_0046"
+    },
+    {
+      "local_evaluation_file": "00732.h5",
+      "inferred_official_zero_based_index": 731,
+      "inferred_scene": "bathroom_0046"
+    },
+    {
+      "local_evaluation_file": "00733.h5",
+      "inferred_official_zero_based_index": 732,
+      "inferred_scene": "bathroom_0047"
+    },
+    {
+      "local_evaluation_file": "00734.h5",
+      "inferred_official_zero_based_index": 733,
+      "inferred_scene": "bathroom_0047"
+    },
+    {
+      "local_evaluation_file": "00743.h5",
+      "inferred_official_zero_based_index": 742,
+      "inferred_scene": "bathroom_0052"
+    },
+    {
+      "local_evaluation_file": "00744.h5",
+      "inferred_official_zero_based_index": 743,
+      "inferred_scene": "bathroom_0052"
+    },
+    {
+      "local_evaluation_file": "00759.h5",
+      "inferred_official_zero_based_index": 758,
+      "inferred_scene": "kitchen_0021"
+    },
+    {
+      "local_evaluation_file": "00760.h5",
+      "inferred_official_zero_based_index": 759,
+      "inferred_scene": "kitchen_0021"
+    },
+    {
+      "local_evaluation_file": "00761.h5",
+      "inferred_official_zero_based_index": 760,
+      "inferred_scene": "kitchen_0021"
+    },
+    {
+      "local_evaluation_file": "00762.h5",
+      "inferred_official_zero_based_index": 761,
+      "inferred_scene": "kitchen_0022"
+    },
+    {
+      "local_evaluation_file": "00763.h5",
+      "inferred_official_zero_based_index": 762,
+      "inferred_scene": "kitchen_0022"
+    },
+    {
+      "local_evaluation_file": "00764.h5",
+      "inferred_official_zero_based_index": 763,
+      "inferred_scene": "kitchen_0022"
+    },
+    {
+      "local_evaluation_file": "00765.h5",
+      "inferred_official_zero_based_index": 764,
+      "inferred_scene": "kitchen_0022"
+    },
+    {
+      "local_evaluation_file": "00766.h5",
+      "inferred_official_zero_based_index": 765,
+      "inferred_scene": "kitchen_0022"
+    },
+    {
+      "local_evaluation_file": "00767.h5",
+      "inferred_official_zero_based_index": 766,
+      "inferred_scene": "kitchen_0023"
+    },
+    {
+      "local_evaluation_file": "00768.h5",
+      "inferred_official_zero_based_index": 767,
+      "inferred_scene": "kitchen_0023"
+    },
+    {
+      "local_evaluation_file": "00769.h5",
+      "inferred_official_zero_based_index": 768,
+      "inferred_scene": "kitchen_0023"
+    },
+    {
+      "local_evaluation_file": "00770.h5",
+      "inferred_official_zero_based_index": 769,
+      "inferred_scene": "kitchen_0023"
+    },
+    {
+      "local_evaluation_file": "00771.h5",
+      "inferred_official_zero_based_index": 770,
+      "inferred_scene": "kitchen_0023"
+    },
+    {
+      "local_evaluation_file": "00772.h5",
+      "inferred_official_zero_based_index": 771,
+      "inferred_scene": "kitchen_0024"
+    },
+    {
+      "local_evaluation_file": "00773.h5",
+      "inferred_official_zero_based_index": 772,
+      "inferred_scene": "kitchen_0024"
+    },
+    {
+      "local_evaluation_file": "00774.h5",
+      "inferred_official_zero_based_index": 773,
+      "inferred_scene": "kitchen_0024"
+    },
+    {
+      "local_evaluation_file": "00775.h5",
+      "inferred_official_zero_based_index": 774,
+      "inferred_scene": "kitchen_0024"
+    },
+    {
+      "local_evaluation_file": "00776.h5",
+      "inferred_official_zero_based_index": 775,
+      "inferred_scene": "kitchen_0024"
+    },
+    {
+      "local_evaluation_file": "00777.h5",
+      "inferred_official_zero_based_index": 776,
+      "inferred_scene": "kitchen_0025"
+    },
+    {
+      "local_evaluation_file": "00778.h5",
+      "inferred_official_zero_based_index": 777,
+      "inferred_scene": "kitchen_0025"
+    },
+    {
+      "local_evaluation_file": "00779.h5",
+      "inferred_official_zero_based_index": 778,
+      "inferred_scene": "kitchen_0025"
+    },
+    {
+      "local_evaluation_file": "00780.h5",
+      "inferred_official_zero_based_index": 779,
+      "inferred_scene": "kitchen_0026"
+    },
+    {
+      "local_evaluation_file": "00781.h5",
+      "inferred_official_zero_based_index": 780,
+      "inferred_scene": "kitchen_0026"
+    },
+    {
+      "local_evaluation_file": "00782.h5",
+      "inferred_official_zero_based_index": 781,
+      "inferred_scene": "kitchen_0026"
+    },
+    {
+      "local_evaluation_file": "00783.h5",
+      "inferred_official_zero_based_index": 782,
+      "inferred_scene": "kitchen_0027"
+    },
+    {
+      "local_evaluation_file": "00784.h5",
+      "inferred_official_zero_based_index": 783,
+      "inferred_scene": "kitchen_0027"
+    },
+    {
+      "local_evaluation_file": "00785.h5",
+      "inferred_official_zero_based_index": 784,
+      "inferred_scene": "kitchen_0027"
+    },
+    {
+      "local_evaluation_file": "00786.h5",
+      "inferred_official_zero_based_index": 785,
+      "inferred_scene": "kitchen_0027"
+    },
+    {
+      "local_evaluation_file": "00787.h5",
+      "inferred_official_zero_based_index": 786,
+      "inferred_scene": "kitchen_0027"
+    },
+    {
+      "local_evaluation_file": "00800.h5",
+      "inferred_official_zero_based_index": 799,
+      "inferred_scene": "kitchen_0030"
+    },
+    {
+      "local_evaluation_file": "00801.h5",
+      "inferred_official_zero_based_index": 800,
+      "inferred_scene": "kitchen_0030"
+    },
+    {
+      "local_evaluation_file": "00802.h5",
+      "inferred_official_zero_based_index": 801,
+      "inferred_scene": "kitchen_0030"
+    },
+    {
+      "local_evaluation_file": "00803.h5",
+      "inferred_official_zero_based_index": 802,
+      "inferred_scene": "kitchen_0030"
+    },
+    {
+      "local_evaluation_file": "00804.h5",
+      "inferred_official_zero_based_index": 803,
+      "inferred_scene": "kitchen_0030"
+    },
+    {
+      "local_evaluation_file": "00810.h5",
+      "inferred_official_zero_based_index": 809,
+      "inferred_scene": "kitchen_0032"
+    },
+    {
+      "local_evaluation_file": "00811.h5",
+      "inferred_official_zero_based_index": 810,
+      "inferred_scene": "kitchen_0032"
+    },
+    {
+      "local_evaluation_file": "00812.h5",
+      "inferred_official_zero_based_index": 811,
+      "inferred_scene": "kitchen_0032"
+    },
+    {
+      "local_evaluation_file": "00813.h5",
+      "inferred_official_zero_based_index": 812,
+      "inferred_scene": "kitchen_0032"
+    },
+    {
+      "local_evaluation_file": "00814.h5",
+      "inferred_official_zero_based_index": 813,
+      "inferred_scene": "kitchen_0032"
+    },
+    {
+      "local_evaluation_file": "00821.h5",
+      "inferred_official_zero_based_index": 820,
+      "inferred_scene": "kitchen_0034"
+    },
+    {
+      "local_evaluation_file": "00822.h5",
+      "inferred_official_zero_based_index": 821,
+      "inferred_scene": "kitchen_0034"
+    },
+    {
+      "local_evaluation_file": "00823.h5",
+      "inferred_official_zero_based_index": 822,
+      "inferred_scene": "kitchen_0034"
+    },
+    {
+      "local_evaluation_file": "00833.h5",
+      "inferred_official_zero_based_index": 832,
+      "inferred_scene": "kitchen_0038"
+    },
+    {
+      "local_evaluation_file": "00834.h5",
+      "inferred_official_zero_based_index": 833,
+      "inferred_scene": "kitchen_0038"
+    },
+    {
+      "local_evaluation_file": "00835.h5",
+      "inferred_official_zero_based_index": 834,
+      "inferred_scene": "kitchen_0038"
+    },
+    {
+      "local_evaluation_file": "00836.h5",
+      "inferred_official_zero_based_index": 835,
+      "inferred_scene": "kitchen_0038"
+    },
+    {
+      "local_evaluation_file": "00837.h5",
+      "inferred_official_zero_based_index": 836,
+      "inferred_scene": "kitchen_0039"
+    },
+    {
+      "local_evaluation_file": "00838.h5",
+      "inferred_official_zero_based_index": 837,
+      "inferred_scene": "kitchen_0039"
+    },
+    {
+      "local_evaluation_file": "00839.h5",
+      "inferred_official_zero_based_index": 838,
+      "inferred_scene": "kitchen_0039"
+    },
+    {
+      "local_evaluation_file": "00840.h5",
+      "inferred_official_zero_based_index": 839,
+      "inferred_scene": "kitchen_0039"
+    },
+    {
+      "local_evaluation_file": "00841.h5",
+      "inferred_official_zero_based_index": 840,
+      "inferred_scene": "kitchen_0039"
+    },
+    {
+      "local_evaluation_file": "00842.h5",
+      "inferred_official_zero_based_index": 841,
+      "inferred_scene": "kitchen_0039"
+    },
+    {
+      "local_evaluation_file": "00843.h5",
+      "inferred_official_zero_based_index": 842,
+      "inferred_scene": "kitchen_0040"
+    },
+    {
+      "local_evaluation_file": "00844.h5",
+      "inferred_official_zero_based_index": 843,
+      "inferred_scene": "kitchen_0040"
+    },
+    {
+      "local_evaluation_file": "00845.h5",
+      "inferred_official_zero_based_index": 844,
+      "inferred_scene": "kitchen_0040"
+    },
+    {
+      "local_evaluation_file": "00846.h5",
+      "inferred_official_zero_based_index": 845,
+      "inferred_scene": "kitchen_0040"
+    },
+    {
+      "local_evaluation_file": "00850.h5",
+      "inferred_official_zero_based_index": 849,
+      "inferred_scene": "kitchen_0042"
+    },
+    {
+      "local_evaluation_file": "00851.h5",
+      "inferred_official_zero_based_index": 850,
+      "inferred_scene": "kitchen_0042"
+    },
+    {
+      "local_evaluation_file": "00852.h5",
+      "inferred_official_zero_based_index": 851,
+      "inferred_scene": "kitchen_0042"
+    },
+    {
+      "local_evaluation_file": "00857.h5",
+      "inferred_official_zero_based_index": 856,
+      "inferred_scene": "kitchen_0044"
+    },
+    {
+      "local_evaluation_file": "00858.h5",
+      "inferred_official_zero_based_index": 857,
+      "inferred_scene": "kitchen_0044"
+    },
+    {
+      "local_evaluation_file": "00859.h5",
+      "inferred_official_zero_based_index": 858,
+      "inferred_scene": "kitchen_0044"
+    },
+    {
+      "local_evaluation_file": "00860.h5",
+      "inferred_official_zero_based_index": 859,
+      "inferred_scene": "kitchen_0044"
+    },
+    {
+      "local_evaluation_file": "00861.h5",
+      "inferred_official_zero_based_index": 860,
+      "inferred_scene": "kitchen_0044"
+    },
+    {
+      "local_evaluation_file": "00862.h5",
+      "inferred_official_zero_based_index": 861,
+      "inferred_scene": "kitchen_0044"
+    },
+    {
+      "local_evaluation_file": "00869.h5",
+      "inferred_official_zero_based_index": 868,
+      "inferred_scene": "kitchen_0046"
+    },
+    {
+      "local_evaluation_file": "00870.h5",
+      "inferred_official_zero_based_index": 869,
+      "inferred_scene": "kitchen_0046"
+    },
+    {
+      "local_evaluation_file": "00871.h5",
+      "inferred_official_zero_based_index": 870,
+      "inferred_scene": "kitchen_0046"
+    },
+    {
+      "local_evaluation_file": "00906.h5",
+      "inferred_official_zero_based_index": 905,
+      "inferred_scene": "kitchen_0054"
+    },
+    {
+      "local_evaluation_file": "00907.h5",
+      "inferred_official_zero_based_index": 906,
+      "inferred_scene": "kitchen_0054"
+    },
+    {
+      "local_evaluation_file": "00908.h5",
+      "inferred_official_zero_based_index": 907,
+      "inferred_scene": "kitchen_0054"
+    },
+    {
+      "local_evaluation_file": "00917.h5",
+      "inferred_official_zero_based_index": 916,
+      "inferred_scene": "bedroom_0027"
+    },
+    {
+      "local_evaluation_file": "00918.h5",
+      "inferred_official_zero_based_index": 917,
+      "inferred_scene": "bedroom_0027"
+    },
+    {
+      "local_evaluation_file": "00919.h5",
+      "inferred_official_zero_based_index": 918,
+      "inferred_scene": "bedroom_0027"
+    },
+    {
+      "local_evaluation_file": "00926.h5",
+      "inferred_official_zero_based_index": 925,
+      "inferred_scene": "bedroom_0030"
+    },
+    {
+      "local_evaluation_file": "00927.h5",
+      "inferred_official_zero_based_index": 926,
+      "inferred_scene": "bedroom_0030"
+    },
+    {
+      "local_evaluation_file": "00928.h5",
+      "inferred_official_zero_based_index": 927,
+      "inferred_scene": "bedroom_0030"
+    },
+    {
+      "local_evaluation_file": "00932.h5",
+      "inferred_official_zero_based_index": 931,
+      "inferred_scene": "bedroom_0032"
+    },
+    {
+      "local_evaluation_file": "00933.h5",
+      "inferred_official_zero_based_index": 932,
+      "inferred_scene": "bedroom_0032"
+    },
+    {
+      "local_evaluation_file": "00934.h5",
+      "inferred_official_zero_based_index": 933,
+      "inferred_scene": "bedroom_0032"
+    },
+    {
+      "local_evaluation_file": "00935.h5",
+      "inferred_official_zero_based_index": 934,
+      "inferred_scene": "bedroom_0032"
+    },
+    {
+      "local_evaluation_file": "00945.h5",
+      "inferred_official_zero_based_index": 944,
+      "inferred_scene": "bedroom_0037"
+    },
+    {
+      "local_evaluation_file": "00946.h5",
+      "inferred_official_zero_based_index": 945,
+      "inferred_scene": "bedroom_0037"
+    },
+    {
+      "local_evaluation_file": "00947.h5",
+      "inferred_official_zero_based_index": 946,
+      "inferred_scene": "bedroom_0037"
+    },
+    {
+      "local_evaluation_file": "00959.h5",
+      "inferred_official_zero_based_index": 958,
+      "inferred_scene": "bedroom_0043"
+    },
+    {
+      "local_evaluation_file": "00960.h5",
+      "inferred_official_zero_based_index": 959,
+      "inferred_scene": "bedroom_0043"
+    },
+    {
+      "local_evaluation_file": "00961.h5",
+      "inferred_official_zero_based_index": 960,
+      "inferred_scene": "bedroom_0044"
+    },
+    {
+      "local_evaluation_file": "00962.h5",
+      "inferred_official_zero_based_index": 961,
+      "inferred_scene": "bedroom_0044"
+    },
+    {
+      "local_evaluation_file": "00965.h5",
+      "inferred_official_zero_based_index": 964,
+      "inferred_scene": "bedroom_0046"
+    },
+    {
+      "local_evaluation_file": "00966.h5",
+      "inferred_official_zero_based_index": 965,
+      "inferred_scene": "bedroom_0046"
+    },
+    {
+      "local_evaluation_file": "00967.h5",
+      "inferred_official_zero_based_index": 966,
+      "inferred_scene": "bedroom_0046"
+    },
+    {
+      "local_evaluation_file": "00970.h5",
+      "inferred_official_zero_based_index": 969,
+      "inferred_scene": "bedroom_0048"
+    },
+    {
+      "local_evaluation_file": "00971.h5",
+      "inferred_official_zero_based_index": 970,
+      "inferred_scene": "bedroom_0048"
+    },
+    {
+      "local_evaluation_file": "00972.h5",
+      "inferred_official_zero_based_index": 971,
+      "inferred_scene": "bedroom_0048"
+    },
+    {
+      "local_evaluation_file": "00973.h5",
+      "inferred_official_zero_based_index": 972,
+      "inferred_scene": "bedroom_0048"
+    },
+    {
+      "local_evaluation_file": "00974.h5",
+      "inferred_official_zero_based_index": 973,
+      "inferred_scene": "bedroom_0048"
+    },
+    {
+      "local_evaluation_file": "00975.h5",
+      "inferred_official_zero_based_index": 974,
+      "inferred_scene": "bedroom_0049"
+    },
+    {
+      "local_evaluation_file": "00976.h5",
+      "inferred_official_zero_based_index": 975,
+      "inferred_scene": "bedroom_0049"
+    },
+    {
+      "local_evaluation_file": "00977.h5",
+      "inferred_official_zero_based_index": 976,
+      "inferred_scene": "bedroom_0049"
+    },
+    {
+      "local_evaluation_file": "00991.h5",
+      "inferred_official_zero_based_index": 990,
+      "inferred_scene": "bedroom_0054"
+    },
+    {
+      "local_evaluation_file": "00992.h5",
+      "inferred_official_zero_based_index": 991,
+      "inferred_scene": "bedroom_0054"
+    },
+    {
+      "local_evaluation_file": "00993.h5",
+      "inferred_official_zero_based_index": 992,
+      "inferred_scene": "bedroom_0054"
+    },
+    {
+      "local_evaluation_file": "00994.h5",
+      "inferred_official_zero_based_index": 993,
+      "inferred_scene": "bedroom_0055"
+    },
+    {
+      "local_evaluation_file": "00995.h5",
+      "inferred_official_zero_based_index": 994,
+      "inferred_scene": "bedroom_0055"
+    },
+    {
+      "local_evaluation_file": "01001.h5",
+      "inferred_official_zero_based_index": 1000,
+      "inferred_scene": "bedroom_0058"
+    },
+    {
+      "local_evaluation_file": "01002.h5",
+      "inferred_official_zero_based_index": 1001,
+      "inferred_scene": "bedroom_0058"
+    },
+    {
+      "local_evaluation_file": "01003.h5",
+      "inferred_official_zero_based_index": 1002,
+      "inferred_scene": "bedroom_0058"
+    },
+    {
+      "local_evaluation_file": "01004.h5",
+      "inferred_official_zero_based_index": 1003,
+      "inferred_scene": "bedroom_0058"
+    },
+    {
+      "local_evaluation_file": "01010.h5",
+      "inferred_official_zero_based_index": 1009,
+      "inferred_scene": "bedroom_0061"
+    },
+    {
+      "local_evaluation_file": "01011.h5",
+      "inferred_official_zero_based_index": 1010,
+      "inferred_scene": "bedroom_0061"
+    },
+    {
+      "local_evaluation_file": "01012.h5",
+      "inferred_official_zero_based_index": 1011,
+      "inferred_scene": "bedroom_0061"
+    },
+    {
+      "local_evaluation_file": "01021.h5",
+      "inferred_official_zero_based_index": 1020,
+      "inferred_scene": "bedroom_0064"
+    },
+    {
+      "local_evaluation_file": "01022.h5",
+      "inferred_official_zero_based_index": 1021,
+      "inferred_scene": "bedroom_0064"
+    },
+    {
+      "local_evaluation_file": "01023.h5",
+      "inferred_official_zero_based_index": 1022,
+      "inferred_scene": "bedroom_0064"
+    },
+    {
+      "local_evaluation_file": "01032.h5",
+      "inferred_official_zero_based_index": 1031,
+      "inferred_scene": "bedroom_0068"
+    },
+    {
+      "local_evaluation_file": "01033.h5",
+      "inferred_official_zero_based_index": 1032,
+      "inferred_scene": "bedroom_0068"
+    },
+    {
+      "local_evaluation_file": "01034.h5",
+      "inferred_official_zero_based_index": 1033,
+      "inferred_scene": "bedroom_0068"
+    },
+    {
+      "local_evaluation_file": "01038.h5",
+      "inferred_official_zero_based_index": 1037,
+      "inferred_scene": "bedroom_0070"
+    },
+    {
+      "local_evaluation_file": "01039.h5",
+      "inferred_official_zero_based_index": 1038,
+      "inferred_scene": "bedroom_0070"
+    },
+    {
+      "local_evaluation_file": "01048.h5",
+      "inferred_official_zero_based_index": 1047,
+      "inferred_scene": "bedroom_0073"
+    },
+    {
+      "local_evaluation_file": "01049.h5",
+      "inferred_official_zero_based_index": 1048,
+      "inferred_scene": "bedroom_0073"
+    },
+    {
+      "local_evaluation_file": "01052.h5",
+      "inferred_official_zero_based_index": 1051,
+      "inferred_scene": "bedroom_0075"
+    },
+    {
+      "local_evaluation_file": "01053.h5",
+      "inferred_official_zero_based_index": 1052,
+      "inferred_scene": "bedroom_0075"
+    },
+    {
+      "local_evaluation_file": "01057.h5",
+      "inferred_official_zero_based_index": 1056,
+      "inferred_scene": "bedroom_0077"
+    },
+    {
+      "local_evaluation_file": "01058.h5",
+      "inferred_official_zero_based_index": 1057,
+      "inferred_scene": "bedroom_0077"
+    },
+    {
+      "local_evaluation_file": "01075.h5",
+      "inferred_official_zero_based_index": 1074,
+      "inferred_scene": "bedroom_0083"
+    },
+    {
+      "local_evaluation_file": "01076.h5",
+      "inferred_official_zero_based_index": 1075,
+      "inferred_scene": "bedroom_0083"
+    },
+    {
+      "local_evaluation_file": "01077.h5",
+      "inferred_official_zero_based_index": 1076,
+      "inferred_scene": "bedroom_0084"
+    },
+    {
+      "local_evaluation_file": "01078.h5",
+      "inferred_official_zero_based_index": 1077,
+      "inferred_scene": "bedroom_0084"
+    },
+    {
+      "local_evaluation_file": "01079.h5",
+      "inferred_official_zero_based_index": 1078,
+      "inferred_scene": "bedroom_0084"
+    },
+    {
+      "local_evaluation_file": "01080.h5",
+      "inferred_official_zero_based_index": 1079,
+      "inferred_scene": "bedroom_0084"
+    },
+    {
+      "local_evaluation_file": "01081.h5",
+      "inferred_official_zero_based_index": 1080,
+      "inferred_scene": "bedroom_0085"
+    },
+    {
+      "local_evaluation_file": "01082.h5",
+      "inferred_official_zero_based_index": 1081,
+      "inferred_scene": "bedroom_0085"
+    },
+    {
+      "local_evaluation_file": "01083.h5",
+      "inferred_official_zero_based_index": 1082,
+      "inferred_scene": "bedroom_0085"
+    },
+    {
+      "local_evaluation_file": "01084.h5",
+      "inferred_official_zero_based_index": 1083,
+      "inferred_scene": "bedroom_0085"
+    },
+    {
+      "local_evaluation_file": "01088.h5",
+      "inferred_official_zero_based_index": 1087,
+      "inferred_scene": "bedroom_0087"
+    },
+    {
+      "local_evaluation_file": "01089.h5",
+      "inferred_official_zero_based_index": 1088,
+      "inferred_scene": "bedroom_0087"
+    },
+    {
+      "local_evaluation_file": "01090.h5",
+      "inferred_official_zero_based_index": 1089,
+      "inferred_scene": "bedroom_0087"
+    },
+    {
+      "local_evaluation_file": "01091.h5",
+      "inferred_official_zero_based_index": 1090,
+      "inferred_scene": "bedroom_0088"
+    },
+    {
+      "local_evaluation_file": "01092.h5",
+      "inferred_official_zero_based_index": 1091,
+      "inferred_scene": "bedroom_0088"
+    },
+    {
+      "local_evaluation_file": "01093.h5",
+      "inferred_official_zero_based_index": 1092,
+      "inferred_scene": "bedroom_0088"
+    },
+    {
+      "local_evaluation_file": "01094.h5",
+      "inferred_official_zero_based_index": 1093,
+      "inferred_scene": "bedroom_0089"
+    },
+    {
+      "local_evaluation_file": "01095.h5",
+      "inferred_official_zero_based_index": 1094,
+      "inferred_scene": "bedroom_0089"
+    },
+    {
+      "local_evaluation_file": "01096.h5",
+      "inferred_official_zero_based_index": 1095,
+      "inferred_scene": "bedroom_0089"
+    },
+    {
+      "local_evaluation_file": "01098.h5",
+      "inferred_official_zero_based_index": 1097,
+      "inferred_scene": "bedroom_0091"
+    },
+    {
+      "local_evaluation_file": "01099.h5",
+      "inferred_official_zero_based_index": 1098,
+      "inferred_scene": "bedroom_0091"
+    },
+    {
+      "local_evaluation_file": "01100.h5",
+      "inferred_official_zero_based_index": 1099,
+      "inferred_scene": "bedroom_0092"
+    },
+    {
+      "local_evaluation_file": "01101.h5",
+      "inferred_official_zero_based_index": 1100,
+      "inferred_scene": "bedroom_0092"
+    },
+    {
+      "local_evaluation_file": "01102.h5",
+      "inferred_official_zero_based_index": 1101,
+      "inferred_scene": "bedroom_0092"
+    },
+    {
+      "local_evaluation_file": "01103.h5",
+      "inferred_official_zero_based_index": 1102,
+      "inferred_scene": "bedroom_0093"
+    },
+    {
+      "local_evaluation_file": "01104.h5",
+      "inferred_official_zero_based_index": 1103,
+      "inferred_scene": "bedroom_0093"
+    },
+    {
+      "local_evaluation_file": "01106.h5",
+      "inferred_official_zero_based_index": 1105,
+      "inferred_scene": "bedroom_0095"
+    },
+    {
+      "local_evaluation_file": "01107.h5",
+      "inferred_official_zero_based_index": 1106,
+      "inferred_scene": "bedroom_0095"
+    },
+    {
+      "local_evaluation_file": "01108.h5",
+      "inferred_official_zero_based_index": 1107,
+      "inferred_scene": "bedroom_0095"
+    },
+    {
+      "local_evaluation_file": "01109.h5",
+      "inferred_official_zero_based_index": 1108,
+      "inferred_scene": "bedroom_0095"
+    },
+    {
+      "local_evaluation_file": "01117.h5",
+      "inferred_official_zero_based_index": 1116,
+      "inferred_scene": "bedroom_0099"
+    },
+    {
+      "local_evaluation_file": "01118.h5",
+      "inferred_official_zero_based_index": 1117,
+      "inferred_scene": "bedroom_0099"
+    },
+    {
+      "local_evaluation_file": "01119.h5",
+      "inferred_official_zero_based_index": 1118,
+      "inferred_scene": "bedroom_0099"
+    },
+    {
+      "local_evaluation_file": "01123.h5",
+      "inferred_official_zero_based_index": 1122,
+      "inferred_scene": "bedroom_0101"
+    },
+    {
+      "local_evaluation_file": "01124.h5",
+      "inferred_official_zero_based_index": 1123,
+      "inferred_scene": "bedroom_0101"
+    },
+    {
+      "local_evaluation_file": "01125.h5",
+      "inferred_official_zero_based_index": 1124,
+      "inferred_scene": "bedroom_0101"
+    },
+    {
+      "local_evaluation_file": "01126.h5",
+      "inferred_official_zero_based_index": 1125,
+      "inferred_scene": "bedroom_0101"
+    },
+    {
+      "local_evaluation_file": "01127.h5",
+      "inferred_official_zero_based_index": 1126,
+      "inferred_scene": "bedroom_0102"
+    },
+    {
+      "local_evaluation_file": "01128.h5",
+      "inferred_official_zero_based_index": 1127,
+      "inferred_scene": "bedroom_0102"
+    },
+    {
+      "local_evaluation_file": "01129.h5",
+      "inferred_official_zero_based_index": 1128,
+      "inferred_scene": "bedroom_0103"
+    },
+    {
+      "local_evaluation_file": "01130.h5",
+      "inferred_official_zero_based_index": 1129,
+      "inferred_scene": "bedroom_0103"
+    },
+    {
+      "local_evaluation_file": "01131.h5",
+      "inferred_official_zero_based_index": 1130,
+      "inferred_scene": "bedroom_0103"
+    },
+    {
+      "local_evaluation_file": "01135.h5",
+      "inferred_official_zero_based_index": 1134,
+      "inferred_scene": "bedroom_0105"
+    },
+    {
+      "local_evaluation_file": "01136.h5",
+      "inferred_official_zero_based_index": 1135,
+      "inferred_scene": "bedroom_0105"
+    },
+    {
+      "local_evaluation_file": "01144.h5",
+      "inferred_official_zero_based_index": 1143,
+      "inferred_scene": "bedroom_0108"
+    },
+    {
+      "local_evaluation_file": "01145.h5",
+      "inferred_official_zero_based_index": 1144,
+      "inferred_scene": "bedroom_0108"
+    },
+    {
+      "local_evaluation_file": "01146.h5",
+      "inferred_official_zero_based_index": 1145,
+      "inferred_scene": "bedroom_0108"
+    },
+    {
+      "local_evaluation_file": "01147.h5",
+      "inferred_official_zero_based_index": 1146,
+      "inferred_scene": "bedroom_0109"
+    },
+    {
+      "local_evaluation_file": "01148.h5",
+      "inferred_official_zero_based_index": 1147,
+      "inferred_scene": "bedroom_0109"
+    },
+    {
+      "local_evaluation_file": "01149.h5",
+      "inferred_official_zero_based_index": 1148,
+      "inferred_scene": "bedroom_0109"
+    },
+    {
+      "local_evaluation_file": "01150.h5",
+      "inferred_official_zero_based_index": 1149,
+      "inferred_scene": "bedroom_0110"
+    },
+    {
+      "local_evaluation_file": "01151.h5",
+      "inferred_official_zero_based_index": 1150,
+      "inferred_scene": "bedroom_0110"
+    },
+    {
+      "local_evaluation_file": "01152.h5",
+      "inferred_official_zero_based_index": 1151,
+      "inferred_scene": "bedroom_0110"
+    },
+    {
+      "local_evaluation_file": "01153.h5",
+      "inferred_official_zero_based_index": 1152,
+      "inferred_scene": "bedroom_0111"
+    },
+    {
+      "local_evaluation_file": "01154.h5",
+      "inferred_official_zero_based_index": 1153,
+      "inferred_scene": "bedroom_0111"
+    },
+    {
+      "local_evaluation_file": "01155.h5",
+      "inferred_official_zero_based_index": 1154,
+      "inferred_scene": "bedroom_0111"
+    },
+    {
+      "local_evaluation_file": "01156.h5",
+      "inferred_official_zero_based_index": 1155,
+      "inferred_scene": "bedroom_0112"
+    },
+    {
+      "local_evaluation_file": "01157.h5",
+      "inferred_official_zero_based_index": 1156,
+      "inferred_scene": "bedroom_0112"
+    },
+    {
+      "local_evaluation_file": "01158.h5",
+      "inferred_official_zero_based_index": 1157,
+      "inferred_scene": "bedroom_0112"
+    },
+    {
+      "local_evaluation_file": "01162.h5",
+      "inferred_official_zero_based_index": 1161,
+      "inferred_scene": "bedroom_0114"
+    },
+    {
+      "local_evaluation_file": "01163.h5",
+      "inferred_official_zero_based_index": 1162,
+      "inferred_scene": "bedroom_0114"
+    },
+    {
+      "local_evaluation_file": "01164.h5",
+      "inferred_official_zero_based_index": 1163,
+      "inferred_scene": "bedroom_0114"
+    },
+    {
+      "local_evaluation_file": "01165.h5",
+      "inferred_official_zero_based_index": 1164,
+      "inferred_scene": "bedroom_0115"
+    },
+    {
+      "local_evaluation_file": "01166.h5",
+      "inferred_official_zero_based_index": 1165,
+      "inferred_scene": "bedroom_0115"
+    },
+    {
+      "local_evaluation_file": "01167.h5",
+      "inferred_official_zero_based_index": 1166,
+      "inferred_scene": "bedroom_0115"
+    },
+    {
+      "local_evaluation_file": "01170.h5",
+      "inferred_official_zero_based_index": 1169,
+      "inferred_scene": "bedroom_0117"
+    },
+    {
+      "local_evaluation_file": "01171.h5",
+      "inferred_official_zero_based_index": 1170,
+      "inferred_scene": "bedroom_0117"
+    },
+    {
+      "local_evaluation_file": "01174.h5",
+      "inferred_official_zero_based_index": 1173,
+      "inferred_scene": "bedroom_0119"
+    },
+    {
+      "local_evaluation_file": "01175.h5",
+      "inferred_official_zero_based_index": 1174,
+      "inferred_scene": "bedroom_0119"
+    },
+    {
+      "local_evaluation_file": "01176.h5",
+      "inferred_official_zero_based_index": 1175,
+      "inferred_scene": "bedroom_0119"
+    },
+    {
+      "local_evaluation_file": "01179.h5",
+      "inferred_official_zero_based_index": 1178,
+      "inferred_scene": "bedroom_0121"
+    },
+    {
+      "local_evaluation_file": "01180.h5",
+      "inferred_official_zero_based_index": 1179,
+      "inferred_scene": "bedroom_0121"
+    },
+    {
+      "local_evaluation_file": "01181.h5",
+      "inferred_official_zero_based_index": 1180,
+      "inferred_scene": "bedroom_0122"
+    },
+    {
+      "local_evaluation_file": "01182.h5",
+      "inferred_official_zero_based_index": 1181,
+      "inferred_scene": "bedroom_0122"
+    },
+    {
+      "local_evaluation_file": "01183.h5",
+      "inferred_official_zero_based_index": 1182,
+      "inferred_scene": "bedroom_0123"
+    },
+    {
+      "local_evaluation_file": "01184.h5",
+      "inferred_official_zero_based_index": 1183,
+      "inferred_scene": "bedroom_0123"
+    },
+    {
+      "local_evaluation_file": "01192.h5",
+      "inferred_official_zero_based_index": 1191,
+      "inferred_scene": "bedroom_0127"
+    },
+    {
+      "local_evaluation_file": "01193.h5",
+      "inferred_official_zero_based_index": 1192,
+      "inferred_scene": "bedroom_0127"
+    },
+    {
+      "local_evaluation_file": "01194.h5",
+      "inferred_official_zero_based_index": 1193,
+      "inferred_scene": "bedroom_0127"
+    },
+    {
+      "local_evaluation_file": "01195.h5",
+      "inferred_official_zero_based_index": 1194,
+      "inferred_scene": "bedroom_0128"
+    },
+    {
+      "local_evaluation_file": "01196.h5",
+      "inferred_official_zero_based_index": 1195,
+      "inferred_scene": "bedroom_0128"
+    },
+    {
+      "local_evaluation_file": "01201.h5",
+      "inferred_official_zero_based_index": 1200,
+      "inferred_scene": "living_room_0025"
+    },
+    {
+      "local_evaluation_file": "01202.h5",
+      "inferred_official_zero_based_index": 1201,
+      "inferred_scene": "living_room_0025"
+    },
+    {
+      "local_evaluation_file": "01203.h5",
+      "inferred_official_zero_based_index": 1202,
+      "inferred_scene": "living_room_0025"
+    },
+    {
+      "local_evaluation_file": "01204.h5",
+      "inferred_official_zero_based_index": 1203,
+      "inferred_scene": "living_room_0026"
+    },
+    {
+      "local_evaluation_file": "01205.h5",
+      "inferred_official_zero_based_index": 1204,
+      "inferred_scene": "living_room_0026"
+    },
+    {
+      "local_evaluation_file": "01206.h5",
+      "inferred_official_zero_based_index": 1205,
+      "inferred_scene": "living_room_0027"
+    },
+    {
+      "local_evaluation_file": "01207.h5",
+      "inferred_official_zero_based_index": 1206,
+      "inferred_scene": "living_room_0027"
+    },
+    {
+      "local_evaluation_file": "01208.h5",
+      "inferred_official_zero_based_index": 1207,
+      "inferred_scene": "living_room_0027"
+    },
+    {
+      "local_evaluation_file": "01209.h5",
+      "inferred_official_zero_based_index": 1208,
+      "inferred_scene": "living_room_0028"
+    },
+    {
+      "local_evaluation_file": "01210.h5",
+      "inferred_official_zero_based_index": 1209,
+      "inferred_scene": "living_room_0028"
+    },
+    {
+      "local_evaluation_file": "01211.h5",
+      "inferred_official_zero_based_index": 1210,
+      "inferred_scene": "living_room_0028"
+    },
+    {
+      "local_evaluation_file": "01212.h5",
+      "inferred_official_zero_based_index": 1211,
+      "inferred_scene": "living_room_0028"
+    },
+    {
+      "local_evaluation_file": "01216.h5",
+      "inferred_official_zero_based_index": 1215,
+      "inferred_scene": "living_room_0030"
+    },
+    {
+      "local_evaluation_file": "01217.h5",
+      "inferred_official_zero_based_index": 1216,
+      "inferred_scene": "living_room_0030"
+    },
+    {
+      "local_evaluation_file": "01218.h5",
+      "inferred_official_zero_based_index": 1217,
+      "inferred_scene": "living_room_0031"
+    },
+    {
+      "local_evaluation_file": "01219.h5",
+      "inferred_official_zero_based_index": 1218,
+      "inferred_scene": "living_room_0031"
+    },
+    {
+      "local_evaluation_file": "01220.h5",
+      "inferred_official_zero_based_index": 1219,
+      "inferred_scene": "living_room_0031"
+    },
+    {
+      "local_evaluation_file": "01226.h5",
+      "inferred_official_zero_based_index": 1225,
+      "inferred_scene": "living_room_0034"
+    },
+    {
+      "local_evaluation_file": "01227.h5",
+      "inferred_official_zero_based_index": 1226,
+      "inferred_scene": "living_room_0034"
+    },
+    {
+      "local_evaluation_file": "01228.h5",
+      "inferred_official_zero_based_index": 1227,
+      "inferred_scene": "living_room_0034"
+    },
+    {
+      "local_evaluation_file": "01229.h5",
+      "inferred_official_zero_based_index": 1228,
+      "inferred_scene": "living_room_0034"
+    },
+    {
+      "local_evaluation_file": "01230.h5",
+      "inferred_official_zero_based_index": 1229,
+      "inferred_scene": "living_room_0034"
+    },
+    {
+      "local_evaluation_file": "01233.h5",
+      "inferred_official_zero_based_index": 1232,
+      "inferred_scene": "living_room_0036"
+    },
+    {
+      "local_evaluation_file": "01234.h5",
+      "inferred_official_zero_based_index": 1233,
+      "inferred_scene": "living_room_0036"
+    },
+    {
+      "local_evaluation_file": "01235.h5",
+      "inferred_official_zero_based_index": 1234,
+      "inferred_scene": "living_room_0036"
+    },
+    {
+      "local_evaluation_file": "01247.h5",
+      "inferred_official_zero_based_index": 1246,
+      "inferred_scene": "living_room_0041"
+    },
+    {
+      "local_evaluation_file": "01248.h5",
+      "inferred_official_zero_based_index": 1247,
+      "inferred_scene": "living_room_0041"
+    },
+    {
+      "local_evaluation_file": "01249.h5",
+      "inferred_official_zero_based_index": 1248,
+      "inferred_scene": "living_room_0041"
+    },
+    {
+      "local_evaluation_file": "01250.h5",
+      "inferred_official_zero_based_index": 1249,
+      "inferred_scene": "living_room_0041"
+    },
+    {
+      "local_evaluation_file": "01254.h5",
+      "inferred_official_zero_based_index": 1253,
+      "inferred_scene": "living_room_0043"
+    },
+    {
+      "local_evaluation_file": "01255.h5",
+      "inferred_official_zero_based_index": 1254,
+      "inferred_scene": "living_room_0043"
+    },
+    {
+      "local_evaluation_file": "01256.h5",
+      "inferred_official_zero_based_index": 1255,
+      "inferred_scene": "living_room_0043"
+    },
+    {
+      "local_evaluation_file": "01257.h5",
+      "inferred_official_zero_based_index": 1256,
+      "inferred_scene": "living_room_0043"
+    },
+    {
+      "local_evaluation_file": "01258.h5",
+      "inferred_official_zero_based_index": 1257,
+      "inferred_scene": "living_room_0044"
+    },
+    {
+      "local_evaluation_file": "01259.h5",
+      "inferred_official_zero_based_index": 1258,
+      "inferred_scene": "living_room_0044"
+    },
+    {
+      "local_evaluation_file": "01260.h5",
+      "inferred_official_zero_based_index": 1259,
+      "inferred_scene": "living_room_0044"
+    },
+    {
+      "local_evaluation_file": "01261.h5",
+      "inferred_official_zero_based_index": 1260,
+      "inferred_scene": "living_room_0044"
+    },
+    {
+      "local_evaluation_file": "01262.h5",
+      "inferred_official_zero_based_index": 1261,
+      "inferred_scene": "living_room_0045"
+    },
+    {
+      "local_evaluation_file": "01263.h5",
+      "inferred_official_zero_based_index": 1262,
+      "inferred_scene": "living_room_0045"
+    },
+    {
+      "local_evaluation_file": "01264.h5",
+      "inferred_official_zero_based_index": 1263,
+      "inferred_scene": "living_room_0045"
+    },
+    {
+      "local_evaluation_file": "01265.h5",
+      "inferred_official_zero_based_index": 1264,
+      "inferred_scene": "living_room_0045"
+    },
+    {
+      "local_evaluation_file": "01275.h5",
+      "inferred_official_zero_based_index": 1274,
+      "inferred_scene": "living_room_0048"
+    },
+    {
+      "local_evaluation_file": "01276.h5",
+      "inferred_official_zero_based_index": 1275,
+      "inferred_scene": "living_room_0048"
+    },
+    {
+      "local_evaluation_file": "01277.h5",
+      "inferred_official_zero_based_index": 1276,
+      "inferred_scene": "living_room_0049"
+    },
+    {
+      "local_evaluation_file": "01278.h5",
+      "inferred_official_zero_based_index": 1277,
+      "inferred_scene": "living_room_0049"
+    },
+    {
+      "local_evaluation_file": "01279.h5",
+      "inferred_official_zero_based_index": 1278,
+      "inferred_scene": "living_room_0049"
+    },
+    {
+      "local_evaluation_file": "01280.h5",
+      "inferred_official_zero_based_index": 1279,
+      "inferred_scene": "living_room_0049"
+    },
+    {
+      "local_evaluation_file": "01285.h5",
+      "inferred_official_zero_based_index": 1284,
+      "inferred_scene": "living_room_0051"
+    },
+    {
+      "local_evaluation_file": "01286.h5",
+      "inferred_official_zero_based_index": 1285,
+      "inferred_scene": "living_room_0051"
+    },
+    {
+      "local_evaluation_file": "01287.h5",
+      "inferred_official_zero_based_index": 1286,
+      "inferred_scene": "living_room_0051"
+    },
+    {
+      "local_evaluation_file": "01288.h5",
+      "inferred_official_zero_based_index": 1287,
+      "inferred_scene": "living_room_0051"
+    },
+    {
+      "local_evaluation_file": "01289.h5",
+      "inferred_official_zero_based_index": 1288,
+      "inferred_scene": "living_room_0052"
+    },
+    {
+      "local_evaluation_file": "01290.h5",
+      "inferred_official_zero_based_index": 1289,
+      "inferred_scene": "living_room_0052"
+    },
+    {
+      "local_evaluation_file": "01291.h5",
+      "inferred_official_zero_based_index": 1290,
+      "inferred_scene": "living_room_0053"
+    },
+    {
+      "local_evaluation_file": "01292.h5",
+      "inferred_official_zero_based_index": 1291,
+      "inferred_scene": "living_room_0053"
+    },
+    {
+      "local_evaluation_file": "01293.h5",
+      "inferred_official_zero_based_index": 1292,
+      "inferred_scene": "living_room_0053"
+    },
+    {
+      "local_evaluation_file": "01294.h5",
+      "inferred_official_zero_based_index": 1293,
+      "inferred_scene": "living_room_0054"
+    },
+    {
+      "local_evaluation_file": "01295.h5",
+      "inferred_official_zero_based_index": 1294,
+      "inferred_scene": "living_room_0054"
+    },
+    {
+      "local_evaluation_file": "01297.h5",
+      "inferred_official_zero_based_index": 1296,
+      "inferred_scene": "living_room_0056"
+    },
+    {
+      "local_evaluation_file": "01298.h5",
+      "inferred_official_zero_based_index": 1297,
+      "inferred_scene": "living_room_0057"
+    },
+    {
+      "local_evaluation_file": "01299.h5",
+      "inferred_official_zero_based_index": 1298,
+      "inferred_scene": "living_room_0057"
+    },
+    {
+      "local_evaluation_file": "01302.h5",
+      "inferred_official_zero_based_index": 1301,
+      "inferred_scene": "living_room_0059"
+    },
+    {
+      "local_evaluation_file": "01303.h5",
+      "inferred_official_zero_based_index": 1302,
+      "inferred_scene": "living_room_0059"
+    },
+    {
+      "local_evaluation_file": "01304.h5",
+      "inferred_official_zero_based_index": 1303,
+      "inferred_scene": "living_room_0059"
+    },
+    {
+      "local_evaluation_file": "01305.h5",
+      "inferred_official_zero_based_index": 1304,
+      "inferred_scene": "living_room_0059"
+    },
+    {
+      "local_evaluation_file": "01306.h5",
+      "inferred_official_zero_based_index": 1305,
+      "inferred_scene": "living_room_0060"
+    },
+    {
+      "local_evaluation_file": "01307.h5",
+      "inferred_official_zero_based_index": 1306,
+      "inferred_scene": "living_room_0060"
+    },
+    {
+      "local_evaluation_file": "01308.h5",
+      "inferred_official_zero_based_index": 1307,
+      "inferred_scene": "living_room_0061"
+    },
+    {
+      "local_evaluation_file": "01314.h5",
+      "inferred_official_zero_based_index": 1313,
+      "inferred_scene": "living_room_0064"
+    },
+    {
+      "local_evaluation_file": "01315.h5",
+      "inferred_official_zero_based_index": 1314,
+      "inferred_scene": "living_room_0066"
+    },
+    {
+      "local_evaluation_file": "01329.h5",
+      "inferred_official_zero_based_index": 1328,
+      "inferred_scene": "living_room_0072"
+    },
+    {
+      "local_evaluation_file": "01330.h5",
+      "inferred_official_zero_based_index": 1329,
+      "inferred_scene": "living_room_0075"
+    },
+    {
+      "local_evaluation_file": "01331.h5",
+      "inferred_official_zero_based_index": 1330,
+      "inferred_scene": "living_room_0075"
+    },
+    {
+      "local_evaluation_file": "01332.h5",
+      "inferred_official_zero_based_index": 1331,
+      "inferred_scene": "living_room_0076"
+    },
+    {
+      "local_evaluation_file": "01335.h5",
+      "inferred_official_zero_based_index": 1334,
+      "inferred_scene": "living_room_0079"
+    },
+    {
+      "local_evaluation_file": "01336.h5",
+      "inferred_official_zero_based_index": 1335,
+      "inferred_scene": "living_room_0079"
+    },
+    {
+      "local_evaluation_file": "01337.h5",
+      "inferred_official_zero_based_index": 1336,
+      "inferred_scene": "living_room_0079"
+    },
+    {
+      "local_evaluation_file": "01338.h5",
+      "inferred_official_zero_based_index": 1337,
+      "inferred_scene": "living_room_0080"
+    },
+    {
+      "local_evaluation_file": "01339.h5",
+      "inferred_official_zero_based_index": 1338,
+      "inferred_scene": "living_room_0080"
+    },
+    {
+      "local_evaluation_file": "01340.h5",
+      "inferred_official_zero_based_index": 1339,
+      "inferred_scene": "living_room_0080"
+    },
+    {
+      "local_evaluation_file": "01347.h5",
+      "inferred_official_zero_based_index": 1346,
+      "inferred_scene": "dining_room_0003"
+    },
+    {
+      "local_evaluation_file": "01348.h5",
+      "inferred_official_zero_based_index": 1347,
+      "inferred_scene": "dining_room_0003"
+    },
+    {
+      "local_evaluation_file": "01349.h5",
+      "inferred_official_zero_based_index": 1348,
+      "inferred_scene": "dining_room_0003"
+    },
+    {
+      "local_evaluation_file": "01353.h5",
+      "inferred_official_zero_based_index": 1352,
+      "inferred_scene": "dining_room_0005"
+    },
+    {
+      "local_evaluation_file": "01354.h5",
+      "inferred_official_zero_based_index": 1353,
+      "inferred_scene": "dining_room_0005"
+    },
+    {
+      "local_evaluation_file": "01355.h5",
+      "inferred_official_zero_based_index": 1354,
+      "inferred_scene": "dining_room_0006"
+    },
+    {
+      "local_evaluation_file": "01356.h5",
+      "inferred_official_zero_based_index": 1355,
+      "inferred_scene": "dining_room_0006"
+    },
+    {
+      "local_evaluation_file": "01364.h5",
+      "inferred_official_zero_based_index": 1363,
+      "inferred_scene": "dining_room_0009"
+    },
+    {
+      "local_evaluation_file": "01365.h5",
+      "inferred_official_zero_based_index": 1364,
+      "inferred_scene": "dining_room_0009"
+    },
+    {
+      "local_evaluation_file": "01368.h5",
+      "inferred_official_zero_based_index": 1367,
+      "inferred_scene": "dining_room_0011"
+    },
+    {
+      "local_evaluation_file": "01369.h5",
+      "inferred_official_zero_based_index": 1368,
+      "inferred_scene": "dining_room_0011"
+    },
+    {
+      "local_evaluation_file": "01384.h5",
+      "inferred_official_zero_based_index": 1383,
+      "inferred_scene": "dining_room_0017"
+    },
+    {
+      "local_evaluation_file": "01385.h5",
+      "inferred_official_zero_based_index": 1384,
+      "inferred_scene": "dining_room_0017"
+    },
+    {
+      "local_evaluation_file": "01386.h5",
+      "inferred_official_zero_based_index": 1385,
+      "inferred_scene": "dining_room_0017"
+    },
+    {
+      "local_evaluation_file": "01387.h5",
+      "inferred_official_zero_based_index": 1386,
+      "inferred_scene": "dining_room_0018"
+    },
+    {
+      "local_evaluation_file": "01388.h5",
+      "inferred_official_zero_based_index": 1387,
+      "inferred_scene": "dining_room_0018"
+    },
+    {
+      "local_evaluation_file": "01389.h5",
+      "inferred_official_zero_based_index": 1388,
+      "inferred_scene": "dining_room_0018"
+    },
+    {
+      "local_evaluation_file": "01390.h5",
+      "inferred_official_zero_based_index": 1389,
+      "inferred_scene": "dining_room_0018"
+    },
+    {
+      "local_evaluation_file": "01391.h5",
+      "inferred_official_zero_based_index": 1390,
+      "inferred_scene": "dining_room_0018"
+    },
+    {
+      "local_evaluation_file": "01394.h5",
+      "inferred_official_zero_based_index": 1393,
+      "inferred_scene": "dining_room_0020"
+    },
+    {
+      "local_evaluation_file": "01395.h5",
+      "inferred_official_zero_based_index": 1394,
+      "inferred_scene": "dining_room_0020"
+    },
+    {
+      "local_evaluation_file": "01396.h5",
+      "inferred_official_zero_based_index": 1395,
+      "inferred_scene": "dining_room_0020"
+    },
+    {
+      "local_evaluation_file": "01397.h5",
+      "inferred_official_zero_based_index": 1396,
+      "inferred_scene": "dining_room_0021"
+    },
+    {
+      "local_evaluation_file": "01398.h5",
+      "inferred_official_zero_based_index": 1397,
+      "inferred_scene": "dining_room_0021"
+    },
+    {
+      "local_evaluation_file": "01399.h5",
+      "inferred_official_zero_based_index": 1398,
+      "inferred_scene": "dining_room_0021"
+    },
+    {
+      "local_evaluation_file": "01400.h5",
+      "inferred_official_zero_based_index": 1399,
+      "inferred_scene": "dining_room_0022"
+    },
+    {
+      "local_evaluation_file": "01401.h5",
+      "inferred_official_zero_based_index": 1400,
+      "inferred_scene": "dining_room_0022"
+    },
+    {
+      "local_evaluation_file": "01407.h5",
+      "inferred_official_zero_based_index": 1406,
+      "inferred_scene": "dining_room_0025"
+    },
+    {
+      "local_evaluation_file": "01408.h5",
+      "inferred_official_zero_based_index": 1407,
+      "inferred_scene": "dining_room_0025"
+    },
+    {
+      "local_evaluation_file": "01409.h5",
+      "inferred_official_zero_based_index": 1408,
+      "inferred_scene": "dining_room_0025"
+    },
+    {
+      "local_evaluation_file": "01410.h5",
+      "inferred_official_zero_based_index": 1409,
+      "inferred_scene": "dining_room_0025"
+    },
+    {
+      "local_evaluation_file": "01411.h5",
+      "inferred_official_zero_based_index": 1410,
+      "inferred_scene": "dining_room_0025"
+    },
+    {
+      "local_evaluation_file": "01412.h5",
+      "inferred_official_zero_based_index": 1411,
+      "inferred_scene": "dining_room_0026"
+    },
+    {
+      "local_evaluation_file": "01413.h5",
+      "inferred_official_zero_based_index": 1412,
+      "inferred_scene": "dining_room_0026"
+    },
+    {
+      "local_evaluation_file": "01414.h5",
+      "inferred_official_zero_based_index": 1413,
+      "inferred_scene": "dining_room_0026"
+    },
+    {
+      "local_evaluation_file": "01421.h5",
+      "inferred_official_zero_based_index": 1420,
+      "inferred_scene": "dining_room_0030"
+    },
+    {
+      "local_evaluation_file": "01422.h5",
+      "inferred_official_zero_based_index": 1421,
+      "inferred_scene": "dining_room_0030"
+    },
+    {
+      "local_evaluation_file": "01423.h5",
+      "inferred_official_zero_based_index": 1422,
+      "inferred_scene": "dining_room_0030"
+    },
+    {
+      "local_evaluation_file": "01424.h5",
+      "inferred_official_zero_based_index": 1423,
+      "inferred_scene": "dining_room_0030"
+    },
+    {
+      "local_evaluation_file": "01430.h5",
+      "inferred_official_zero_based_index": 1429,
+      "inferred_scene": "dining_room_0032"
+    },
+    {
+      "local_evaluation_file": "01431.h5",
+      "inferred_official_zero_based_index": 1430,
+      "inferred_scene": "dining_room_0032"
+    },
+    {
+      "local_evaluation_file": "01432.h5",
+      "inferred_official_zero_based_index": 1431,
+      "inferred_scene": "dining_room_0032"
+    },
+    {
+      "local_evaluation_file": "01433.h5",
+      "inferred_official_zero_based_index": 1432,
+      "inferred_scene": "dining_room_0032"
+    },
+    {
+      "local_evaluation_file": "01441.h5",
+      "inferred_official_zero_based_index": 1440,
+      "inferred_scene": "dining_room_0035"
+    },
+    {
+      "local_evaluation_file": "01442.h5",
+      "inferred_official_zero_based_index": 1441,
+      "inferred_scene": "dining_room_0035"
+    },
+    {
+      "local_evaluation_file": "01443.h5",
+      "inferred_official_zero_based_index": 1442,
+      "inferred_scene": "dining_room_0035"
+    },
+    {
+      "local_evaluation_file": "01444.h5",
+      "inferred_official_zero_based_index": 1443,
+      "inferred_scene": "dining_room_0036"
+    },
+    {
+      "local_evaluation_file": "01445.h5",
+      "inferred_official_zero_based_index": 1444,
+      "inferred_scene": "dining_room_0036"
+    },
+    {
+      "local_evaluation_file": "01446.h5",
+      "inferred_official_zero_based_index": 1445,
+      "inferred_scene": "dining_room_0036"
+    },
+    {
+      "local_evaluation_file": "01447.h5",
+      "inferred_official_zero_based_index": 1446,
+      "inferred_scene": "dining_room_0036"
+    },
+    {
+      "local_evaluation_file": "01448.h5",
+      "inferred_official_zero_based_index": 1447,
+      "inferred_scene": "dining_room_0036"
+    },
+    {
+      "local_evaluation_file": "01449.h5",
+      "inferred_official_zero_based_index": 1448,
+      "inferred_scene": "dining_room_0036"
+    }
+  ],
+  "remote_requests": 3,
+  "remote_bytes_fetched": 10859185,
+  "limitations": "Unverified indices are inferred from filenames, not exact RGB matched; source names are not proof of independent or same physical locations. Community checkpoint pretraining remains unknown."
+}

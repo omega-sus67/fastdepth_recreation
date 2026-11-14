@@ -1,0 +1,22 @@
+{
+  "scope": "Desktop TensorRT model-only; preallocated zero tensor; excludes preprocessing and transfers",
+  "precision": "fp16",
+  "precision_note": "FP16 tactics enabled; other operations may remain FP32",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "tensorrt": "10.3.0",
+  "torch": "2.9.1+cu128",
+  "checkpoint_sha256": "2d49963b1e1c3b9d81d38b4a61cb81ef08b145ed29d1abc6c98c3b322891b970",
+  "onnx_sha256": "fc765698a6731b7de976e5393501f01013c0439b0c9f036c7bbebcc73df2356c",
+  "engine_sha256": "37e4bb938a6005d5246575e723d14c97f2f5e902380bacc5303a79aa1f94fe36",
+  "warmup": 50,
+  "samples": 500,
+  "median_ms": 0.35866299999999995,
+  "p95_ms": 0.47910754999999994,
+  "p99_ms": 0.49088244999999997,
+  "sample": "00006.h5",
+  "sample_path": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/train/bathroom_0001/00006.h5",
+  "sample_max_abs_diff_vs_pytorch": 0.016961336135864258,
+  "sample_mean_abs_diff_vs_pytorch": 0.0011557083344087005,
+  "model_source": "project_pruning_candidate",
+  "limitations": "One desktop run and one parity sample; not Orin performance, full-set accuracy or end-to-end 33 ms target."
+}

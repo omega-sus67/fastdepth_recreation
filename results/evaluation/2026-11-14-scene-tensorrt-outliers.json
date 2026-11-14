@@ -1,0 +1,222 @@
+{
+  "scope": "Descriptive output differences on tuning images; 0.1 is an exploratory diagnostic threshold in native units, not an acceptance tolerance",
+  "summary_sha256": "9af27e66dc99fbd0002dfc48aeb8380ab77bd8940e650b77f8723cba557f40b0",
+  "per_image_sha256": "4c8c95276657006f326563f6520bdfde1f086fd2f6a34e62e76c8d9791c6f71c",
+  "models": {
+    "original": {
+      "image_count": 445,
+      "images_with_any_pixel_abs_diff_over_0_1": 21,
+      "pixels_abs_diff_over_0_1": 1100,
+      "total_output_pixels": 22328320,
+      "worst_5": [
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00076.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 1.3969478607177734,
+          "mean_abs": 0.005430579556114212,
+          "pixels_over_0_1": 556
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/dining_room_0012/01506.h5",
+          "scene": "dining_room_0012",
+          "max_abs": 0.6693878173828125,
+          "mean_abs": 0.0022103285122358676,
+          "pixels_over_0_1": 28
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/dining_room_0012/01511.h5",
+          "scene": "dining_room_0012",
+          "max_abs": 0.5892620086669922,
+          "mean_abs": 0.002341375548430547,
+          "pixels_over_0_1": 64
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/dining_room_0012/01521.h5",
+          "scene": "dining_room_0012",
+          "max_abs": 0.559262752532959,
+          "mean_abs": 0.0017356837776546575,
+          "pixels_over_0_1": 32
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0041/00346.h5",
+          "scene": "bathroom_0041",
+          "max_abs": 0.4817657470703125,
+          "mean_abs": 0.00403040914163136,
+          "pixels_over_0_1": 24
+        }
+      ]
+    },
+    "weight": {
+      "image_count": 445,
+      "images_with_any_pixel_abs_diff_over_0_1": 19,
+      "pixels_abs_diff_over_0_1": 372,
+      "total_output_pixels": 22328320,
+      "worst_5": [
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0041/00346.h5",
+          "scene": "bathroom_0041",
+          "max_abs": 0.8506507873535156,
+          "mean_abs": 0.0034056399477145646,
+          "pixels_over_0_1": 24
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00056.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.7413311004638672,
+          "mean_abs": 0.002912860192662599,
+          "pixels_over_0_1": 24
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00076.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.6643180847167969,
+          "mean_abs": 0.0038583560713699888,
+          "pixels_over_0_1": 64
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/dining_room_0012/01546.h5",
+          "scene": "dining_room_0012",
+          "max_abs": 0.51824951171875,
+          "mean_abs": 0.0016071073977010591,
+          "pixels_over_0_1": 28
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00041.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.40688514709472656,
+          "mean_abs": 0.0020940436753539406,
+          "pixels_over_0_1": 20
+        }
+      ]
+    },
+    "average_ablation": {
+      "image_count": 445,
+      "images_with_any_pixel_abs_diff_over_0_1": 4,
+      "pixels_abs_diff_over_0_1": 116,
+      "total_output_pixels": 22328320,
+      "worst_5": [
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00041.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.4150199890136719,
+          "mean_abs": 0.0012503348157874175,
+          "pixels_over_0_1": 16
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00086.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.3062705993652344,
+          "mean_abs": 0.0015714402994787206,
+          "pixels_over_0_1": 16
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00076.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.2850494384765625,
+          "mean_abs": 0.0022157963403329557,
+          "pixels_over_0_1": 48
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00056.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.2748603820800781,
+          "mean_abs": 0.001998794046515713,
+          "pixels_over_0_1": 36
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0041/00336.h5",
+          "scene": "bathroom_0041",
+          "max_abs": 0.050881266593933105,
+          "mean_abs": 0.002645774443510386,
+          "pixels_over_0_1": 0
+        }
+      ]
+    },
+    "scene_aware": {
+      "image_count": 445,
+      "images_with_any_pixel_abs_diff_over_0_1": 0,
+      "pixels_abs_diff_over_0_1": 0,
+      "total_output_pixels": 22328320,
+      "worst_5": [
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0041/00336.h5",
+          "scene": "bathroom_0041",
+          "max_abs": 0.062409162521362305,
+          "mean_abs": 0.00248156061325619,
+          "pixels_over_0_1": 0
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/living_room_0035/00781.h5",
+          "scene": "living_room_0035",
+          "max_abs": 0.056786537170410156,
+          "mean_abs": 0.002361559850752962,
+          "pixels_over_0_1": 0
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/kitchen_0050/00861.h5",
+          "scene": "kitchen_0050",
+          "max_abs": 0.051661014556884766,
+          "mean_abs": 0.0017550497562909613,
+          "pixels_over_0_1": 0
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00076.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.047478675842285156,
+          "mean_abs": 0.0015902093953776117,
+          "pixels_over_0_1": 0
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/living_room_0047b/00946.h5",
+          "scene": "living_room_0047b",
+          "max_abs": 0.044542789459228516,
+          "mean_abs": 0.002175933719441599,
+          "pixels_over_0_1": 0
+        }
+      ]
+    },
+    "random": {
+      "image_count": 445,
+      "images_with_any_pixel_abs_diff_over_0_1": 23,
+      "pixels_abs_diff_over_0_1": 392,
+      "total_output_pixels": 22328320,
+      "worst_5": [
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00041.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.7419376373291016,
+          "mean_abs": 0.0019933349186820643,
+          "pixels_over_0_1": 20
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00076.h5",
+          "scene": "bathroom_0050",
+          "max_abs": 0.6106834411621094,
+          "mean_abs": 0.0017475147389483694,
+          "pixels_over_0_1": 20
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0041/00356.h5",
+          "scene": "bathroom_0041",
+          "max_abs": 0.5621490478515625,
+          "mean_abs": 0.003187255623464696,
+          "pixels_over_0_1": 20
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0041/00386.h5",
+          "scene": "bathroom_0041",
+          "max_abs": 0.3878059387207031,
+          "mean_abs": 0.0021291739884668924,
+          "pixels_over_0_1": 16
+        },
+        {
+          "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/dining_room_0012/01506.h5",
+          "scene": "dining_room_0012",
+          "max_abs": 0.3643608093261719,
+          "mean_abs": 0.0016779083169388529,
+          "pixels_over_0_1": 56
+        }
+      ]
+    }
+  }
+}

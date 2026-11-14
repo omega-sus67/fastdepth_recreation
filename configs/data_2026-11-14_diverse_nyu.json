@@ -1,0 +1,11 @@
+{
+  "purpose": "Acquire a larger scene-separated NYU mirror subset while keeping disk use bounded",
+  "declared_before_acquisition": "2026-11-14",
+  "dataset_revision": "50579a0b591445f91bf7269b28611ad1cc6a05d2",
+  "source": "sayakpaul/nyu_depth_v2 pinned training tar shards",
+  "selection": {"windows_per_shard": 8, "window_mib": 32, "maximum_samples_per_window": 24, "scene_split_seed": 42, "tuning_scene_fraction": 0.2},
+  "selection_details": "Offsets evenly spaced through each shard; up to 24 complete HDF5 files at evenly spaced positions inside each bounded window. Scene split occurs after acquisition using a seeded shuffle of sorted names; not a uniform random frame or scene sample.",
+  "exclude_prior_scenes_from": "data/nyu_depth_v2/multiscene_2026-11-14-expanded/manifest.json",
+  "validation": "Check exact decoded RGB matches against local evaluation; retain failed ranges and report unknown near-duplicate and evaluation-scene overlap.",
+  "limitations": "No independent upstream per-member checksums or full shard downloads; tar range validity and local sample hashes do not prove upstream dataset identity."
+}

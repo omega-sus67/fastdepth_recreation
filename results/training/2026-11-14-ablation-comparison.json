@@ -1,0 +1,29 @@
+{
+  "scope": "Exploratory tuning results on 64 correlated images from two scenes, native units; not final evaluation or Orin",
+  "runs": {
+    "control": {
+      "path": "results/training/2026-11-14-expanded-control/summary.json",
+      "sha256": "5202c6caae64854a102a2126db3b47b80f39bd1f16929810d9ed484b3fc35f53",
+      "before_mean_image_rmse": 0.4289980908946364,
+      "after_mean_image_rmse": 0.45439190689795994
+    },
+    "192": {
+      "path": "results/training/2026-11-14-expanded-192/summary.json",
+      "sha256": "e8d74eb3cd29245b70662a14c182449de9b6be5509bed81629799b00c2ac4d39",
+      "before_mean_image_rmse": 0.5736949465768599,
+      "after_mean_image_rmse": 0.4757360832660875
+    },
+    "184": {
+      "path": "results/training/2026-11-14-expanded-184/summary.json",
+      "sha256": "8efe539954d927993d4a6b40f7d2005e543dd9bb230ba5bb48c286a6b40bb3bc",
+      "before_mean_image_rmse": 0.7111718101418874,
+      "after_mean_image_rmse": 0.5289551390717857
+    },
+    "176": {
+      "path": "results/training/2026-11-14-expanded-176/summary.json",
+      "sha256": "2128c7ae6ea176c5b962117e554f46705c9451d1b35886f46c4f5f891390c806",
+      "before_mean_image_rmse": 0.9093946337987164,
+      "after_mean_image_rmse": 0.5877360949697379
+    }
+  }
+}

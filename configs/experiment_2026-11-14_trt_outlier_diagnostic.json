@@ -1,0 +1,10 @@
+{
+  "purpose": "Post-hoc runtime diagnosis of the largest original-model TensorRT output difference",
+  "declared_after_tuning_outlier_inspection": "2026-11-14",
+  "checkpoint": "results/training/2026-11-14-scene-aware-original-42/checkpoint.pth",
+  "onnx": "exports/2026-11-14-scene-aware-original-42-corrected/model.onnx",
+  "sample": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/tune/bathroom_0050/00076.h5",
+  "known_observation": "FP16-enabled engine differs from PyTorch FP32 by max 1.3969478607177734 native units for this sample.",
+  "test": "Build a desktop TensorRT engine without enabling FP16 tactics and measure output difference versus the same PyTorch model on this sample. TensorRT default TF32 is not explicitly controlled. A changed result would implicate runtime/precision choice but would not isolate a single operation or prove root cause.",
+  "limitations": "One post-selected tuning image; not an independent performance test; not Orin; not an acceptance tolerance."
+}
