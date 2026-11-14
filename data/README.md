@@ -1,6 +1,6 @@
 # Dataset navigation
 
-The project uses NYU Depth V2-derived images from a public mirror. We have **not downloaded the complete training dataset**. The historical split relationship and full depth conversion chain of the local mirror remain unverified. See [dataset and preprocessing notes](../docs/learning/dataset_preprocessing.md) for source, transformations and limitations.
+The project uses NYU Depth V2-derived images from a public mirror. We have **not downloaded the complete training dataset**. The historical split relationship and full depth conversion chain of the local mirror remain unverified. See dataset and preprocessing notes (local documentation) for source, transformations and limitations.
 
 | Location | Role | Status and caution |
 | --- | --- | --- |

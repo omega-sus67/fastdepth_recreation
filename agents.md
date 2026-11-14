@@ -4,7 +4,7 @@
 
 - The deployment target is **Jetson Orin Nano**. Do not introduce original Jetson Nano or other-board deliverables without a user request.
 - The current development machine has an RTX 3060 Laptop GPU with 6 GB VRAM. The Orin Nano is unavailable; finish independent desktop implementation and experiments while hardware tasks remain pending.
-- Read `docs/immediate_priority.md` before starting implementation and follow the first actionable task. Use `docs/fastdepth_edge_ai_plan.md` as the single authoritative implementation and submission plan.
+- When the locally retained `docs/` directory is available, read `docs/immediate_priority.md` before starting implementation and follow the first actionable task. Use `docs/fastdepth_edge_ai_plan.md` as the single authoritative implementation and submission plan. The documentation is not included in the public Git tree.
 - Prioritize runnable software and reproducible experiments. Build detailed teaching explanations alongside implementation; the user does not need to finish reading before work can proceed.
 
 ## Explain every implementation and decision
@@ -68,7 +68,7 @@
 
 ## Repository contents
 
-- Keep planning documents, papers, source, checkpoints, exports, and experiment results in scope for version control. The user requested that datasets remain local and not be pushed to GitHub.
+- Keep source, checkpoints, exports, and experiment results in scope for version control. The user requested that datasets, the `docs/` directory, and the `papers/` directory remain local and not be pushed to GitHub.
 - Use `.gitignore` for local datasets, environments, installed dependency directories, caches, build products, and local editor/OS files. Preserve papers, checkpoints, results, and vendored source.
 - Use Git LFS for files exceeding the host's ordinary Git size limits and preserve existing LFS tracking. Never delete project artifacts merely to reduce repository size.
 - Preserve user changes and upstream licenses. Make completion claims only for work actually performed and verified.

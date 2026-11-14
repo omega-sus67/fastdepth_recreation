@@ -1,0 +1,24 @@
+{
+  "description": "synthetic RGB tensor, NCHW float32 0..1, no image preprocessing",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "output_shape": [
+    1,
+    1,
+    224,
+    224
+  ],
+  "pytorch_onnx_max_absolute_difference": 2.2649765014648438e-06,
+  "hashes_sha256": {
+    "exports/2026-11-13-community-pruned/model.onnx": "2b1eb9da74437739966089e17324f4876955b818d0aa863b39ab5a1a7311cda2",
+    "exports/jetson-smoke/rgb.float32.bin": "cc6d1609e2c93425eca14a9c81535466a2450ba56165efd56d721df239843626",
+    "exports/jetson-smoke/reference-pytorch.npy": "ebf440e3e272122173be05e83ba6a5934c758d1491d4e5b9b7c0afa15119cecd",
+    "exports/jetson-smoke/reference-onnx.npy": "4066eed0deccdd4f8c70cfd6e5d9f3b52c0a370bbeeba0823ab5135d775f944b"
+  },
+  "units": "unverified",
+  "purpose": "runtime smoke and parity only, not accuracy"
+}

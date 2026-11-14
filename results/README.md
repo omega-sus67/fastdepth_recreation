@@ -1,6 +1,6 @@
 # Results and evidence
 
-Start with the [experiment index](../docs/experiment_index.md) for a question-by-question overview, the relevant settings, checkpoints, outcomes and links to raw measurements. For the history of decisions, failures and limitations, read the [progress report](../docs/progress_report.md). The [evidence index](evidence_index.csv) maps stable evidence IDs to artifact paths and SHA-256 fingerprints.
+Start with the experiment index (local documentation) for a question-by-question overview, the relevant settings, checkpoints, outcomes and links to raw measurements. For the history of decisions, failures and limitations, read the progress report (local documentation). The [evidence index](evidence_index.csv) maps stable evidence IDs to artifact paths and SHA-256 fingerprints.
 
 | Folder | What it contains |
 | --- | --- |

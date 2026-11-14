@@ -1,6 +1,8 @@
 # Python environments and installed dependencies
 # Local datasets are retained on disk but excluded from GitHub.
 data/nyu_depth_v2/
+docs/
+papers/
 
 .venv/
 .venv-desktop/

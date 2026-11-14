@@ -1,6 +1,6 @@
 # Script navigation
 
-Run project Python scripts from the repository root with `bash scripts/python.sh scripts/<name>.py ...`; the wrapper selects the independent desktop environment and avoids unrelated Python paths. Most scripts offer `--help`. See the [setup notes](../docs/learning/setup.md), [experiment index](../docs/experiment_index.md) and [working rules](../agents.md) for context and reproducibility requirements.
+Run project Python scripts from the repository root with `bash scripts/python.sh scripts/<name>.py ...`; the wrapper selects the independent desktop environment and avoids unrelated Python paths. Most scripts offer `--help`. See the setup notes (local documentation), experiment index (local documentation) and [working rules](../agents.md) for context and reproducibility requirements.
 
 ## Setup and models
 
@@ -49,5 +49,6 @@ Run project Python scripts from the repository root with `bash scripts/python.sh
 | [benchmark_pytorch.py](benchmark_pytorch.py), [benchmark_tensorrt.py](benchmark_tensorrt.py) | Save model-only desktop timing samples and summaries. |
 | [replay_tensorrt_timing.py](replay_tensorrt_timing.py) | Repeat timing on already-built desktop engines in a recorded order. |
 | [build_jetson_engine.sh](build_jetson_engine.sh) | Prepare a guarded TensorRT engine build on a Jetson; it has not yet been tested on the target board. |
+| [run_tensorrt_smoke.py](run_tensorrt_smoke.py) | Run a fixed synthetic input through a local engine and compare numerical output; tested on desktop, not Jetson. |
 
-Use a new output path for each experiment. The script's help and saved configuration define exact arguments; examples in [training](../docs/learning/training.md) and the [experiment index](../docs/experiment_index.md) show existing workflows. Desktop setup and engine results do not establish Jetson compatibility or performance.
+Use a new output path for each experiment. The script's help and saved configuration define exact arguments; examples in training (local documentation) and the experiment index (local documentation) show existing workflows. Desktop setup and engine results do not establish Jetson compatibility or performance.
