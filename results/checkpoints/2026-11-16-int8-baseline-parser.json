@@ -1,9 +1,0 @@
-{
-  "model": "exports/sweep/baseline-int8/model.onnx",
-  "parser_success": false,
-  "errors": [
-    "In node 0 with name: conv0.0.weight_bias_DequantizeLinear and operator: DequantizeLinear (parseNode): INVALID_NODE: Invalid Node - conv0.0.weight_bias_DequantizeLinear\nIDequantizeLayer::setPrecision: Error Code 3: API Usage Error (Parameter check failed, condition: isQuantized(dataType). A DequantizeLayer can only run in DataType::kINT8, DataType::kFP8 or DataType::kINT4precision)"
-  ],
-  "tensorrt": "10.3.0",
-  "scope": "desktop parser only; not engine build, numerical validation or Orin"
-}

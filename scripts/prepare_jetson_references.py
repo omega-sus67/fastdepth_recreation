@@ -27,8 +27,10 @@ def main():
     manifest = json.loads((a.data / 'manifest.json').read_text())
     if sha(a.data / 'inputs.npy') != manifest['inputs_sha256']: raise ValueError('input hash mismatch')
     inputs = np.load(a.data / 'inputs.npy', mmap_mode='r', allow_pickle=False); n = len(inputs)
-    selection = json.loads((ROOT / 'configs/selection_2026-11-16_simple.json').read_text())
-    models = {name: selection[name] for name in ('baseline', 'student')}
+    models = {
+        'baseline': 'checkpoints/converted/community-skipadd-pruned.pth',
+        'student': 'results/training/2026-11-16-latency-176/checkpoint.pth',
+    }
     if a.model:
         models = {}
         for item in a.model:

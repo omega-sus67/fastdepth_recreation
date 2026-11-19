@@ -1,9 +1,0 @@
-{
-  "scope": "Reconstruct RMSE and maximum output differences from saved paired per-image rows; does not prove precision suitability or scene independence",
-  "summary_sha256": "9af27e66dc99fbd0002dfc48aeb8380ab77bd8940e650b77f8723cba557f40b0",
-  "per_image_sha256": "4c8c95276657006f326563f6520bdfde1f086fd2f6a34e62e76c8d9791c6f71c",
-  "models": 5,
-  "rows": 4450,
-  "max_aggregation_difference": 2.220446049250313e-16,
-  "errors": []
-}

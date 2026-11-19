@@ -1,9 +1,0 @@
-{
-  "local_package_snapshot_unchanged": true,
-  "torch_version": "2.9.1+cu130",
-  "torch_origin": "/home/omega_sus/droidrun/venv/lib/python3.12/site-packages/torch/__init__.py",
-  "torchvision_version": "0.24.1+cu130",
-  "torchvision_origin": "/home/omega_sus/droidrun/venv/lib/python3.12/site-packages/torchvision/__init__.py",
-  "cuda_available": true,
-  "cuda_smoke_value": 16.0
-}

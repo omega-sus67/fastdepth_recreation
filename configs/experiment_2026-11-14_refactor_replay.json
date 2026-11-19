@@ -1,9 +1,0 @@
-{
-  "purpose": "Verify that the saved original seed-43 model state is reproducible using the refactored training script",
-  "declared_before_replay": "2026-11-14",
-  "protocol": "configs/experiment_2026-11-14_scene_aware.json",
-  "source_checkpoint": "checkpoints/converted/community-skipadd-pruned.pth",
-  "existing_result": "results/training/2026-11-14-scene-aware-original-43/checkpoint.pth",
-  "seed": 43,
-  "comparison": "Compare every model state tensor and record maximum absolute difference. Does not establish exact optimizer/RNG state, all seeds, all methods, or general device-level determinism."
-}

@@ -33,7 +33,7 @@
 - Record the objective/hypothesis, actual command or run ID, model/checkpoint/configuration/manifest identifiers, device/runtime/precision, seed where applicable, observations, measured values with units/sample counts, diagnosis, response, validation, evidence paths, report relevance and remaining limits. Separate a confirmed cause from a hypothesis.
 - Record event date separately from date recorded when compiling history later. Capture future failures' stdout/stderr and exit status when practical; label reconstructed session history and missing logs explicitly. Never fabricate evidence or claim a new run solely because documentation was updated.
 - Distinguish tooling errors from scientific negative results, random/synthetic checks from pretrained accuracy, inherited checkpoint metrics from remeasured results, and desktop results from Orin measurements. State what each result permits us to claim and which report/contribution sections still need evidence.
-- Preserve important evidence in stable run-specific paths before a checker overwrites a latest-result file. Do not overwrite `results/history/2026-11-12-phase-a/` or other historical baselines with new runs; add a new dated/run-specific snapshot and mark superseding findings in the history.
+- Preserve important evidence in stable run-specific paths before a checker overwrites a latest-result file. Keep the working results focused on the four model widths and their FP32, FP16 and INT8 runs. Earlier tracked experiment artifacts removed during the 12-model cleanup can be inspected in Git commit `6c947dd`; do not silently recreate them in the working tree.
 - Maintain `results/evidence_index.csv` with progress IDs, claim scope, artifact paths, SHA-256 fingerprints, report placement and limitations. Keep fingerprints consistent with the referenced files; the progress report is a narrative source, not a substitute for raw measurements.
 - Routine read-only work without a new finding does not need a history entry. Documentation-only progress must not be counted as a model experiment or scientific contribution.
 
@@ -70,5 +70,5 @@
 
 - Keep source, checkpoints, exports, and experiment results in scope for version control. The user requested that datasets, the `docs/` directory, and the `papers/` directory remain local and not be pushed to GitHub.
 - Use `.gitignore` for local datasets, environments, installed dependency directories, caches, build products, and local editor/OS files. Preserve papers, checkpoints, results, and vendored source.
-- Use Git LFS for files exceeding the host's ordinary Git size limits and preserve existing LFS tracking. Never delete project artifacts merely to reduce repository size.
+- Use Git LFS for files exceeding the host's ordinary Git size limits and preserve existing LFS tracking. Do not remove current sweep evidence or user assets merely to reduce repository size.
 - Preserve user changes and upstream licenses. Make completion claims only for work actually performed and verified.

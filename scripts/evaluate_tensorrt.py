@@ -8,7 +8,7 @@ from fastdepth_project.data import load_h5,preprocess
 from fastdepth_project.metrics import DepthMetrics
 from fastdepth_project.models import sha256
 p=argparse.ArgumentParser(description=__doc__)
-p.add_argument('--engine',type=Path,default=ROOT/'results/benchmarks/2026-11-13-desktop-tensorrt-fp16/desktop.engine')
+p.add_argument('--engine',type=Path,required=True,help='Path to an engine built for this machine')
 p.add_argument('--data',type=Path,default=ROOT/'data/nyu_depth_v2/extracted/val/official')
 p.add_argument('--output',type=Path,required=True);a=p.parse_args()
 if a.output.exists():p.error('output exists')
@@ -30,7 +30,7 @@ for i,path in enumerate(paths,1):
 with (a.output/'per_image.csv').open('w',newline='') as f:
  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 manifest='\n'.join(path.name for path in paths)+'\n';(a.output/'manifest.txt').write_text(manifest)
-report={'scope':'Desktop TensorRT FP16-enabled engine; local validation set; units and split identity unverified',
+report={'scope':'Locally supplied TensorRT engine; local validation set; precision, units and split identity require verification',
  'engine_sha256':sha256(a.engine),'tensorrt':trt.__version__,'gpu':torch.cuda.get_device_name(0),
  'samples':len(paths),'manifest_sha256':hashlib.sha256(manifest.encode()).hexdigest(),
  'preprocessing':'same paired preprocessing as PyTorch baseline','depth_units':'native units unverified',

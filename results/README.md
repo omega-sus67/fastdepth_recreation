@@ -1,20 +1,17 @@
-# Results and evidence
+# Results for the 12 Jetson configurations
 
-Start with the experiment index (local documentation) for a question-by-question overview, the relevant settings, checkpoints, outcomes and links to raw measurements. For the history of decisions, failures and limitations, read the progress report (local documentation). The [evidence index](evidence_index.csv) maps stable evidence IDs to artifact paths and SHA-256 fingerprints.
+Start with [comparison.csv](jetson_orin_2026-11-16/comparison.csv). It contains the actual results for the four model widths and three precision modes: **12 tuning rows**, followed by **six evaluation rows** for the baseline and the selected width176 student. Width192 and width160 were not evaluated on the 654-image collection in that run.
 
-| Folder | What it contains |
+| Location | Contents |
 | --- | --- |
-| [evaluation/](evaluation/) | Desktop model accuracy summaries, evaluation manifests and per-image results. |
-| [training/](training/) | Fine-tuning and pruning comparisons, trained checkpoints and tuning metrics. |
-| [benchmarks/](benchmarks/) | Desktop model-only latency summaries and raw timing samples; some folders contain desktop TensorRT engines. |
-| [data/](data/) | Dataset audits, archive checks, preprocessing verification and split-overlap reports. |
-| [checkpoints/](checkpoints/) | Checkpoint acquisition, conversion, provenance and structural checks. |
-| [inference/](inference/) | Image and video inference examples. |
-| [environment/](environment/) | Desktop installation and runtime checks. |
-| [history/](history/) | Preserved snapshots, earlier checks and test outputs. |
+| [Jetson sweep](jetson_orin_2026-11-16/results/orin-sweep-visit/) | The original build, tuning and evaluation logs, 12 tuning results, six evaluation results, selection record and telemetry. The build subfolders also contain the original board-specific engines locally. |
+| [Follow-up](jetson_followup_2026-11-16/) | Baseline and width176 timing repeats, profiles and saved paired predictions. |
+| [Training](training/) | The three trained student checkpoints and their training summaries. The baseline is in `../checkpoints/converted/`. |
+| [Figures](figures/) | The poster comparison and provenance of the six report comparisons. |
+| [Inference](inference/) | One paired video smoke test and its synthetic input. |
+| [Data checks](data/) and [checkpoint checks](checkpoints/) | Evidence about the data split, preprocessing and baseline provenance. |
+| [Evidence index](evidence_index.csv) | Fingerprints of the retained evidence. |
 
-Results are organized by type and then run date/name. Similar-looking folders can contain different configurations or controls: read the run's `summary.json` and its configuration before comparing values. `latencies_ms.csv` contains individual timing samples, while a benchmark summary specifies the runtime, scope, warm-up and device. Desktop results do not establish Jetson Orin Nano performance.
+Each tuning or evaluation subfolder contains its own `summary.json` and timing samples. The selection record chooses width176 using the FP16 tuning measurements and the project's accuracy and timing-variability rules. The 654-image collection had been inspected previously; it is not an untouched test. INT8 lost accuracy and the measurements did not establish a reliable pruning speedup.
 
-The current sweep checkpoints and distillation controls are retained. Superseded checkpoint binaries, some old desktop engines and intermediate poster layouts were retired on 19 November 2026; their summaries and measurement records remain. [Cleanup manifest](history/2026-11-19-cleanup/manifest.json) records the paths and hashes. Historical configurations referencing retired binaries need those files restored or regenerated before they can run again. A Git-tracked file may be recoverable from a commit that contains it; an untracked file is not necessarily recoverable.
-
-Keep earlier attempts, including negative findings and failed runs. Do not overwrite a run directory or edit an indexed evidence artifact to make an updated result: create a new run, document its relationship to earlier work, and add its evidence fingerprint. The [project rules](../agents.md) define the full procedure.
+Earlier unrelated results were removed from the working directory. Tracked historical files can be inspected at Git commit `6c947dd`; ignored or previously untracked files are not guaranteed recoverable. The local progress report records the project's development and the cleanup.
