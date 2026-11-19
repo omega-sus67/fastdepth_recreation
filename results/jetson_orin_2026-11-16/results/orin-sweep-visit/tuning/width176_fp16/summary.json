@@ -1,0 +1,56 @@
+{
+  "engine_sha256": "4a8b4ce22beca0135000b6d1ad689cb73b39d56029e7fb84ddf9db7645eddac8",
+  "manifest_sha256": "af353a7ab59710cf5c708be6dc1d35c2cbda6aa3faa70ac7582ea5f26f6922f8",
+  "reference_sha256": "d677f6ad18c811fbaf586885a7a879fca60e2844962ce17af760e99c16c41f12",
+  "max_runtime_abs_difference": 0.7506942749023438,
+  "mean_runtime_abs_difference": 0.0011979126948376939,
+  "samples": 445,
+  "gpu": "Orin",
+  "torch": "2.11.0",
+  "tensorrt": "10.3.0",
+  "pooled": {
+    "valid_pixels": 22150715,
+    "nonpositive_predictions": 1540,
+    "rmse": 0.3252714403297537,
+    "mae": 0.17798505287267305,
+    "rel": 0.06517534890938087,
+    "delta1": 0.9596946193384728,
+    "r2": 0.9431268915445397,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "mean_image_rmse": 0.2840276391779381,
+  "mean_image_delta1": 0.9592456304023952,
+  "warmup": 50,
+  "runs": 300,
+  "timing_rounds": 3,
+  "round_medians_ms": [
+    1.691762,
+    1.3269225,
+    1.324363
+  ],
+  "timing_windows": [
+    {
+      "start_unix_seconds": 1794827004.536854,
+      "end_unix_seconds": 1794827005.069472,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794827005.1406798,
+      "end_unix_seconds": 1794827005.550684,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794827005.6092794,
+      "end_unix_seconds": 1794827006.011763,
+      "inferences": 300
+    }
+  ],
+  "model_only_median_ms": 1.338811,
+  "model_only_p95_ms": 2.1178749999999997,
+  "prepared_input_to_cpu_output_median_ms": 5.909592,
+  "prepared_input_to_cpu_output_p95_ms": 6.4433044,
+  "timing_scope": "host elapsed enqueue plus non-default stream synchronization; preallocated input/output, excludes transfers and preprocessing",
+  "prepared_input_scope": "host array copy, host-to-device, inference, device-to-host; excludes image decode, resize and visualization; includes memory-map page faults",
+  "limitations": "preprocessed fixed evaluation set; units and complete split identity unverified; not end-to-end latency"
+}

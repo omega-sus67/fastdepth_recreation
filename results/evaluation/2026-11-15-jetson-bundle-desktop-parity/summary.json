@@ -1,0 +1,33 @@
+{
+  "engine_sha256": "33d753cbf1dbe389523258225f977cb0557a81048138e57a143d4ea9a341890c",
+  "manifest_sha256": "4c4430f15d34345bf282c7b9e16c482450987eacbf2d9cb487035603ba4f56ed",
+  "reference_sha256": "9e5a5407938331c008975501945c4a3cf87cdb35f28c2d1e91d1b7f440af2e21",
+  "max_runtime_abs_difference": 0.6431179046630859,
+  "mean_runtime_abs_difference": 0.0017801095188727943,
+  "samples": 654,
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "tensorrt": "10.3.0",
+  "pooled": {
+    "valid_pixels": 32815104,
+    "nonpositive_predictions": 8868,
+    "rmse": 0.7211164188624345,
+    "mae": 0.42900631562917174,
+    "rel": 0.1652180939219688,
+    "delta1": 0.7710547862350215,
+    "r2": 0.7198913288857575,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "mean_image_rmse": 0.6037748294076029,
+  "mean_image_delta1": 0.7710547862350217,
+  "warmup": 5,
+  "runs": 10,
+  "model_only_median_ms": 0.35814749999999995,
+  "model_only_p95_ms": 0.36383335,
+  "prepared_input_to_cpu_output_median_ms": 0.8377175,
+  "prepared_input_to_cpu_output_p95_ms": 0.91364035,
+  "timing_scope": "host elapsed enqueue plus non-default stream synchronization; preallocated input/output, excludes transfers and preprocessing",
+  "prepared_input_scope": "host array copy, host-to-device, inference, device-to-host; excludes image decode, resize and visualization; includes memory-map page faults",
+  "limitations": "preprocessed fixed evaluation set; units and complete split identity unverified; not end-to-end latency"
+}

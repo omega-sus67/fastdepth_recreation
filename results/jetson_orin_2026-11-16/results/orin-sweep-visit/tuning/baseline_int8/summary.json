@@ -1,0 +1,56 @@
+{
+  "engine_sha256": "d3c2c47787891504ea77e593e283139a229f960b0413900115326265043667c5",
+  "manifest_sha256": "af353a7ab59710cf5c708be6dc1d35c2cbda6aa3faa70ac7582ea5f26f6922f8",
+  "reference_sha256": "40f3cf46290d9d590b96609de4f39440516d64dfd81d4e3eff6ed8337dc91526",
+  "max_runtime_abs_difference": 56.12322807312012,
+  "mean_runtime_abs_difference": 0.2709767835083799,
+  "samples": 445,
+  "gpu": "Orin",
+  "torch": "2.11.0",
+  "tensorrt": "10.3.0",
+  "pooled": {
+    "valid_pixels": 22150715,
+    "nonpositive_predictions": 13790,
+    "rmse": 0.4888849804718938,
+    "mae": 0.3363512222452523,
+    "rel": 0.1331988314753829,
+    "delta1": 0.8371551437504388,
+    "r2": 0.8715220819790188,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "mean_image_rmse": 0.45707823547528165,
+  "mean_image_delta1": 0.8364700034402439,
+  "warmup": 50,
+  "runs": 300,
+  "timing_rounds": 3,
+  "round_medians_ms": [
+    1.554303,
+    1.2737215,
+    1.1614475
+  ],
+  "timing_windows": [
+    {
+      "start_unix_seconds": 1794826395.0431802,
+      "end_unix_seconds": 1794826395.570797,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794826395.6302338,
+      "end_unix_seconds": 1794826396.015704,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794826396.0693548,
+      "end_unix_seconds": 1794826396.420825,
+      "inferences": 300
+    }
+  ],
+  "model_only_median_ms": 1.261978,
+  "model_only_p95_ms": 2.3581968,
+  "prepared_input_to_cpu_output_median_ms": 4.569021,
+  "prepared_input_to_cpu_output_p95_ms": 5.5124128,
+  "timing_scope": "host elapsed enqueue plus non-default stream synchronization; preallocated input/output, excludes transfers and preprocessing",
+  "prepared_input_scope": "host array copy, host-to-device, inference, device-to-host; excludes image decode, resize and visualization; includes memory-map page faults",
+  "limitations": "preprocessed fixed evaluation set; units and complete split identity unverified; not end-to-end latency"
+}

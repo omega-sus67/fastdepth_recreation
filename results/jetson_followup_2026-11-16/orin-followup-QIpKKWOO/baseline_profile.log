@@ -1,0 +1,130 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v100300] # /usr/src/tensorrt/bin/trtexec --loadEngine=results/orin-sweep-visit/build/baseline_fp16/model.engine --warmUp=1000 --duration=10 --dumpProfile
+[11/16/2026-17:51:47] [I] === Model Options ===
+[11/16/2026-17:51:47] [I] Format: *
+[11/16/2026-17:51:47] [I] Model: 
+[11/16/2026-17:51:47] [I] Output:
+[11/16/2026-17:51:47] [I] 
+[11/16/2026-17:51:47] [I] === System Options ===
+[11/16/2026-17:51:47] [I] Device: 0
+[11/16/2026-17:51:47] [I] DLACore: 
+[11/16/2026-17:51:47] [I] Plugins:
+[11/16/2026-17:51:47] [I] setPluginsToSerialize:
+[11/16/2026-17:51:47] [I] dynamicPlugins:
+[11/16/2026-17:51:47] [I] ignoreParsedPluginLibs: 0
+[11/16/2026-17:51:47] [I] 
+[11/16/2026-17:51:47] [I] === Inference Options ===
+[11/16/2026-17:51:47] [I] Batch: Explicit
+[11/16/2026-17:51:47] [I] Input inference shapes: model
+[11/16/2026-17:51:47] [I] Iterations: 10
+[11/16/2026-17:51:47] [I] Duration: 10s (+ 1000ms warm up)
+[11/16/2026-17:51:47] [I] Sleep time: 0ms
+[11/16/2026-17:51:47] [I] Idle time: 0ms
+[11/16/2026-17:51:47] [I] Inference Streams: 1
+[11/16/2026-17:51:47] [I] ExposeDMA: Disabled
+[11/16/2026-17:51:47] [I] Data transfers: Enabled
+[11/16/2026-17:51:47] [I] Spin-wait: Disabled
+[11/16/2026-17:51:47] [I] Multithreading: Disabled
+[11/16/2026-17:51:47] [I] CUDA Graph: Disabled
+[11/16/2026-17:51:47] [I] Separate profiling: Disabled
+[11/16/2026-17:51:47] [I] Time Deserialize: Disabled
+[11/16/2026-17:51:47] [I] Time Refit: Disabled
+[11/16/2026-17:51:47] [I] NVTX verbosity: 0
+[11/16/2026-17:51:47] [I] Persistent Cache Ratio: 0
+[11/16/2026-17:51:47] [I] Optimization Profile Index: 0
+[11/16/2026-17:51:47] [I] Weight Streaming Budget: 100.000000%
+[11/16/2026-17:51:47] [I] Inputs:
+[11/16/2026-17:51:47] [I] Debug Tensor Save Destinations:
+[11/16/2026-17:51:47] [I] === Reporting Options ===
+[11/16/2026-17:51:47] [I] Verbose: Disabled
+[11/16/2026-17:51:47] [I] Averages: 10 inferences
+[11/16/2026-17:51:47] [I] Percentiles: 90,95,99
+[11/16/2026-17:51:47] [I] Dump refittable layers:Disabled
+[11/16/2026-17:51:47] [I] Dump output: Disabled
+[11/16/2026-17:51:47] [I] Profile: Enabled
+[11/16/2026-17:51:47] [I] Export timing to JSON file: 
+[11/16/2026-17:51:47] [I] Export output to JSON file: 
+[11/16/2026-17:51:47] [I] Export profile to JSON file: 
+[11/16/2026-17:51:47] [I] 
+[11/16/2026-17:51:47] [I] === Device Information ===
+[11/16/2026-17:51:47] [I] Available Devices: 
+[11/16/2026-17:51:47] [I]   Device 0: "Orin" UUID: GPU-0857f9d1-db9a-536a-bafe-64018460e460
+[11/16/2026-17:51:48] [I] Selected Device: Orin
+[11/16/2026-17:51:48] [I] Selected Device ID: 0
+[11/16/2026-17:51:48] [I] Selected Device UUID: GPU-0857f9d1-db9a-536a-bafe-64018460e460
+[11/16/2026-17:51:48] [I] Compute Capability: 8.7
+[11/16/2026-17:51:48] [I] SMs: 8
+[11/16/2026-17:51:48] [I] Device Global Memory: 7619 MiB
+[11/16/2026-17:51:48] [I] Shared Memory per SM: 164 KiB
+[11/16/2026-17:51:48] [I] Memory Bus Width: 128 bits (ECC disabled)
+[11/16/2026-17:51:48] [I] Application Compute Clock Rate: 1.02 GHz
+[11/16/2026-17:51:48] [I] Application Memory Clock Rate: 0.918 GHz
+[11/16/2026-17:51:48] [I] 
+[11/16/2026-17:51:48] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[11/16/2026-17:51:48] [I] 
+[11/16/2026-17:51:48] [I] TensorRT version: 10.3.0
+[11/16/2026-17:51:48] [I] Loading standard plugins
+[11/16/2026-17:51:48] [I] [TRT] Loaded engine size: 3 MiB
+[11/16/2026-17:51:48] [I] Engine deserialized in 0.0547051 sec.
+[11/16/2026-17:51:48] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +5, now: CPU 0, GPU 7 (MiB)
+[11/16/2026-17:51:48] [I] Setting persistentCacheLimit to 0 bytes.
+[11/16/2026-17:51:48] [I] Created execution context with device memory size: 5.31152 MiB
+[11/16/2026-17:51:48] [I] Using random values for input rgb
+[11/16/2026-17:51:48] [I] Input binding for rgb with dimensions 1x3x224x224 is created.
+[11/16/2026-17:51:48] [I] Output binding for depth with dimensions 1x1x224x224 is created.
+[11/16/2026-17:51:48] [I] Starting inference
+[11/16/2026-17:51:59] [I] The e2e network timing is not reported since it is inaccurate due to the extra synchronizations when the profiler is enabled.
+[11/16/2026-17:51:59] [I] To show e2e network timing report, add --separateProfileRun to profile layer timing in a separate run or remove --dumpProfile to disable the profiler.
+[11/16/2026-17:51:59] [I] 
+[11/16/2026-17:51:59] [I] === Profile (8003 iterations ) ===
+[11/16/2026-17:51:59] [I]    Time(ms)     Avg.(ms)   Median(ms)   Time(%)   Layer
+[11/16/2026-17:51:59] [I]      338.08       0.0422       0.0416       3.3   Reformatting CopyNode for Input Tensor 0 to node_Conv_595 + n4
+[11/16/2026-17:51:59] [I]      168.80       0.0211       0.0208       1.7   node_Conv_595 + n4
+[11/16/2026-17:51:59] [I]      197.01       0.0246       0.0244       1.9   node_Conv_597 + n4_2
+[11/16/2026-17:51:59] [I]      267.66       0.0334       0.0332       2.6   node_Conv_599 + n4_3
+[11/16/2026-17:51:59] [I]      218.73       0.0273       0.0271       2.1   node_Conv_601 + n4_4
+[11/16/2026-17:51:59] [I]      232.09       0.0290       0.0288       2.3   node_Conv_603 + n4_5
+[11/16/2026-17:51:59] [I]      249.80       0.0312       0.0310       2.5   node_Conv_605 + n4_6
+[11/16/2026-17:51:59] [I]      256.81       0.0321       0.0319       2.5   node_Conv_607 + n4_7
+[11/16/2026-17:51:59] [I]      146.04       0.0182       0.0181       1.4   node_Conv_609 + n4_8
+[11/16/2026-17:51:59] [I]      147.78       0.0185       0.0183       1.5   node_Conv_611 + n4_9
+[11/16/2026-17:51:59] [I]      139.30       0.0174       0.0173       1.4   node_Conv_613 + n4_10
+[11/16/2026-17:51:59] [I]      156.23       0.0195       0.0194       1.5   node_Conv_615 + n4_11
+[11/16/2026-17:51:59] [I]      107.90       0.0135       0.0134       1.1   node_Conv_617 + n4_12
+[11/16/2026-17:51:59] [I]      150.27       0.0188       0.0187       1.5   node_Conv_619 + n4_13
+[11/16/2026-17:51:59] [I]      115.95       0.0145       0.0144       1.1   node_Conv_621 + n4_14
+[11/16/2026-17:51:59] [I]      183.08       0.0229       0.0228       1.8   node_Conv_623 + n4_15
+[11/16/2026-17:51:59] [I]      113.65       0.0142       0.0141       1.1   node_Conv_625 + n4_16
+[11/16/2026-17:51:59] [I]      152.62       0.0191       0.0189       1.5   node_Conv_627 + n4_17
+[11/16/2026-17:51:59] [I]       99.54       0.0124       0.0124       1.0   node_Conv_629 + n4_18
+[11/16/2026-17:51:59] [I]      135.56       0.0169       0.0169       1.3   node_Conv_631 + n4_19
+[11/16/2026-17:51:59] [I]      100.40       0.0125       0.0125       1.0   node_Conv_633 + n4_20
+[11/16/2026-17:51:59] [I]      139.13       0.0174       0.0173       1.4   node_Conv_635 + n4_21
+[11/16/2026-17:51:59] [I]      102.25       0.0128       0.0127       1.0   node_Conv_637 + n4_22
+[11/16/2026-17:51:59] [I]      150.87       0.0189       0.0187       1.5   node_Conv_639 + n4_23
+[11/16/2026-17:51:59] [I]       73.68       0.0092       0.0091       0.7   node_Conv_641 + n4_24
+[11/16/2026-17:51:59] [I]      144.09       0.0180       0.0178       1.4   node_Conv_643 + n4_25
+[11/16/2026-17:51:59] [I]       76.65       0.0096       0.0095       0.8   node_Conv_645 + n4_26
+[11/16/2026-17:51:59] [I]      152.31       0.0190       0.0188       1.5   node_Conv_647 + n4_27
+[11/16/2026-17:51:59] [I]      136.99       0.0171       0.0171       1.3   node_Conv_649 + node_relu
+[11/16/2026-17:51:59] [I]      110.58       0.0138       0.0137       1.1   node_Conv_651 + node_relu_1
+[11/16/2026-17:51:59] [I]       54.39       0.0068       0.0067       0.5   node_upsample_nearest2d
+[11/16/2026-17:51:59] [I]      147.13       0.0184       0.0182       1.4   node_Conv_653 + node_relu_2
+[11/16/2026-17:51:59] [I]      120.43       0.0150       0.0149       1.2   node_Conv_655 + node_relu_3
+[11/16/2026-17:51:59] [I]       77.46       0.0097       0.0096       0.8   node_upsample_nearest2d_1
+[11/16/2026-17:51:59] [I]      148.53       0.0186       0.0185       1.5   PWN(node_add)
+[11/16/2026-17:51:59] [I]      429.79       0.0537       0.0534       4.2   node_Conv_657 + node_relu_4
+[11/16/2026-17:51:59] [I]      142.13       0.0178       0.0176       1.4   node_Conv_659 + node_relu_5
+[11/16/2026-17:51:59] [I]      110.17       0.0138       0.0137       1.1   node_upsample_nearest2d_2
+[11/16/2026-17:51:59] [I]      353.82       0.0442       0.0437       3.5   PWN(node_add_1)
+[11/16/2026-17:51:59] [I]      767.45       0.0959       0.0954       7.5   node_Conv_661 + node_relu_6
+[11/16/2026-17:51:59] [I]      179.50       0.0224       0.0223       1.8   node_Conv_663 + node_relu_7
+[11/16/2026-17:51:59] [I]      163.34       0.0204       0.0203       1.6   node_upsample_nearest2d_3
+[11/16/2026-17:51:59] [I]      441.32       0.0551       0.0541       4.3   PWN(node_add_2)
+[11/16/2026-17:51:59] [I]     1307.43       0.1634       0.1621      12.8   node_Conv_665 + node_relu_8
+[11/16/2026-17:51:59] [I]      296.94       0.0371       0.0367       2.9   node_Conv_667 + node_relu_9
+[11/16/2026-17:51:59] [I]      185.42       0.0232       0.0230       1.8   node_upsample_nearest2d_4
+[11/16/2026-17:51:59] [I]      360.60       0.0451       0.0447       3.5   node_Conv_669 + node_relu_10
+[11/16/2026-17:51:59] [I]      126.95       0.0159       0.0152       1.2   Reformatting CopyNode for Output Tensor 0 to node_Conv_669 + node_relu_10
+[11/16/2026-17:51:59] [I]    10176.62       1.2716       1.2607     100.0   Total
+[11/16/2026-17:51:59] [I] 
+&&&& PASSED TensorRT.trtexec [TensorRT v100300] # /usr/src/tensorrt/bin/trtexec --loadEngine=results/orin-sweep-visit/build/baseline_fp16/model.engine --warmUp=1000 --duration=10 --dumpProfile

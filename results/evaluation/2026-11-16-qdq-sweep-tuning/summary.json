@@ -1,0 +1,139 @@
+{
+  "scope": "Previously inspected tuning split; not a final evaluation",
+  "samples": 445,
+  "config_sha256": "d0bb3742c3f99df9b0364794273264c231c2bae33cfbcc17b2e6e1a0508d5d0f",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "runtime": "ONNX Runtime CPU",
+  "onnxruntime": "1.31.1",
+  "models": {
+    "baseline_fp32": {
+      "path": "exports/simple-baseline/model.onnx",
+      "sha256": "2b1eb9da74437739966089e17324f4876955b818d0aa863b39ab5a1a7311cda2",
+      "pooled": {
+        "valid_pixels": 22150715,
+        "nonpositive_predictions": 11863,
+        "rmse": 0.36375487383576854,
+        "mae": 0.18014043904088925,
+        "rel": 0.06471342459021459,
+        "delta1": 0.9609641494642498,
+        "r2": 0.9288732864825352,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.3001150433388192
+    },
+    "width192_fp32": {
+      "path": "exports/simple-student/model.onnx",
+      "sha256": "8bcf43565cff0e0539d355ab2e4b0a05b52ba3002e87492282425b7d570b6a5a",
+      "pooled": {
+        "valid_pixels": 22150715,
+        "nonpositive_predictions": 1732,
+        "rmse": 0.32574889172762,
+        "mae": 0.17755742278427455,
+        "rel": 0.06464236655743706,
+        "delta1": 0.9604082757599472,
+        "r2": 0.9429598060218572,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.2847244341207344
+    },
+    "width176_fp32": {
+      "path": "exports/sweep/width176-fp32/model.onnx",
+      "sha256": "30e5c0651f9fb8fe3bab37941863cceedf20d286d1331f303174c8a3af4ea6d1",
+      "pooled": {
+        "valid_pixels": 22150715,
+        "nonpositive_predictions": 1540,
+        "rmse": 0.32529938102405254,
+        "mae": 0.17800681935176546,
+        "rel": 0.06518890583281815,
+        "delta1": 0.9596850033960529,
+        "r2": 0.9431171203676666,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.28405394148670354
+    },
+    "width160_fp32": {
+      "path": "exports/sweep/width160-fp32/model.onnx",
+      "sha256": "302a33ef080263b84adc0dbf4731613d5220fc2ae299e319f2241ecc5dc34eff",
+      "pooled": {
+        "valid_pixels": 22150715,
+        "nonpositive_predictions": 386,
+        "rmse": 0.3267822947071216,
+        "mae": 0.1810582954938459,
+        "rel": 0.06648519850501315,
+        "delta1": 0.958043250522613,
+        "r2": 0.9425973243249663,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.28692287052674537
+    },
+    "baseline_int8": {
+      "path": "exports/sweep/baseline-int8-floatbias/model.onnx",
+      "sha256": "a60acecb799f4898c73ff485d71949156dbbbced852096805aacbf44a03fe07c",
+      "pooled": {
+        "valid_pixels": 22150715,
+        "nonpositive_predictions": 5391,
+        "rmse": 0.5137230656203466,
+        "mae": 0.3610587659789734,
+        "rel": 0.1397299506985432,
+        "delta1": 0.8091895453487619,
+        "r2": 0.8581356635087984,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.48589425544612713
+    },
+    "width192_int8": {
+      "path": "exports/sweep/width192-int8-floatbias/model.onnx",
+      "sha256": "e55208296e23f07408d3dc1bb100d8a1145416f689fe122a0d186adf072c5bdf",
+      "pooled": {
+        "valid_pixels": 22150715,
+        "nonpositive_predictions": 0,
+        "rmse": 0.4945659127418385,
+        "mae": 0.32195523998252557,
+        "rel": 0.11537790687161739,
+        "delta1": 0.8663909946022058,
+        "r2": 0.8685188602968459,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.4506843572466447
+    },
+    "width176_int8": {
+      "path": "exports/sweep/width176-int8-floatbias/model.onnx",
+      "sha256": "19e655042b80969c459e509c799f0cf3ff2331c7449618ea83e9e497c994ab71",
+      "pooled": {
+        "valid_pixels": 22150715,
+        "nonpositive_predictions": 52,
+        "rmse": 0.45598230626984687,
+        "mae": 0.28883994943264896,
+        "rel": 0.10460700515828492,
+        "delta1": 0.8928758281617546,
+        "r2": 0.8882336465125528,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.41375392668645494
+    },
+    "width160_int8": {
+      "path": "exports/sweep/width160-int8-floatbias/model.onnx",
+      "sha256": "348c9fbb12dea02d2d2aae1687a49503dfca2474b7f01b5dbbedf81d48259129",
+      "pooled": {
+        "valid_pixels": 22150715,
+        "nonpositive_predictions": 0,
+        "rmse": 0.4803768093126095,
+        "mae": 0.3113412633078084,
+        "rel": 0.11402300477652243,
+        "delta1": 0.865314234777523,
+        "r2": 0.8759550276680089,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.43823781170545995
+    }
+  },
+  "limitations": "Tuning set previously inspected; unknown pretraining overlap and physical scene identity. No TensorRT or Orin performance claim."
+}

@@ -1,0 +1,68 @@
+{
+  "selected_student": "width176",
+  "selection_sha256": "4feffe13b4ec2be1664c0f1f0ed973cdea3c209b79deabad725f6fd99f1965b2",
+  "photo_manifest_sha256": "b4791e48c3ce4e0442203e7efcbf2f50e10a42ecd5d6ebabf6789be1cb88d06c",
+  "baseline_checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "student_checkpoint_sha256": "50e60e246e96bcc47ac8bf26d1eafa9c2301a4db32354892a28958611ebb7dd1",
+  "runtime": "PyTorch",
+  "device": "cuda",
+  "samples": [
+    {
+      "photo": "photo_0001_00001.png",
+      "source_h5": "00001.h5",
+      "comparison": "photo_0001_00001_comparison.png",
+      "shared_color_min": 1.878876805305481,
+      "shared_color_max": 4.056748390197754
+    },
+    {
+      "photo": "photo_0094_00202.png",
+      "source_h5": "00202.h5",
+      "comparison": "photo_0094_00202_comparison.png",
+      "shared_color_min": 1.2254598140716553,
+      "shared_color_max": 4.887184143066406
+    },
+    {
+      "photo": "photo_0187_00471.png",
+      "source_h5": "00471.h5",
+      "comparison": "photo_0187_00471_comparison.png",
+      "shared_color_min": 1.163840651512146,
+      "shared_color_max": 3.6495368480682373
+    },
+    {
+      "photo": "photo_0280_00676.png",
+      "source_h5": "00676.h5",
+      "comparison": "photo_0280_00676_comparison.png",
+      "shared_color_min": 1.1095603704452515,
+      "shared_color_max": 2.453460216522217
+    },
+    {
+      "photo": "photo_0374_00851.png",
+      "source_h5": "00851.h5",
+      "comparison": "photo_0374_00851_comparison.png",
+      "shared_color_min": 1.273033857345581,
+      "shared_color_max": 5.6009345054626465
+    },
+    {
+      "photo": "photo_0467_01104.png",
+      "source_h5": "01104.h5",
+      "comparison": "photo_0467_01104_comparison.png",
+      "shared_color_min": 1.0150493383407593,
+      "shared_color_max": 3.323739767074585
+    },
+    {
+      "photo": "photo_0560_01262.png",
+      "source_h5": "01262.h5",
+      "comparison": "photo_0560_01262_comparison.png",
+      "shared_color_min": 1.3092379570007324,
+      "shared_color_max": 4.55258846282959
+    },
+    {
+      "photo": "photo_0654_01449.png",
+      "source_h5": "01449.h5",
+      "comparison": "photo_0654_01449_comparison.png",
+      "shared_color_min": 1.0980968475341797,
+      "shared_color_max": 4.78778076171875
+    }
+  ],
+  "interpretation": "Same color scale for both predictions within each photo; scale differs between photos. Qualitative comparison only; RGB view is uncropped while model input is center-cropped. Not TensorRT or a Jetson latency measurement."
+}

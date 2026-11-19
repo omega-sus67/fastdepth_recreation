@@ -3,7 +3,7 @@
 ## Scope and priorities
 
 - The deployment target is **Jetson Orin Nano**. Do not introduce original Jetson Nano or other-board deliverables without a user request.
-- The current development machine has an RTX 3060 Laptop GPU with 6 GB VRAM. The Orin Nano is unavailable; finish independent desktop implementation and experiments while hardware tasks remain pending.
+- The current development machine has an RTX 3060 Laptop GPU with 6 GB VRAM. A Jetson Orin Nano board run was captured on 16 November 2026; current board access is not assured. Preserve the captured evidence and distinguish additional hardware-dependent work from desktop analysis.
 - When the locally retained `docs/` directory is available, read `docs/immediate_priority.md` before starting implementation and follow the first actionable task. Use `docs/fastdepth_edge_ai_plan.md` as the single authoritative implementation and submission plan. The documentation is not included in the public Git tree.
 - Prioritize runnable software and reproducible experiments. Build detailed teaching explanations alongside implementation; the user does not need to finish reading before work can proceed.
 
@@ -13,7 +13,7 @@
 - Write for oral examination as well as reproduction: add likely professor questions and defensible answers to the relevant topic note or `docs/learning/oral_defense.md`. Explain not just what was done but why, what an alternative would change, and what the evidence can and cannot establish. Break concepts down carefully enough that the user can explain them independently.
 - Keep examples, data units, masks, aggregation, numerical results, hardware and version claims consistent with primary evidence and the progress report. Clearly mark proposed approaches and inferred explanations; do not pretend every reasonable choice was experimentally proven optimal.
 - Use `docs/learning/jetson_software.md` and the user-provided photographs under `papers/` as reported target-board context. They are screenshots of a summary, not direct board telemetry; keep version discrepancies and unseen components explicitly unverified until raw board checks are available. Do not install desktop wheels on Jetson or claim an engine/benchmark works on the board based on desktop evidence.
-- Preserve the user's choice to defer poster and final report production; detailed learning documents and progress/evidence records should continue to grow while implementation proceeds.
+- The user authorized preparation of report, poster and submission drafts on 18 November 2026. Keep their claims evidence-backed, retain editable sources, and continue maintaining learning notes and the progress record.
 
 ## Maintaining immediate_priority.md
 

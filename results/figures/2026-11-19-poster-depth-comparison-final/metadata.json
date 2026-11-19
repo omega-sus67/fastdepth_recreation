@@ -1,0 +1,20 @@
+{
+  "scope": "qualitative saved PyTorch predictions, not a new inference or accuracy comparison",
+  "sample": "photo_0001_00001",
+  "source_h5": "00001.h5",
+  "photo_sha256": "ecc2033477bf25f08607f81df73d89e69c65f1695d804f535d05fcc47110b98e",
+  "baseline_prediction_sha256": "efc157ab6eb618b6790e1a099976b78c4fa6f1a4316d4361258287783736fea4",
+  "student_prediction_sha256": "99f827ee6893e2ec2db6ac8952a6255487e23c658269bdbf1358f268596dfcad",
+  "baseline_checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "student_checkpoint_sha256": "50e60e246e96bcc47ac8bf26d1eafa9c2301a4db32354892a28958611ebb7dd1",
+  "selection_sha256": "4feffe13b4ec2be1664c0f1f0ed973cdea3c209b79deabad725f6fd99f1965b2",
+  "photo_manifest_sha256": "b4791e48c3ce4e0442203e7efcbf2f50e10a42ecd5d6ebabf6789be1cb88d06c",
+  "runtime_recorded_by_source": "PyTorch",
+  "device_recorded_by_source": "cuda",
+  "runtime_host": "not identified by source manifest",
+  "model_input_preprocessing": "project preprocess: 640x480 RGB to 224x224 crop",
+  "scale_min": 1.878876805305481,
+  "scale_max": 4.056748390197754,
+  "scale": "common minimum and maximum from both arrays",
+  "limits": "Previously inspected NYU-derived image; physical depth units and pretraining overlap not verified; no TensorRT or speed claim."
+}

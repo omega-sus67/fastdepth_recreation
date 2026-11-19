@@ -1,0 +1,25 @@
+{
+  "purpose": "Post-hoc exploratory smaller teacher weight after 0.5 distillation underperformed the matched supervised control",
+  "manifest": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/manifest.json",
+  "overlap_report": "results/data/2026-11-14-diverse-regrouped-overlap.json",
+  "baseline": "checkpoints/converted/community-skipadd-pruned.pth",
+  "pruning": {
+    "stage": "first",
+    "keep": 192,
+    "method": "downstream pointwise input-channel L1 weight magnitude",
+    "reason": "Simple existing rule; earlier 445-image tuning comparison showed this width close to baseline. This is an informed exploratory choice, not a blinded selection."
+  },
+  "training": {
+    "seeds": [
+      42
+    ],
+    "epochs": 1,
+    "batch_size": 4,
+    "optimizer": "Adam",
+    "learning_rate": 1e-05,
+    "freeze_batch_norm_statistics": true
+  },
+  "distill_weight": 0.1,
+  "comparison": "Same starting checkpoint, seed, epoch and data order as the 0.5 and supervised runs. Tuning already inspected; no blind claim.",
+  "limitations": "Post-hoc teacher weight; one seed and one epoch; pretraining overlap unknown; no Orin result."
+}

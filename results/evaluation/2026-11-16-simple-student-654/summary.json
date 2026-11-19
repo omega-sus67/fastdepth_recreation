@@ -1,0 +1,26 @@
+{
+  "scope": "PyTorch checkpoint evaluation on the local validation collection; original split identity and depth units remain unverified",
+  "variant": "mobilenet-nnconv5dw-skipadd-pruned-firstdecoder-pruned",
+  "checkpoint_source": "project_pruning_candidate",
+  "checkpoint_sha256": "3eb75a9e679750fde25eba0e6588415f39d5bf63550c544a77ddac63e72b030d",
+  "device": "cuda",
+  "torch": "2.9.1+cu128",
+  "python": "3.12.3",
+  "samples": 654,
+  "manifest_sha256": "b45aa37d77f90ccdd84f620a64a6d5b95c69362801db0f1a4aac89a9f40cdc6a",
+  "preprocessing": "Pillow nearest: 480x640 -> 250x333 -> center crop 228x304 -> 224x224; RGB /255; depth float32",
+  "depth_units": "unverified, values treated as native dataset units",
+  "pooled": {
+    "valid_pixels": 32815104,
+    "nonpositive_predictions": 516,
+    "rmse": 0.7095947439739948,
+    "mae": 0.4334666086244923,
+    "rel": 0.16261466850903056,
+    "delta1": 0.7668132637946233,
+    "r2": 0.7287707237069336,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "mean_image_rmse": 0.5939118093047562,
+  "mean_image_delta1": 0.7668132637946232
+}

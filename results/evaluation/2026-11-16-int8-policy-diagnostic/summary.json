@@ -1,0 +1,59 @@
+{
+  "scope": "Diagnostic subset of tuning data",
+  "samples": 32,
+  "config_sha256": "d0bb3742c3f99df9b0364794273264c231c2bae33cfbcc17b2e6e1a0508d5d0f",
+  "manifest_sha256": "a6fe135ba727f2d3537516845bbef6e76f4abdb735f3f842d47b039bcc543a77",
+  "runtime": "ONNX Runtime CPU",
+  "onnxruntime": "1.31.1",
+  "models": {
+    "fp32": {
+      "path": "exports/simple-baseline/model.onnx",
+      "sha256": "2b1eb9da74437739966089e17324f4876955b818d0aa863b39ab5a1a7311cda2",
+      "pooled": {
+        "valid_pixels": 1544143,
+        "nonpositive_predictions": 10989,
+        "rmse": 0.6529560707477893,
+        "mae": 0.29871304716849445,
+        "rel": 0.10374286725554334,
+        "delta1": 0.9091010353315723,
+        "r2": 0.767574513991103,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.5801597738259562
+    },
+    "int8_all": {
+      "path": "exports/sweep/baseline-int8/model.onnx",
+      "sha256": "5d6c29928d373f29b41348ec3cfab2c44dfb97a36ff18ee2d0420173279265ed",
+      "pooled": {
+        "valid_pixels": 1544143,
+        "nonpositive_predictions": 4495,
+        "rmse": 0.6734021031691341,
+        "mae": 0.45495971918586114,
+        "rel": 0.17343991736375067,
+        "delta1": 0.7441461056391798,
+        "r2": 0.7527907274589303,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.6583933350740041
+    },
+    "int8_pointwise": {
+      "path": "exports/sweep/baseline-int8-pointwise/model.onnx",
+      "sha256": "9729cc438fa0a196604f7de4eff165d689c325fd2dc61ea19cdb0643795e12ae",
+      "pooled": {
+        "valid_pixels": 1544143,
+        "nonpositive_predictions": 13284,
+        "rmse": 0.7048722122444557,
+        "mae": 0.3762418556940674,
+        "rel": 0.13769479933190745,
+        "delta1": 0.8491156583295718,
+        "r2": 0.729145160543581,
+        "aggregation": "pooled valid pixels",
+        "ratio_epsilon": 1e-06
+      },
+      "mean_image_rmse": 0.6439346371384987
+    }
+  },
+  "limitations": "Tuning set previously inspected; unknown pretraining overlap and physical scene identity. No TensorRT or Orin performance claim."
+}

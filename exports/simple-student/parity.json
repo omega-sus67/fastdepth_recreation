@@ -1,0 +1,21 @@
+{
+  "scope": "One supplied HDF5 input; CPU PyTorch versus ONNX Runtime CPU; not Jetson validation",
+  "sample": "00006.h5",
+  "sample_path": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/train/bathroom_0001/00006.h5",
+  "checkpoint_sha256": "3eb75a9e679750fde25eba0e6588415f39d5bf63550c544a77ddac63e72b030d",
+  "onnx_sha256": "8bcf43565cff0e0539d355ab2e4b0a05b52ba3002e87492282425b7d570b6a5a",
+  "model_source": "project_pruning_candidate",
+  "opset": 18,
+  "output_shape": [
+    1,
+    1,
+    224,
+    224
+  ],
+  "max_abs_error": 3.814697265625e-06,
+  "mean_abs_error": 2.8497521498138667e-07,
+  "tolerance": 0.0001,
+  "within_tolerance": true,
+  "onnxruntime": "1.31.1",
+  "torch": "2.9.1+cu128"
+}

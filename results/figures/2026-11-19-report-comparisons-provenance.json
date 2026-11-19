@@ -1,0 +1,60 @@
+{
+  "scope": "Saved paired PyTorch predictions, not a new inference; not TensorRT. Source recorded CUDA but not host. Six first samples of the eight fixed manifest selections, previously inspected. Each row has a separate shared baseline/student grayscale range.",
+  "image_preprocessing": "Original image after network center-crop and resize",
+  "samples": [
+    {
+      "sample": "photo_0001_00001",
+      "original_h5": "00001.h5",
+      "photo_sha256": "ecc2033477bf25f08607f81df73d89e69c65f1695d804f535d05fcc47110b98e",
+      "baseline_sha256": "efc157ab6eb618b6790e1a099976b78c4fa6f1a4316d4361258287783736fea4",
+      "student_sha256": "99f827ee6893e2ec2db6ac8952a6255487e23c658269bdbf1358f268596dfcad",
+      "shared_min": 1.878876805305481,
+      "shared_max": 4.056748390197754
+    },
+    {
+      "sample": "photo_0094_00202",
+      "original_h5": "00202.h5",
+      "photo_sha256": "15a3b32ea374d50bc3982634c10afb26e131d4244a0ae4aa776a4ce1d62b7f46",
+      "baseline_sha256": "d4281780c0ec2847741ab307468b4def7ac4aa7073bc1507a48191bc302d17cd",
+      "student_sha256": "5082b33fadc2ca9394f20b0b5b84fe657d8ce9462ccb0a05833818be1376f394",
+      "shared_min": 1.2254598140716553,
+      "shared_max": 4.887184143066406
+    },
+    {
+      "sample": "photo_0187_00471",
+      "original_h5": "00471.h5",
+      "photo_sha256": "8fca99221e9d5cc3755d4f67536eebe6cd06cfc525233cf447b368eaaa058add",
+      "baseline_sha256": "8675e85941ea9adbf77ee5c3eb3a234d04f38734050fcd30c13f53d0b872cea8",
+      "student_sha256": "2bfafb933dff1426d1123c2b0db0c7646916ed5f2536463e3a19e4d9408ea04d",
+      "shared_min": 1.163840651512146,
+      "shared_max": 3.6495368480682373
+    },
+    {
+      "sample": "photo_0280_00676",
+      "original_h5": "00676.h5",
+      "photo_sha256": "5401f59d4a71386a9f2ffd33c6166e8cd5dd2bae36396f907a475309044211ea",
+      "baseline_sha256": "ee2bf4389ca864b377dd37474f0b8f8accc7506fd279599b56dcb6c11886fbf7",
+      "student_sha256": "05ea72e89fddf8e141f6d39c8ab464c9eb68ec9422dd2a7594add7a8e8d63fe3",
+      "shared_min": 1.1095603704452515,
+      "shared_max": 2.453460216522217
+    },
+    {
+      "sample": "photo_0374_00851",
+      "original_h5": "00851.h5",
+      "photo_sha256": "355bca3d5350a5aaeddbd1852f999c0f658c02c5175618f9a228051b57efbff2",
+      "baseline_sha256": "e8083fb45428253fbe80c4a979b980ea014249b0fecab16093c5c7c78c72d0c5",
+      "student_sha256": "1a692e4f9031a6b4c62d85fbee65bb6e55362653a25650e2cf8a8206db1425db",
+      "shared_min": 1.273033857345581,
+      "shared_max": 5.6009345054626465
+    },
+    {
+      "sample": "photo_0467_01104",
+      "original_h5": "01104.h5",
+      "photo_sha256": "13405e3dd8956efac67ccc0c075b136050a09c625e7c17eb2abfd43a632a412a",
+      "baseline_sha256": "a0dd80f8747aa0549be9f7e706a5c37669db95fe85daf67f5fe8efe7ce4c62e3",
+      "student_sha256": "f4a3713e69c2498c824016909ea0b53a031f856277b2d3fb30ea5738d7fe2d2a",
+      "shared_min": 1.0150493383407593,
+      "shared_max": 3.323739767074585
+    }
+  ]
+}

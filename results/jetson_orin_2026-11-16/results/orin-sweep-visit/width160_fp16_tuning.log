@@ -1,0 +1,60 @@
+100/445
+200/445
+300/445
+400/445
+{
+  "engine_sha256": "88f5fbdc465dd10c68901d0686c09083048ecc1976edb103c1eba8b7850620b9",
+  "manifest_sha256": "af353a7ab59710cf5c708be6dc1d35c2cbda6aa3faa70ac7582ea5f26f6922f8",
+  "reference_sha256": "a39800c400878623a5f914258b279666a62efec1cf562653c822cf0854f8c66f",
+  "max_runtime_abs_difference": 1.1490974426269531,
+  "mean_runtime_abs_difference": 0.0015613567581485247,
+  "samples": 445,
+  "gpu": "Orin",
+  "torch": "2.11.0",
+  "tensorrt": "10.3.0",
+  "pooled": {
+    "valid_pixels": 22150715,
+    "nonpositive_predictions": 390,
+    "rmse": 0.32669020877931926,
+    "mae": 0.18097042570107963,
+    "rel": 0.06644847748881255,
+    "delta1": 0.9580585999142691,
+    "r2": 0.9426296714499471,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "mean_image_rmse": 0.2868213848402496,
+  "mean_image_delta1": 0.9576137732277036,
+  "warmup": 50,
+  "runs": 300,
+  "timing_rounds": 3,
+  "round_medians_ms": [
+    1.834277,
+    1.3221865,
+    1.3143145
+  ],
+  "timing_windows": [
+    {
+      "start_unix_seconds": 1794827370.0577893,
+      "end_unix_seconds": 1794827370.61302,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794827370.680767,
+      "end_unix_seconds": 1794827371.090321,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794827371.1481495,
+      "end_unix_seconds": 1794827371.5460958,
+      "inferences": 300
+    }
+  ],
+  "model_only_median_ms": 1.338107,
+  "model_only_p95_ms": 2.0991709499999995,
+  "prepared_input_to_cpu_output_median_ms": 5.854806,
+  "prepared_input_to_cpu_output_p95_ms": 6.347443,
+  "timing_scope": "host elapsed enqueue plus non-default stream synchronization; preallocated input/output, excludes transfers and preprocessing",
+  "prepared_input_scope": "host array copy, host-to-device, inference, device-to-host; excludes image decode, resize and visualization; includes memory-map page faults",
+  "limitations": "preprocessed fixed evaluation set; units and complete split identity unverified; not end-to-end latency"
+}

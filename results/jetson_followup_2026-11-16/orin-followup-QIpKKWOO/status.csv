@@ -1,0 +1,9 @@
+step,status,log
+baseline_profile,ok,results/orin-followup-QIpKKWOO/baseline_profile.log
+width176_profile,ok,results/orin-followup-QIpKKWOO/width176_profile.log
+baseline_repeat1,ok,results/orin-followup-QIpKKWOO/baseline_repeat1.log
+width176_repeat1,ok,results/orin-followup-QIpKKWOO/width176_repeat1.log
+width176_repeat2,ok,results/orin-followup-QIpKKWOO/width176_repeat2.log
+baseline_repeat2,ok,results/orin-followup-QIpKKWOO/baseline_repeat2.log
+visual_comparison,failed_1,results/orin-followup-QIpKKWOO/visual-comparison.log
+video,skipped,no_input_provided

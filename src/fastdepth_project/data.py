@@ -12,14 +12,16 @@ def preprocess(rgb, depth=None):
         raise ValueError('Expected uint8 RGB image with shape (480, 640, 3)')
     if depth is not None and np.asarray(depth).shape != (480, 640):
         raise ValueError('Expected depth image with shape (480, 640)')
+    # Pillow < 9.1 exposes NEAREST on Image instead of Image.Resampling.
+    nearest = getattr(Image, 'Resampling', Image).NEAREST
     def transform(array):
         image = Image.fromarray(array)
         # scipy.misc.imresize's float scale truncates the scaled dimensions.
-        image = image.resize((int(640 * 250.0 / 480), 250), Image.Resampling.NEAREST)
+        image = image.resize((int(640 * 250.0 / 480), 250), nearest)
         left = int(round((image.width - 304) / 2.0))
         top = int(round((image.height - 228) / 2.0))
         image = image.crop((left, top, left + 304, top + 228))
-        return np.asarray(image.resize((224, 224), Image.Resampling.NEAREST))
+        return np.asarray(image.resize((224, 224), nearest))
     rgb_out = transform(rgb).astype(np.float32) / 255.0
     x = torch.from_numpy(np.ascontiguousarray(rgb_out.transpose(2, 0, 1)))
     if depth is None:

@@ -1,8 +1,17 @@
 # Python environments and installed dependencies
 # Local datasets are retained on disk but excluded from GitHub.
 data/nyu_depth_v2/
+/jetson_handoff/
+/jetson_handoff.zip
 docs/
 papers/
+# Local alternatives and duplicate board-transfer payloads; retain measurement logs.
+/checkpoints/original/
+/results/results_jetson_nano.zip
+/results/orin-followup-QIpKKWOO.zip
+/results/visual-comparison_jetson_nano/
+/results/jetson_orin_2026-11-16/results/training/
+/results/jetson_orin_2026-11-16/results/orin-sweep-visit/build/*/model.engine
 
 .venv/
 .venv-desktop/
@@ -31,3 +40,6 @@ dist/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local submission snapshot includes papers and is not intended for the public repository.
+/submissions/

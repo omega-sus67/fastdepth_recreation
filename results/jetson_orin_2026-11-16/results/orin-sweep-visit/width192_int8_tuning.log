@@ -1,0 +1,60 @@
+100/445
+200/445
+300/445
+400/445
+{
+  "engine_sha256": "081850f43592462cf112f7e2478401c67441b38fae28f86fbdb163f2f8c68059",
+  "manifest_sha256": "af353a7ab59710cf5c708be6dc1d35c2cbda6aa3faa70ac7582ea5f26f6922f8",
+  "reference_sha256": "11e6ac4a8ad7baca8ce9cea381664e68845f084ecd24423ba9ddc05b37c972c3",
+  "max_runtime_abs_difference": 34.197893142700195,
+  "mean_runtime_abs_difference": 0.16646377270470517,
+  "samples": 445,
+  "gpu": "Orin",
+  "torch": "2.11.0",
+  "tensorrt": "10.3.0",
+  "pooled": {
+    "valid_pixels": 22150715,
+    "nonpositive_predictions": 2652,
+    "rmse": 0.3875409865593993,
+    "mae": 0.2512297299595334,
+    "rel": 0.09571881124311012,
+    "delta1": 0.9178261740083785,
+    "r2": 0.9192671319511151,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "mean_image_rmse": 0.35782974714052895,
+  "mean_image_delta1": 0.9173489340037264,
+  "warmup": 50,
+  "runs": 300,
+  "timing_rounds": 3,
+  "round_medians_ms": [
+    1.5634234999999999,
+    1.311306,
+    1.1850640000000001
+  ],
+  "timing_windows": [
+    {
+      "start_unix_seconds": 1794826759.5189052,
+      "end_unix_seconds": 1794826759.9914577,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794826760.0568643,
+      "end_unix_seconds": 1794826760.4583268,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794826760.5127392,
+      "end_unix_seconds": 1794826760.8773143,
+      "inferences": 300
+    }
+  ],
+  "model_only_median_ms": 1.29489,
+  "model_only_p95_ms": 1.8099569999999998,
+  "prepared_input_to_cpu_output_median_ms": 4.95434,
+  "prepared_input_to_cpu_output_p95_ms": 5.392851199999998,
+  "timing_scope": "host elapsed enqueue plus non-default stream synchronization; preallocated input/output, excludes transfers and preprocessing",
+  "prepared_input_scope": "host array copy, host-to-device, inference, device-to-host; excludes image decode, resize and visualization; includes memory-map page faults",
+  "limitations": "preprocessed fixed evaluation set; units and complete split identity unverified; not end-to-end latency"
+}

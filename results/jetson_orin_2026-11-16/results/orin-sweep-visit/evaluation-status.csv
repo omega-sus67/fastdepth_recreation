@@ -1,0 +1,7 @@
+model,precision,evaluation_status
+baseline,fp32,ok
+baseline,fp16,ok
+baseline,int8,ok
+width176,fp32,ok
+width176,fp16,ok
+width176,int8,ok

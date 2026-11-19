@@ -1,0 +1,56 @@
+{
+  "engine_sha256": "d3c2c47787891504ea77e593e283139a229f960b0413900115326265043667c5",
+  "manifest_sha256": "4c4430f15d34345bf282c7b9e16c482450987eacbf2d9cb487035603ba4f56ed",
+  "reference_sha256": "9e5a5407938331c008975501945c4a3cf87cdb35f28c2d1e91d1b7f440af2e21",
+  "max_runtime_abs_difference": 41.254150390625,
+  "mean_runtime_abs_difference": 0.28667636315555184,
+  "samples": 654,
+  "gpu": "Orin",
+  "torch": "2.11.0",
+  "tensorrt": "10.3.0",
+  "pooled": {
+    "valid_pixels": 32815104,
+    "nonpositive_predictions": 10252,
+    "rmse": 0.7984972075175975,
+    "mae": 0.5318057310070651,
+    "rel": 0.21569445548429747,
+    "delta1": 0.659653036601682,
+    "r2": 0.6565507371775834,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "mean_image_rmse": 0.7135929655022216,
+  "mean_image_delta1": 0.659653036601682,
+  "warmup": 50,
+  "runs": 300,
+  "timing_rounds": 3,
+  "round_medians_ms": [
+    1.5451675,
+    1.271097,
+    1.168247
+  ],
+  "timing_windows": [
+    {
+      "start_unix_seconds": 1794827543.262114,
+      "end_unix_seconds": 1794827543.7428768,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794827543.8067818,
+      "end_unix_seconds": 1794827544.1888993,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794827544.2421691,
+      "end_unix_seconds": 1794827544.5996804,
+      "inferences": 300
+    }
+  ],
+  "model_only_median_ms": 1.2235285,
+  "model_only_p95_ms": 1.8067729999999995,
+  "prepared_input_to_cpu_output_median_ms": 4.276774,
+  "prepared_input_to_cpu_output_p95_ms": 4.963536800000001,
+  "timing_scope": "host elapsed enqueue plus non-default stream synchronization; preallocated input/output, excludes transfers and preprocessing",
+  "prepared_input_scope": "host array copy, host-to-device, inference, device-to-host; excludes image decode, resize and visualization; includes memory-map page faults",
+  "limitations": "preprocessed fixed evaluation set; units and complete split identity unverified; not end-to-end latency"
+}

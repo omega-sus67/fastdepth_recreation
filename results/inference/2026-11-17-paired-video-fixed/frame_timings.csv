@@ -1,0 +1,4 @@
+frame,decode_ms,preprocess_h2d_ms,baseline_infer_d2h_ms,student_infer_d2h_ms,render_encode_save_ms
+0,29.160691,9.864198,6.906382,5.725283,45.552586
+1,1.631795,3.479096,5.934892,5.584932,4.359181
+2,0.400518,3.806961,6.609283,6.10769,4.317685

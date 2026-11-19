@@ -1,0 +1,44 @@
+{
+  "scope": "Selected fixed pair on 654 local evaluation images, desktop PyTorch FP32; not Orin",
+  "selection_record": "configs/selection_2026-11-16_simple.json",
+  "manifest_sha256": "b45aa37d77f90ccdd84f620a64a6d5b95c69362801db0f1a4aac89a9f40cdc6a",
+  "samples": 654,
+  "baseline": {
+    "checkpoint_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+    "pooled": {
+      "valid_pixels": 32815104,
+      "nonpositive_predictions": 8884,
+      "rmse": 0.7211589224955154,
+      "mae": 0.4289633163811314,
+      "rel": 0.1651631956558098,
+      "delta1": 0.7710646902109468,
+      "r2": 0.7198583079012507,
+      "aggregation": "pooled valid pixels",
+      "ratio_epsilon": 1e-06
+    },
+    "mean_image_rmse": 0.6037366517524553
+  },
+  "student": {
+    "checkpoint_sha256": "3eb75a9e679750fde25eba0e6588415f39d5bf63550c544a77ddac63e72b030d",
+    "pooled": {
+      "valid_pixels": 32815104,
+      "nonpositive_predictions": 516,
+      "rmse": 0.7095947439739948,
+      "mae": 0.4334666086244923,
+      "rel": 0.16261466850903056,
+      "delta1": 0.7668132637946233,
+      "r2": 0.7287707237069336,
+      "aggregation": "pooled valid pixels",
+      "ratio_epsilon": 1e-06
+    },
+    "mean_image_rmse": 0.5939118093047562
+  },
+  "desktop_timing_median_ms": {
+    "2026-11-16-simple-baseline-pass1": 9.301584,
+    "2026-11-16-simple-student-pass1": 9.300903,
+    "2026-11-16-simple-student-pass2": 9.307327,
+    "2026-11-16-simple-baseline-pass2": 9.3094345
+  },
+  "timing_scope": "model-only PyTorch FP32 preallocated zero tensor; 50 warmups, 200 calls per pass; order baseline/student/student/baseline",
+  "limits": "student selected on previously inspected tuning set; baseline on this evaluation set previously inspected; depth units, scene independence and pretraining overlap unverified; clocks and thermals uncontrolled; no Orin evidence"
+}

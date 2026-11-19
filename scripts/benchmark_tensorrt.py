@@ -7,7 +7,7 @@ import numpy as np,torch,tensorrt as trt
 from fastdepth_project.data import load_h5,preprocess
 from fastdepth_project.models import load_converted,sha256
 p=argparse.ArgumentParser(description=__doc__)
-p.add_argument('--onnx',type=Path,default=ROOT/'exports/2026-11-13-community-pruned/model.onnx')
+p.add_argument('--onnx',type=Path,default=ROOT/'exports/simple-baseline/model.onnx')
 p.add_argument('--checkpoint',type=Path,default=ROOT/'checkpoints/converted/community-skipadd-pruned.pth')
 p.add_argument('--sample',type=Path,default=ROOT/'data/nyu_depth_v2/extracted/val/official/00001.h5')
 p.add_argument('--precision',choices=['fp32','fp16'],default='fp16')

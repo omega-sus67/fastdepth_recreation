@@ -1,0 +1,59 @@
+{
+  "selected_student": "width176",
+  "candidates": [
+    {
+      "name": "width192",
+      "pooled_rmse": 0.32553565997931555,
+      "delta1": 0.9604390648337988,
+      "eligible": true,
+      "median_of_round_medians_ms": 1.350699,
+      "observed_round_range_ms": 0.540267
+    },
+    {
+      "name": "width176",
+      "pooled_rmse": 0.3252714403297537,
+      "delta1": 0.9596946193384728,
+      "eligible": true,
+      "median_of_round_medians_ms": 1.3269225,
+      "observed_round_range_ms": 0.36739900000000003
+    },
+    {
+      "name": "width160",
+      "pooled_rmse": 0.32669020877931926,
+      "delta1": 0.9580585999142691,
+      "eligible": true,
+      "median_of_round_medians_ms": 1.3221865,
+      "observed_round_range_ms": 0.5199624999999999
+    }
+  ],
+  "baseline_median_of_round_medians_ms": 1.3511160000000002,
+  "observed_latency_difference_ms": 0.0241935000000002,
+  "difference_exceeds_observed_round_range": false,
+  "reason": "Fastest eligible candidate; within observed round-range ties choose lower pooled RMSE",
+  "limits": "Simple variability heuristic, not a statistical significance test; timings may drift with order, temperature or power.",
+  "selection_scope": "FP16-enabled engines; already-inspected tuning set only",
+  "accuracy_gates": {
+    "dataset": "tune",
+    "precision": "fp16-enabled",
+    "objective": "minimum repeated median model-only latency on Orin among accuracy-eligible candidates",
+    "rmse_aggregation": "pooled valid pixels",
+    "maximum_relative_rmse_increase": 0.1,
+    "maximum_absolute_delta1_drop": 0.01,
+    "latency_ties": "If differences are smaller than observed repeated-run variation, prefer higher tuning accuracy and report no reliable latency difference."
+  },
+  "missing_candidates": [],
+  "complete_candidate_set": true,
+  "baseline_pooled": {
+    "valid_pixels": 22150715,
+    "nonpositive_predictions": 11861,
+    "rmse": 0.36374734661940294,
+    "mae": 0.1801512621839875,
+    "rel": 0.06472326180316403,
+    "delta1": 0.960964871788563,
+    "r2": 0.9288762301166203,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "baseline_samples": 445,
+  "tuning_manifest_sha256": "af353a7ab59710cf5c708be6dc1d35c2cbda6aa3faa70ac7582ea5f26f6922f8"
+}

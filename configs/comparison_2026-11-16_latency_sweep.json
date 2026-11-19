@@ -1,0 +1,28 @@
+{
+  "manifest": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/manifest.json",
+  "overlap_report": "results/data/2026-11-14-diverse-regrouped-overlap.json",
+  "group": "tune",
+  "models": [
+    {
+      "name": "baseline",
+      "checkpoint": "checkpoints/converted/community-skipadd-pruned.pth",
+      "description": "baseline fixed candidate; teacher weight 0.1 for pruned models"
+    },
+    {
+      "name": "width192",
+      "checkpoint": "results/training/2026-11-16-simple-distilled-alpha01/checkpoint.pth",
+      "description": "width192 fixed candidate; teacher weight 0.1 for pruned models"
+    },
+    {
+      "name": "width176",
+      "checkpoint": "results/training/2026-11-16-latency-176/checkpoint.pth",
+      "description": "width176 fixed candidate; teacher weight 0.1 for pruned models"
+    },
+    {
+      "name": "width160",
+      "checkpoint": "results/training/2026-11-16-latency-160/checkpoint.pth",
+      "description": "width160 fixed candidate; teacher weight 0.1 for pruned models"
+    }
+  ],
+  "limitations": "Accuracy gates are project choices, not proven safety bounds. Tuning data previously inspected; checkpoint pretraining overlap, data units and physical scene independence unverified. No target latency or novelty claim until measured."
+}

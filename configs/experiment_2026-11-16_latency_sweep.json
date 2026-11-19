@@ -1,0 +1,13 @@
+{
+  "purpose": "Prepare a fixed baseline and three additional pruning widths for hardware-measured selection on Jetson Orin Nano",
+  "baseline": "checkpoints/converted/community-skipadd-pruned.pth",
+  "manifest": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/manifest.json",
+  "overlap_report": "results/data/2026-11-14-diverse-regrouped-overlap.json",
+  "pruning": {"stage": "first", "widths": [192, 176, 160], "method": "downstream pointwise input-channel L1 weight magnitude"},
+  "training": {"seeds": [42], "epochs": 1, "batch_size": 4, "optimizer": "Adam", "learning_rate": 0.00001, "freeze_batch_norm_statistics": true},
+  "distill_weight": 0.1,
+  "selection": {"dataset": "tune", "precision": "fp16-enabled", "objective": "minimum repeated median model-only latency on Orin among accuracy-eligible candidates", "rmse_aggregation": "pooled valid pixels", "maximum_relative_rmse_increase": 0.10, "maximum_absolute_delta1_drop": 0.01, "latency_ties": "If differences are smaller than observed repeated-run variation, prefer higher tuning accuracy and report no reliable latency difference."},
+  "quantization": {"calibration_group": "train", "calibration_images": 128, "method": "explicit Q/DQ post-training INT8; tool and runtime compatibility must be verified"},
+  "evaluation": "After hardware selection, evaluate the fixed selected model and baseline at FP32-configured, FP16-enabled and INT8 on the 654-file local evaluation collection. The 654 baseline and earlier student results were already inspected; it is not an untouched test.",
+  "limitations": "Accuracy gates are project choices, not proven safety bounds. Tuning data previously inspected; checkpoint pretraining overlap, data units and physical scene independence unverified. No target latency or novelty claim until measured."
+}

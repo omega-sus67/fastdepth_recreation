@@ -1,0 +1,8 @@
+{
+  "scope": "4-sample deterministic smoke; same pruned student and data; distillation weight 0 versus supervised trainer",
+  "keys": 228,
+  "all_state_tensors_exactly_equal": true,
+  "distillation_checkpoint_sha256": "30cf4a808ab346ed84871b763bf1f748d60cccd507450fb2dc7c86a8e19c4fd6",
+  "supervised_checkpoint_sha256": "0879f1d11bcd52058d147abf97521da33647f53bd62a88d26fe72583bbf987c7",
+  "limitations": "one batch and one seed on desktop; not proof for all inputs or original pretrained model"
+}

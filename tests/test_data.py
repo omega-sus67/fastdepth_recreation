@@ -1,5 +1,8 @@
 import numpy as np
 import pytest
+from types import SimpleNamespace
+from PIL import Image
+from fastdepth_project import data
 from fastdepth_project.data import preprocess
 
 def test_shapes_alignment_and_normalization():
@@ -14,3 +17,14 @@ def test_shapes_alignment_and_normalization():
 def test_rejects_bad_shape():
     with pytest.raises(ValueError,match='shape'):
         preprocess(np.zeros((4,4,3),dtype=np.uint8))
+
+def test_legacy_pillow_nearest_matches_current(monkeypatch):
+    rng = np.random.default_rng(42)
+    rgb = rng.integers(0, 256, (480, 640, 3), dtype=np.uint8)
+    depth = rng.random((480, 640), dtype=np.float32)
+    expected_x, expected_y = preprocess(rgb, depth)
+    legacy_image = SimpleNamespace(fromarray=Image.fromarray, NEAREST=Image.Resampling.NEAREST)
+    monkeypatch.setattr(data, 'Image', legacy_image)
+    actual_x, actual_y = preprocess(rgb, depth)
+    assert np.array_equal(expected_x.numpy(), actual_x.numpy())
+    assert np.array_equal(expected_y.numpy(), actual_y.numpy())

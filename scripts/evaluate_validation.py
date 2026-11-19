@@ -36,7 +36,7 @@ with (a.output/'per_image.csv').open('w',newline='') as f:
  writer=csv.DictWriter(f,fieldnames=list(rows[0])); writer.writeheader();writer.writerows(rows)
 manifest='\n'.join(x.name for x in paths)+'\n'
 (a.output/'manifest.txt').write_text(manifest)
-report={'scope':'Desktop community checkpoint, local validation subset; original split identity and depth units remain unverified',
+report={'scope':'PyTorch checkpoint evaluation on the local validation collection; original split identity and depth units remain unverified',
  'variant':record['variant'],'checkpoint_source':record['provenance']['source_status'],'checkpoint_sha256':sha256(a.checkpoint),
  'device':a.device,'torch':str(torch.__version__),'python':platform.python_version(),'samples':len(paths),
  'manifest_sha256':hashlib.sha256(manifest.encode()).hexdigest(),

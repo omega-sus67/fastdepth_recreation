@@ -1,0 +1,7 @@
+{
+  "model": "exports/sweep/baseline-int8-floatbias/model.onnx",
+  "parser_success": true,
+  "errors": [],
+  "tensorrt": "10.3.0",
+  "scope": "desktop parser only; not engine build or Orin"
+}

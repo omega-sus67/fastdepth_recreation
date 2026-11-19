@@ -1,0 +1,42 @@
+{
+  "input_video": "results/inference/2026-11-16-video-geometry-input/widescreen.mp4",
+  "output_video": "depth.mp4",
+  "frames": 3,
+  "elapsed_seconds": 0.47403568099980475,
+  "complete_pipeline_fps": 6.32863752718487,
+  "input_fps": 5.0,
+  "output_resolution": [
+    448,
+    224
+  ],
+  "side_by_side": true,
+  "input_resize": "letterbox",
+  "first_frame_geometry": {
+    "source_width": 960,
+    "source_height": 540,
+    "mode": "letterbox",
+    "resized_width": 640,
+    "resized_height": 360,
+    "padding_left": 0,
+    "padding_top": 60,
+    "padding_right": 0,
+    "padding_bottom": 60
+  },
+  "source_resolutions": [
+    [
+      960,
+      540
+    ]
+  ],
+  "model_preprocessing": "same center crop and resize as training; side-by-side shows actual model input",
+  "preview": "per-frame normalized color; may flicker",
+  "depth_range_native_units": null,
+  "numeric_depth_saved": true,
+  "checkpoint": "/home/omega_sus/Desktop/5thSem/mlLab/edgeaiProject/results/training/2026-11-16-latency-176/checkpoint.pth",
+  "checkpoint_sha256": "50e60e246e96bcc47ac8bf26d1eafa9c2301a4db32354892a28958611ebb7dd1",
+  "model_source": "project_pruning_candidate",
+  "runtime": "PyTorch",
+  "device": "cuda",
+  "timing_scope": "decode, resize, preprocess, transfer, inference, colorize and encode; model load excluded; optional depth saving included",
+  "limitations": "video colors are visualization, not calibrated metric depth; units unverified; input audio not retained; offline throughput is not live camera latency"
+}

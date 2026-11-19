@@ -1,0 +1,19 @@
+{
+  "scope": "single previously inspected image; saved PyTorch predictions; no new inference",
+  "source_h5": "00001.h5",
+  "evaluation_index": 0,
+  "data_manifest_sha256": "4c4430f15d34345bf282c7b9e16c482450987eacbf2d9cb487035603ba4f56ed",
+  "valid_target_pixels": 50176,
+  "depth_units": "native mirror units; physical scale unverified",
+  "models": {
+    "baseline": {
+      "prediction_sha256": "efc157ab6eb618b6790e1a099976b78c4fa6f1a4316d4361258287783736fea4",
+      "rmse": 0.45657267354816194
+    },
+    "width176": {
+      "prediction_sha256": "99f827ee6893e2ec2db6ac8952a6255487e23c658269bdbf1358f268596dfcad",
+      "rmse": 0.3894658083277995
+    }
+  },
+  "limitations": "Qualitative sample only; not a representative accuracy comparison; prediction source manifest records PyTorch/CUDA without identifying host; not TensorRT metrics."
+}

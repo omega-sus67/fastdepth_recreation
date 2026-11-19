@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/impact-cse-lab/Desktop/2401cs62/jetson_handoff/scripts/compare_visual_photos.py", line 98, in <module>
+    main()
+  File "/home/impact-cse-lab/Desktop/2401cs62/jetson_handoff/scripts/compare_visual_photos.py", line 68, in main
+    x = preprocess(rgb).unsqueeze(0).to(a.device)
+  File "/home/impact-cse-lab/Desktop/2401cs62/jetson_handoff/src/fastdepth_project/data.py", line 23, in preprocess
+    rgb_out = transform(rgb).astype(np.float32) / 255.0
+  File "/home/impact-cse-lab/Desktop/2401cs62/jetson_handoff/src/fastdepth_project/data.py", line 22, in transform
+    return np.asarray(image.resize((224, 224), Image.Resampling.NEAREST))
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 65, in __getattr__
+    raise AttributeError(f"module '{__name__}' has no attribute '{name}'")
+AttributeError: module 'PIL.Image' has no attribute 'Resampling'

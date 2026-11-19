@@ -1,0 +1,56 @@
+{
+  "engine_sha256": "e78f4099566f6a2aa27a1c1e51c2fe6c6a3bd74764ccdd331b7c59e31d5f4820",
+  "manifest_sha256": "af353a7ab59710cf5c708be6dc1d35c2cbda6aa3faa70ac7582ea5f26f6922f8",
+  "reference_sha256": "a39800c400878623a5f914258b279666a62efec1cf562653c822cf0854f8c66f",
+  "max_runtime_abs_difference": 0.21050643920898438,
+  "mean_runtime_abs_difference": 0.0003074448881148953,
+  "samples": 445,
+  "gpu": "Orin",
+  "torch": "2.11.0",
+  "tensorrt": "10.3.0",
+  "pooled": {
+    "valid_pixels": 22150715,
+    "nonpositive_predictions": 386,
+    "rmse": 0.3268023399516246,
+    "mae": 0.18109092802504706,
+    "rel": 0.06649064973993811,
+    "delta1": 0.9580478553401098,
+    "r2": 0.9425902818016788,
+    "aggregation": "pooled valid pixels",
+    "ratio_epsilon": 1e-06
+  },
+  "mean_image_rmse": 0.2869544649125619,
+  "mean_image_delta1": 0.9576035769008207,
+  "warmup": 50,
+  "runs": 300,
+  "timing_rounds": 3,
+  "round_medians_ms": [
+    1.997641,
+    1.9916885,
+    1.9910964999999998
+  ],
+  "timing_windows": [
+    {
+      "start_unix_seconds": 1794827218.7831914,
+      "end_unix_seconds": 1794827219.4146874,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794827219.5104923,
+      "end_unix_seconds": 1794827220.1161113,
+      "inferences": 300
+    },
+    {
+      "start_unix_seconds": 1794827220.2153625,
+      "end_unix_seconds": 1794827220.8186536,
+      "inferences": 300
+    }
+  ],
+  "model_only_median_ms": 1.992584,
+  "model_only_p95_ms": 2.2248498000000003,
+  "prepared_input_to_cpu_output_median_ms": 8.304328,
+  "prepared_input_to_cpu_output_p95_ms": 8.649377999999999,
+  "timing_scope": "host elapsed enqueue plus non-default stream synchronization; preallocated input/output, excludes transfers and preprocessing",
+  "prepared_input_scope": "host array copy, host-to-device, inference, device-to-host; excludes image decode, resize and visualization; includes memory-map page faults",
+  "limitations": "preprocessed fixed evaluation set; units and complete split identity unverified; not end-to-end latency"
+}

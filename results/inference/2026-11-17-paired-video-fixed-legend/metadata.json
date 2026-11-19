@@ -1,0 +1,94 @@
+{
+  "input_video": "results/inference/2026-11-17-video-pipeline-input/moving-scene.mp4",
+  "input_video_sha256": "88131edb3192835a07ce4d5c27a5c3a8da455fda30f1a2f6f173ed2eb2af5e1b",
+  "frames_processed": 3,
+  "input_reported_frame_count": 24.0,
+  "input_may_have_ended_early": false,
+  "input_fps_reported": 12.0,
+  "output_fps": 12.0,
+  "output_size": [
+    672,
+    276
+  ],
+  "source_resolutions": [
+    [
+      960,
+      540
+    ]
+  ],
+  "resize_mode": "letterbox",
+  "first_frame_geometry": {
+    "source_width": 960,
+    "source_height": 540,
+    "mode": "letterbox",
+    "resized_width": 640,
+    "resized_height": 360,
+    "padding_left": 0,
+    "padding_top": 60,
+    "padding_right": 0,
+    "padding_bottom": 60
+  },
+  "model_input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "model_preprocessing": "existing 640x480 adapter, legacy resize/crop 304x228 then nonuniform resize to 224x224",
+  "baseline_sha256": "8d7f7bf2359f33dac8e1046d21e4fdcfafabb8099addd4272a7642d63dd6c1ca",
+  "student_sha256": "50e60e246e96bcc47ac8bf26d1eafa9c2301a4db32354892a28958611ebb7dd1",
+  "baseline_provenance": "community_mirror_unverified",
+  "student_provenance": "project_pruning_candidate",
+  "runtime": "PyTorch",
+  "torch": "2.9.1+cu128",
+  "opencv": "5.0.0",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "common_depth_range": [
+    0.0,
+    10.0
+  ],
+  "scale_method": "user-specified",
+  "scale_calibration_frames": 0,
+  "clipped_pixel_fraction": {
+    "baseline_low": 0.0,
+    "baseline_high": 0.0,
+    "student_low": 0.0,
+    "student_high": 0.0
+  },
+  "warmup_inferences_per_model": 3,
+  "warmup_seconds": 0.45143886599908,
+  "elapsed_seconds": 0.5958445220021531,
+  "paired_pipeline_fps_including_warmup": 5.034870489233363,
+  "per_stage": {
+    "decode_ms": {
+      "mean_ms": 11.759604999999999,
+      "median_ms": 2.050579,
+      "p95_ms": 29.338635699999994
+    },
+    "preprocess_h2d_ms": {
+      "mean_ms": 5.623914666666667,
+      "median_ms": 3.92364,
+      "p95_ms": 9.375621299999999
+    },
+    "baseline_infer_d2h_ms": {
+      "mean_ms": 5.910404333333333,
+      "median_ms": 6.058299,
+      "p95_ms": 6.0964374
+    },
+    "student_infer_d2h_ms": {
+      "mean_ms": 5.918635333333334,
+      "median_ms": 5.909722,
+      "p95_ms": 6.030232900000001
+    },
+    "render_encode_save_ms": {
+      "mean_ms": 18.740323666666665,
+      "median_ms": 5.596803,
+      "p95_ms": 41.08484969999999
+    }
+  },
+  "timing_scope": "offline paired processing: decode, both model inferences, preprocessing, transfers, visual rendering and encode; includes warmup and scale calibration; excludes model loading, input hashing and output validation; optional array writes included",
+  "output_decoded_frames": 3,
+  "numeric_depth_saved": false,
+  "limitations": "fixed frame rate assumes constant-rate source; source frame timestamps/audio not retained; decoder frame count is only a reported estimate and cannot prove whether input decoding was complete; legacy resize can distort; depth units unverified; paired runtime and timing differ from single model/TensorRT/live camera; initial-frame scale can clip later scenes; inference order is fixed"
+}

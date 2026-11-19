@@ -1,0 +1,13 @@
+model,precision,build_status,tuning_status
+baseline,fp32,ok,ok
+baseline,fp16,ok,ok
+baseline,int8,ok,ok
+width192,fp32,ok,ok
+width192,fp16,ok,ok
+width192,int8,ok,ok
+width176,fp32,ok,ok
+width176,fp16,ok,ok
+width176,int8,ok,ok
+width160,fp32,ok,ok
+width160,fp16,ok,ok
+width160,int8,ok,ok

@@ -1,0 +1,669 @@
+{
+  "description": "Retired superseded files; the records, source data, current models, Jetson measurements and final deliverables remain. Some historical experiments require restoring or regenerating their removed binaries. A tracked file may be recoverable from a Git commit containing it; untracked files are not guaranteed recoverable. Git history and LFS objects were not altered.",
+  "archive_large_file_audits": [
+    {
+      "archive": "data/nyu_depth_v2/latency-sweep-handoff.tar",
+      "large_files": 26,
+      "matching": 26,
+      "exceptions": []
+    },
+    {
+      "archive": "data/nyu_depth_v2/simple-jetson-handoff.tar",
+      "large_files": 10,
+      "matching": 10,
+      "exceptions": []
+    },
+    {
+      "archive": "jetson_handoff.zip",
+      "large_files": 26,
+      "matching": 26,
+      "exceptions": []
+    }
+  ],
+  "archive_unique_small_files_preserved": [
+    {
+      "archive": "data/nyu_depth_v2/latency-sweep-handoff.tar",
+      "member": "src/fastdepth_project/data.py",
+      "saved_as": "results/history/2026-11-19-cleanup/archive_snapshots/latency-sweep-handoff.tar/src/fastdepth_project/data.py",
+      "sha256": "33a4de1a8982efb8f8c39bf859d8148129639ba5dc7b5b4f8cb22d432fe89a40"
+    },
+    {
+      "archive": "data/nyu_depth_v2/latency-sweep-handoff.tar",
+      "member": "scripts/infer_video.py",
+      "saved_as": "results/history/2026-11-19-cleanup/archive_snapshots/latency-sweep-handoff.tar/scripts/infer_video.py",
+      "sha256": "1902fa1ecbcf0400be0b312ada5973f7af2518c16a688fe4217c9215e8c81bd6"
+    },
+    {
+      "archive": "data/nyu_depth_v2/simple-jetson-handoff.tar",
+      "member": "scripts/evaluate_jetson_bundle.py",
+      "saved_as": "results/history/2026-11-19-cleanup/archive_snapshots/simple-jetson-handoff.tar/scripts/evaluate_jetson_bundle.py",
+      "sha256": "80bb3a875c7683307833661d685cb3078155ba3ad73c9d2fa07cc401988a863b"
+    },
+    {
+      "archive": "data/nyu_depth_v2/simple-jetson-handoff.tar",
+      "member": "scripts/demo_simple.py",
+      "saved_as": "results/history/2026-11-19-cleanup/archive_snapshots/simple-jetson-handoff.tar/scripts/demo_simple.py",
+      "sha256": "2de91f6465624a689aee5e8dbba893df7fadf589cc212e93ce6f001a23caa8d0"
+    },
+    {
+      "archive": "data/nyu_depth_v2/simple-jetson-handoff.tar",
+      "member": "src/fastdepth_project/data.py",
+      "saved_as": "results/history/2026-11-19-cleanup/archive_snapshots/simple-jetson-handoff.tar/src/fastdepth_project/data.py",
+      "sha256": "33a4de1a8982efb8f8c39bf859d8148129639ba5dc7b5b4f8cb22d432fe89a40"
+    },
+    {
+      "archive": "jetson_handoff.zip",
+      "member": "jetson_handoff/src/fastdepth_project/data.py",
+      "saved_as": "results/history/2026-11-19-cleanup/archive_snapshots/jetson_handoff.zip/jetson_handoff/src/fastdepth_project/data.py",
+      "sha256": "33a4de1a8982efb8f8c39bf859d8148129639ba5dc7b5b4f8cb22d432fe89a40"
+    },
+    {
+      "archive": "jetson_handoff.zip",
+      "member": "jetson_handoff/scripts/infer_video.py",
+      "saved_as": "results/history/2026-11-19-cleanup/archive_snapshots/jetson_handoff.zip/jetson_handoff/scripts/infer_video.py",
+      "sha256": "1902fa1ecbcf0400be0b312ada5973f7af2518c16a688fe4217c9215e8c81bd6"
+    },
+    {
+      "archive": "jetson_handoff.zip",
+      "member": "jetson_handoff/00_START_HERE.md",
+      "saved_as": "results/history/2026-11-19-cleanup/archive_snapshots/jetson_handoff.zip/jetson_handoff/00_START_HERE.md",
+      "sha256": "f74e7d40e9db22ac3ea91c6e6637ac73ae284b0aeaf9458e85472c3c067599b2"
+    },
+    {
+      "archive": "jetson_handoff.zip",
+      "member": "jetson_handoff/SHA256SUMS",
+      "saved_as": "results/history/2026-11-19-cleanup/archive_snapshots/jetson_handoff.zip/jetson_handoff/SHA256SUMS",
+      "sha256": "71e5879a86c4af6f0396c821e495ba3e8d57c577c05a999e9af550f1960237d3"
+    }
+  ],
+  "retired": [
+    {
+      "path": "results/training/2026-11-13-scene-control/checkpoint.pth",
+      "bytes": 16587342,
+      "sha256": "1012655d2e7e5ec1d8a1cf3b9cf2ff00d9eabcdf0a7522e32669ce52e61442f2",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-expanded-184/checkpoint.pth",
+      "bytes": 16434638,
+      "sha256": "1f4c3a06ca370f8f13e0b3ed9b09b6cf35925d6605aff5d0db4aeda0c4803032",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-expanded-control/checkpoint.pth",
+      "bytes": 16587342,
+      "sha256": "247e1b52655bbfa8faffa400f0f9f0233527ceebf691efd37cdccd15cca7f832",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-13-correlated-smoke/checkpoint.pth",
+      "bytes": 16586637,
+      "sha256": "31500b2e4c47d1a932ddd3ffdd74459704c5ead54f8f6ad32f3cbbf5cc6b0f8c",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-13-firstdecoder160-frozenbn/checkpoint.pth",
+      "bytes": 16205326,
+      "sha256": "093fc8f07a1abb535353759b5797f20e98d10e908f8795906d3a2cfcf3fd4ced",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-random-42/checkpoint.pth",
+      "bytes": 16512078,
+      "sha256": "7bf7f58caf91e89a9b94dc7f83c1a600a16ddceb2bdfba6b0690995f046f8677",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-original-43/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "9a8d425d3c61a78c158b6116caf6e8c97b2b89a48f4703a6e13524165942c176",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-deterministic-original-43-1/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "dfa0e9cf3c58b60053ad67b6452dc3753e02a87daaa5b4ecce6519468c90464f",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-13-control-uninterrupted2/checkpoint.pth",
+      "bytes": 16587342,
+      "sha256": "48a400c5b2ddc700d72910d09f34a995b7527fc78c8895731ba330adf9257dff",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-weight-192-frozenbn/checkpoint.pth",
+      "bytes": 16511886,
+      "sha256": "0ee877afb6ea645490c853922975ea6b2f3266a57d364d283aaf682c6aa708cd",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-average_ablation-44/checkpoint.pth",
+      "bytes": 16512206,
+      "sha256": "ad1fa6dbef575a5d1a8c6ea93d0fd04ae7a8e59af1085bd874e89849c24c8857",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-13-correlated-resume/checkpoint.pth",
+      "bytes": 16586637,
+      "sha256": "ece03c7aac2804f9d2b80a3028d768168a65e0e104f9f20157a02fcd5ea04d18",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-weight-43/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "c2fc3099716d2e90cd591d5bc528a1f1c28e8749ac3282e34bcb1fb9f5ed3c7d",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-original-44/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "6fc8840cb26847f50ef1962e3b968a943ab0af2fa47b760c25521db0f0b09f18",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-13-pruned-frozenbn/checkpoint.pth",
+      "bytes": 16584078,
+      "sha256": "9dc5306d0d4b107ea4fe412664d2aed1ee93fe23836bbdb20c6059476ece1289",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-original-43-refactor-check2/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "306f77b46ee1338530b3e893ce10f582d02463c520d04da3c4e6b368059fce7b",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-average_ablation-42/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "541bd3c3fdfa2a558191cf923ec7561234271df3d44807fdbf0595b022133510",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-weight-44/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "d0cb3b87e8029b53f6567361773a5b02ebfc088baca7dc37745cead2e19c6930",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-train-smoke/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "78ce1b6814eeea3ffa70e1c61075e65eb59249d824281fe8221e1e7cfa6e5efd",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-weight-43/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "9ccc9bd34c21fe58d7e93021dd0be91e370ab3fe00b4c61b711d755f4ada826f",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-deterministic-original-43-2/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "dfa0e9cf3c58b60053ad67b6452dc3753e02a87daaa5b4ecce6519468c90464f",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-weight-44/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "2dca7f0619324ab3d8ee455a2f14c9e4756e45f645224dfcd57270ac09e6f92e",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-weight-42/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "6a12ec469d2f1da89eeee2f3115dc05d0f027350ce0220e5bea276d6e474c716",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-average_ablation-43/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "c2aa8fe64de856c86f26c9fbd4403216fcc8be65f247e29bf10e5451ca178a39",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-ablation-192-normalbn/checkpoint.pth",
+      "bytes": 16511886,
+      "sha256": "b0019a926dfbf28097ca2e464773ef166a83bde6bef4edf929c65dfe7c48b1e0",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-random-44/checkpoint.pth",
+      "bytes": 16512078,
+      "sha256": "a1c86549a35ccb2cfe1638b2c9e68676bf37e4538f232e32f602939e21459648",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-deterministic-smoke/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "6c8d30ad39a2977bdaa6d3b6da6c429557b49cff40b0151e1a0966a4d15d0c97",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-original-44/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "6ca4d5e9570d2b0d63c2b29b5884694e45d783f3df2ee8985479a2303f1114bc",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-expanded-192/checkpoint.pth",
+      "bytes": 16511886,
+      "sha256": "317a80858f2476fe15979c54165ecd022d25736480e80334fd2cf793652efa1a",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-scene_aware-43/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "a1f96a501bfdc0500fded7b47ca85a2ac40241c74d1baa884eeb388607148a87",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-scene_aware-44/checkpoint.pth",
+      "bytes": 16512206,
+      "sha256": "ae73c1b5cb6ec363bd1acaaba61aaf08213f9d85308de65a175d5c8abd32adca",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-average_ablation-43/checkpoint.pth",
+      "bytes": 16512206,
+      "sha256": "1c5fe5f85e64c94a57f00b59c29dba73c3b38bfc57438e6ca7bb5519ff48b794",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-random-43/checkpoint.pth",
+      "bytes": 16512078,
+      "sha256": "6093294c76c688267ab24a0d394822efabc7e161c3f1ef4d63eca40782f1a546",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-scene_aware-42/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "2d49963b1e1c3b9d81d38b4a61cb81ef08b145ed29d1abc6c98c3b322891b970",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-13-control-frozenbn/checkpoint.pth",
+      "bytes": 16587342,
+      "sha256": "ea1ccd8610ab5f20c788c618baf6df089b42ab807cac93f0526d46917fe42322",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-13-scene-pruned/checkpoint.pth",
+      "bytes": 16584014,
+      "sha256": "c8cce4bf32e84954f91c7bf611adea926a0c7091b8717ec7298f60d83b794b15",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-original-43-refactor-check/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "77586524b11ddd745f781f73bff0d8cd6500cb7a6b215a342346fde20afc015b",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-13-control-resumed2/checkpoint.pth",
+      "bytes": 16587342,
+      "sha256": "48a400c5b2ddc700d72910d09f34a995b7527fc78c8895731ba330adf9257dff",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-expanded-176/checkpoint.pth",
+      "bytes": 16358606,
+      "sha256": "9fd7f80f06c337a810c80fbd871ad658174cab54ab72c46555b6123db47bc7b3",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-scene_aware-42/checkpoint.pth",
+      "bytes": 16512206,
+      "sha256": "bc3714e846c975ad56c475d85f942a067b1408004a78a954e6bf0da4b3ef631a",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-random-44/checkpoint.pth",
+      "bytes": 16512078,
+      "sha256": "5304811c83193f41cb417d35736fef662eebec2ef5a4c50807218b13609d34ff",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-random-43/checkpoint.pth",
+      "bytes": 16512078,
+      "sha256": "96cde89705519031a848d0b7f15d4de5bff05865d2683ddfe67a46e75be50847",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-scene_aware-44/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "89940082c33fe351c20271d0a7c0f3a2d68a9763da076d0e9f73c64add746f6e",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-original-42/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "7e64e949ccfe2e1c528398a7db2396f95e2e5108b3776f1d53790e89ec1730ec",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-random-42/checkpoint.pth",
+      "bytes": 16512078,
+      "sha256": "1591053f5160960aec4b012206af491934dc27fd4e84b1a9693290ffe69fe47d",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-scene_aware-43/checkpoint.pth",
+      "bytes": 16512206,
+      "sha256": "6299bfb3c284df3d08892239037fc795a695f362616fd8a4eae2960ec55637ab",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-original-42/checkpoint.pth",
+      "bytes": 16587470,
+      "sha256": "3f3a16c03ea2396b85d928b66b873b0ac6e47d1a2fa0300a40fcfb0dc20ec34a",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-weight-42/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "cf1b626caa8eca78e5c0675d9dd0f5c26653f5f33293e670835ce9f24c748d5a",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-aware-average_ablation-44/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "c2974c42577cad761d1140895fa9ee0a4d199eee869956aaa321d0de4202d391",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-14-scene-deterministic-average_ablation-42/checkpoint.pth",
+      "bytes": 16512206,
+      "sha256": "b878e947e9302aa51ba2f0dc9069452b2d9053fe81d48d3fdaa9aca46046f03f",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-13-firstdecoder160/candidate.pth",
+      "bytes": 5468747,
+      "sha256": "32edbfa0fcb4292afe6be403bf81107af6892e6c01b27cf01a5696dbdf5583ae",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-weight-192/candidate.pth",
+      "bytes": 5571275,
+      "sha256": "eb614c109c4f257fb63ce0f6e6f0cc3c06cbe258b95c31dca41047e89b8b2b9b",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-ablation-192/candidate.pth",
+      "bytes": 5571339,
+      "sha256": "7eaae9f1ad7f63cf196fda2997052c83b3c6448af9ec715d6f7b529402e6478f",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-ablation-176/candidate.pth",
+      "bytes": 5520075,
+      "sha256": "60d4a53fbc1bbfc008e648d85d52a8b87d5f05e1e8445e0361c5ace00ac7d0bf",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-13-lastdecoder12/candidate.pth",
+      "bytes": 5594955,
+      "sha256": "bb8870c7ac947af10c5f7f185578188afd9f9e6284354ed39c15e4f15ae6229d",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-ablation-184/candidate.pth",
+      "bytes": 5545419,
+      "sha256": "ae34ec9917458e05d35001da8772497bfa1491c85b3b42f11e935578f5e42d17",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-13-firstdecoder160-corrected/candidate.pth",
+      "bytes": 5468747,
+      "sha256": "d48305647b9bbc12058ef5e820acaee44d48802f7d2feb1685de52ebacc2345f",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-scene-aware/random_44/candidate.pth",
+      "bytes": 5571403,
+      "sha256": "e22c13fa82e7da8814bc36487c19d0a9c67b2e79594795bf8159aca64ce44a2c",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-scene-aware/average_ablation/candidate.pth",
+      "bytes": 5571467,
+      "sha256": "2d009308ed7c92296b7a256eb26c8431b55301ca17c617881fc08aadeac462a6",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-scene-aware/scene_aware/candidate.pth",
+      "bytes": 5571467,
+      "sha256": "f9bb38f780472067d3b2eea38fbc239e053ac88a81c99ae739af12b3b970900b",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-scene-aware/weight/candidate.pth",
+      "bytes": 5571403,
+      "sha256": "30ed18e499ba83d214dcba61b4b63966f253e55eb736e4c11ea19c5aef538d70",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-scene-aware/random_43/candidate.pth",
+      "bytes": 5571403,
+      "sha256": "8bed5de10d6b669a0116729fda313f5092d5a5636e24202a4e55ab6ba4b59d77",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "checkpoints/candidates/2026-11-14-scene-aware/random_42/candidate.pth",
+      "bytes": 5571403,
+      "sha256": "664332f257b008a37f732b35ee3daf5105aa9013e9cc2cddfe740b72a9cc44d7",
+      "tracked_in_git_index": true,
+      "reason": "superseded historical model; run summaries and configurations retained"
+    },
+    {
+      "path": "results/training/2026-11-16-distillation-smoke/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "c1b938a43f819237f5682cf2f6f919719032a2735c884c44c806e9daed73d8c9",
+      "tracked_in_git_index": false,
+      "reason": "superseded small smoke-test checkpoint; run summary retained"
+    },
+    {
+      "path": "results/training/2026-11-16-distillation-zero-control/checkpoint.pth",
+      "bytes": 16512142,
+      "sha256": "30cf4a808ab346ed84871b763bf1f748d60cccd507450fb2dc7c86a8e19c4fd6",
+      "tracked_in_git_index": false,
+      "reason": "superseded small smoke-test checkpoint; run summary retained"
+    },
+    {
+      "path": "results/training/2026-11-16-supervised-control/checkpoint.pth",
+      "bytes": 16512014,
+      "sha256": "0879f1d11bcd52058d147abf97521da33647f53bd62a88d26fe72583bbf987c7",
+      "tracked_in_git_index": false,
+      "reason": "superseded small smoke-test checkpoint; run summary retained"
+    },
+    {
+      "path": "results/benchmarks/2026-11-14-deterministic-trt-original/desktop.engine",
+      "bytes": 3975348,
+      "sha256": "098fb5918dfc285362c46135cd88f9507bc1068ec49942f65e51ae0ecfbe8306",
+      "tracked_in_git_index": true,
+      "reason": "superseded desktop-specific TensorRT engine; timing evidence retained"
+    },
+    {
+      "path": "results/benchmarks/2026-11-14-scene-trt-average_ablation/desktop.engine",
+      "bytes": 4458396,
+      "sha256": "dfd3adc6fb5881ff0f9c45a09c7232f3685c79b1bacc4a93363800d9c5df95fd",
+      "tracked_in_git_index": true,
+      "reason": "superseded desktop-specific TensorRT engine; timing evidence retained"
+    },
+    {
+      "path": "results/benchmarks/2026-11-14-scene-trt-original/desktop.engine",
+      "bytes": 4475708,
+      "sha256": "93e61efca52dea8c2dafa9417cc965c1b8c7d3ee1e1b46bd379cfdee276e0643",
+      "tracked_in_git_index": true,
+      "reason": "superseded desktop-specific TensorRT engine; timing evidence retained"
+    },
+    {
+      "path": "results/benchmarks/2026-11-14-deterministic-trt-scene_aware/desktop.engine",
+      "bytes": 4215316,
+      "sha256": "3379d8fdad03ca2238adb2e6c8cbb021dc3f0e73f6c5ac31ebc003d094f00d82",
+      "tracked_in_git_index": true,
+      "reason": "superseded desktop-specific TensorRT engine; timing evidence retained"
+    },
+    {
+      "path": "results/benchmarks/2026-11-14-scene-trt-weight/desktop.engine",
+      "bytes": 4125412,
+      "sha256": "3546edfbad3c0cf0a9b9fd50ec46b69cd98a29e5d998c1110c4cc44b0b5f6180",
+      "tracked_in_git_index": true,
+      "reason": "superseded desktop-specific TensorRT engine; timing evidence retained"
+    },
+    {
+      "path": "results/benchmarks/2026-11-14-scene-trt-fp32-outlier/desktop.engine",
+      "bytes": 7775004,
+      "sha256": "467be2348462a19fcf30390c185d805ff052bb546ecdcedc1d7168a85793b1b6",
+      "tracked_in_git_index": true,
+      "reason": "superseded desktop-specific TensorRT engine; timing evidence retained"
+    },
+    {
+      "path": "results/benchmarks/2026-11-14-scene-trt-random/desktop.engine",
+      "bytes": 4308436,
+      "sha256": "d5c7fd2f254e21cbe0831fea1f0506976e2e6f7f92d1734d5edc76bcee328917",
+      "tracked_in_git_index": true,
+      "reason": "superseded desktop-specific TensorRT engine; timing evidence retained"
+    },
+    {
+      "path": "results/benchmarks/2026-11-14-scene-trt-scene_aware/desktop.engine",
+      "bytes": 4302004,
+      "sha256": "37e4bb938a6005d5246575e723d14c97f2f5e902380bacc5303a79aa1f94fe36",
+      "tracked_in_git_index": true,
+      "reason": "superseded desktop-specific TensorRT engine; timing evidence retained"
+    },
+    {
+      "path": "results/figures/2026-11-19-poster-depth-comparison/metadata.json",
+      "bytes": 1314,
+      "sha256": "2a04ae81a518852cd3d6c019ad144161124160f36bf93c75861e4504dcdc299f",
+      "tracked_in_git_index": false,
+      "reason": "superseded poster figure draft; final figure retained"
+    },
+    {
+      "path": "results/figures/2026-11-19-poster-depth-comparison/depth_comparison.pdf",
+      "bytes": 141259,
+      "sha256": "0cf6f4b93d6e75a422978a59ffef09af705d9502c516c010913df6b28e28134e",
+      "tracked_in_git_index": false,
+      "reason": "superseded poster figure draft; final figure retained"
+    },
+    {
+      "path": "results/figures/2026-11-19-poster-depth-comparison/depth_comparison.png",
+      "bytes": 337839,
+      "sha256": "372762b4b7d73d0e609d5186f6802b8e4d9cfb8c174b296a1c59396a3f992f67",
+      "tracked_in_git_index": false,
+      "reason": "superseded poster figure draft; final figure retained"
+    },
+    {
+      "path": "results/figures/2026-11-19-poster-depth-comparison-v2/metadata.json",
+      "bytes": 1314,
+      "sha256": "2a04ae81a518852cd3d6c019ad144161124160f36bf93c75861e4504dcdc299f",
+      "tracked_in_git_index": false,
+      "reason": "superseded poster figure draft; final figure retained"
+    },
+    {
+      "path": "results/figures/2026-11-19-poster-depth-comparison-v2/depth_comparison.pdf",
+      "bytes": 140756,
+      "sha256": "710549922c98239ee19a0a388222706be2e994fa3d0d93b02ba1c8ae28a1ed15",
+      "tracked_in_git_index": false,
+      "reason": "superseded poster figure draft; final figure retained"
+    },
+    {
+      "path": "results/figures/2026-11-19-poster-depth-comparison-v2/depth_comparison.png",
+      "bytes": 330921,
+      "sha256": "c84d6df401ea4420890f8efcf087deacc44a88599c795cbf2c9834bc93c387c8",
+      "tracked_in_git_index": false,
+      "reason": "superseded poster figure draft; final figure retained"
+    },
+    {
+      "path": "data/nyu_depth_v2/latency-sweep-handoff.tar",
+      "bytes": 1855518720,
+      "sha256": "4b15957af2399bbc8d4b5871be161b0817fef4bced46997809c9e75a340619f6",
+      "tracked_in_git_index": false,
+      "reason": "superseded transfer archive; payload checked against current files; unique small files saved"
+    },
+    {
+      "path": "data/nyu_depth_v2/simple-jetson-handoff.tar",
+      "bytes": 828129280,
+      "sha256": "0ecc298d4a0f197be9c632d6d2d9a4b41ef11e2893fae27f99df3643b6cedf19",
+      "tracked_in_git_index": false,
+      "reason": "superseded transfer archive; payload checked against current files; unique small files saved"
+    },
+    {
+      "path": "jetson_handoff.zip",
+      "bytes": 576811395,
+      "sha256": "ee041c7294b9be883bbff9154a533d568021c28170203300bc32e4fa3006efa3",
+      "tracked_in_git_index": false,
+      "reason": "superseded transfer archive; payload checked against current files; unique small files saved"
+    },
+    {
+      "path": "data/nyu_depth_v2/latency-sweep-handoff.tar.sha256",
+      "bytes": 92,
+      "sha256": "6d4c0ae17a9b1c71784999dd78ca19a56768b03fd110965ca2c84153d7a18ffc",
+      "tracked_in_git_index": false,
+      "reason": "checksum for retired archive, copied to cleanup archive snapshots"
+    }
+  ]
+}
