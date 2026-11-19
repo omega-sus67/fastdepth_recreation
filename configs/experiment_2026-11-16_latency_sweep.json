@@ -2,7 +2,7 @@
   "purpose": "Prepare a fixed baseline and three additional pruning widths for hardware-measured selection on Jetson Orin Nano",
   "baseline": "checkpoints/converted/community-skipadd-pruned.pth",
   "manifest": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/manifest.json",
-  "overlap_report": "results/data/2026-11-14-diverse-regrouped-overlap.json",
+  "overlap_report": "results/data/training_tuning_overlap.json",
   "pruning": {"stage": "first", "widths": [192, 176, 160], "method": "downstream pointwise input-channel L1 weight magnitude"},
   "training": {"seeds": [42], "epochs": 1, "batch_size": 4, "optimizer": "Adam", "learning_rate": 0.00001, "freeze_batch_norm_statistics": true},
   "distill_weight": 0.1,

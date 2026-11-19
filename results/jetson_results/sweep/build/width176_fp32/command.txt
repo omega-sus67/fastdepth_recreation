@@ -1,0 +1,1 @@
+/usr/src/tensorrt/bin/trtexec --onnx=exports/sweep/width176-fp32/model.onnx --saveEngine=results/orin-sweep-visit/build/width176_fp32/model.engine --skipInference 

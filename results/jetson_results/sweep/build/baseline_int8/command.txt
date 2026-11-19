@@ -1,0 +1,1 @@
+/usr/src/tensorrt/bin/trtexec --onnx=exports/sweep/baseline-int8-floatbias/model.onnx --saveEngine=results/orin-sweep-visit/build/baseline_int8/model.engine --skipInference 

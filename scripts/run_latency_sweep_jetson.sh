@@ -9,7 +9,7 @@ if ! python3 -c 'import numpy, tensorrt, torch; assert torch.cuda.is_available()
 for path in configs/experiment_2026-11-16_latency_sweep.json data/nyu_depth_v2/jetson-tuning-445/manifest.json data/nyu_depth_v2/jetson-evaluation-654/manifest.json data/nyu_depth_v2/latency-tuning-references/manifest.json data/nyu_depth_v2/latency-evaluation-references/manifest.json; do
   if [ ! -f "$path" ]; then echo "Missing $path; see the handoff guide." >&2; exit 1; fi
 done
-mkdir -p "$out/build" "$out/tuning" "$out/evaluation"
+mkdir -p "$out/build" "$out/tuning" "$out/evaluation" "$out/logs/build" "$out/logs/tuning" "$out/logs/evaluation"
 { date -Is; uname -a; cat /etc/nv_tegra_release; cat /proc/device-tree/model; printf '\n'; python3 --version; python3 -c 'import numpy,tensorrt,torch; print("numpy",numpy.__version__,"tensorrt",tensorrt.__version__,"torch",torch.__version__,"cuda",torch.version.cuda,"gpu",torch.cuda.get_device_name(0))'; nvpmodel -q; } > "$out/environment.log" 2>&1
 stats_pid=''
 if command -v tegrastats >/dev/null; then tegrastats --interval 1000 > "$out/tegrastats.log" 2>&1 & stats_pid=$!; fi
@@ -30,19 +30,19 @@ for name in baseline width192 width176 width160; do
     build="$out/build/$id"
     echo "[$(date -Is)] Building $id"
     if [ "$precision" = int8 ]; then
-      bash scripts/build_jetson_qdq.sh "exports/sweep/${name}-int8-floatbias/model.onnx" "$build" > "$out/${id}_build.log" 2>&1
+      bash scripts/build_jetson_qdq.sh "exports/sweep/${name}-int8-floatbias/model.onnx" "$build" > "$out/logs/build/${id}.log" 2>&1
     else
-      bash scripts/build_jetson_engine.sh "$float_model" "$build" "$precision" > "$out/${id}_build.log" 2>&1
+      bash scripts/build_jetson_engine.sh "$float_model" "$build" "$precision" > "$out/logs/build/${id}.log" 2>&1
     fi
     if [ "$?" -ne 0 ]; then
-      echo "Build failed: $id; see $out/${id}_build.log"
+      echo "Build failed: $id; see $out/logs/build/${id}.log"
       printf '%s,%s,failed,not_run\n' "$name" "$precision" >> "$out/status.csv"; failed=1; continue
     fi
     echo "[$(date -Is)] Evaluating $id on tuning data"
-    if python3 scripts/evaluate_jetson_bundle.py --engine "$build/model.engine" --data data/nyu_depth_v2/jetson-tuning-445 --reference "data/nyu_depth_v2/latency-tuning-references/$name.npy" --output "$out/tuning/$id" --timing-rounds 3 > "$out/${id}_tuning.log" 2>&1; then
+    if python3 scripts/evaluate_jetson_bundle.py --engine "$build/model.engine" --data data/nyu_depth_v2/jetson-tuning-445 --reference "data/nyu_depth_v2/latency-tuning-references/$name.npy" --output "$out/tuning/$id" --timing-rounds 3 > "$out/logs/tuning/${id}.log" 2>&1; then
       printf '%s,%s,ok,ok\n' "$name" "$precision" >> "$out/status.csv"
     else
-      echo "Tuning failed: $id; see $out/${id}_tuning.log"
+      echo "Tuning failed: $id; see $out/logs/tuning/${id}.log"
       printf '%s,%s,ok,failed\n' "$name" "$precision" >> "$out/status.csv"; failed=1
     fi
   done
@@ -61,7 +61,7 @@ for name in baseline $selected; do
       printf '%s,%s,missing_engine\n' "$name" "$precision" >> "$out/evaluation-status.csv"; failed=1; continue
     fi
     echo "[$(date -Is)] Evaluating $id on the separate 654-file collection"
-    if python3 scripts/evaluate_jetson_bundle.py --engine "$out/build/$id/model.engine" --data data/nyu_depth_v2/jetson-evaluation-654 --reference "data/nyu_depth_v2/latency-evaluation-references/$name.npy" --output "$out/evaluation/$id" --timing-rounds 3 > "$out/${id}_evaluation.log" 2>&1; then
+    if python3 scripts/evaluate_jetson_bundle.py --engine "$out/build/$id/model.engine" --data data/nyu_depth_v2/jetson-evaluation-654 --reference "data/nyu_depth_v2/latency-evaluation-references/$name.npy" --output "$out/evaluation/$id" --timing-rounds 3 > "$out/logs/evaluation/${id}.log" 2>&1; then
       printf '%s,%s,ok\n' "$name" "$precision" >> "$out/evaluation-status.csv"
     else
       printf '%s,%s,failed\n' "$name" "$precision" >> "$out/evaluation-status.csv"; failed=1

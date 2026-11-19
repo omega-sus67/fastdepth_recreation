@@ -29,7 +29,7 @@ def main():
     inputs = np.load(a.data / 'inputs.npy', mmap_mode='r', allow_pickle=False); n = len(inputs)
     models = {
         'baseline': 'checkpoints/converted/community-skipadd-pruned.pth',
-        'student': 'results/training/2026-11-16-latency-176/checkpoint.pth',
+        'student': 'results/training/width_176/checkpoint.pth',
     }
     if a.model:
         models = {}

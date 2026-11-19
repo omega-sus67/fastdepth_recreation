@@ -7,9 +7,9 @@ if [ -e "$archive" ]; then echo 'Archive already exists.' >&2; exit 1; fi
 files=(README.md agents.md src scripts third_party/fast-depth configs
   docs/latency_sweep_jetson.md docs/jetson_first_test.md
   checkpoints/converted/community-skipadd-pruned.pth
-  results/training/2026-11-16-simple-distilled-alpha01/checkpoint.pth
-  results/training/2026-11-16-latency-176/checkpoint.pth
-  results/training/2026-11-16-latency-160/checkpoint.pth
+  results/training/width_192/checkpoint.pth
+  results/training/width_176/checkpoint.pth
+  results/training/width_160/checkpoint.pth
   exports/simple-baseline/model.onnx exports/simple-student/model.onnx
   exports/sweep/width176-fp32/model.onnx exports/sweep/width160-fp32/model.onnx
   exports/sweep/baseline-int8-floatbias/model.onnx exports/sweep/width192-int8-floatbias/model.onnx

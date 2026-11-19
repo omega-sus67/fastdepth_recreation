@@ -10,8 +10,7 @@ papers/
 /results/results_jetson_nano.zip
 /results/orin-followup-QIpKKWOO.zip
 /results/visual-comparison_jetson_nano/
-/results/jetson_orin_2026-11-16/results/training/
-/results/jetson_orin_2026-11-16/results/orin-sweep-visit/build/*/model.engine
+/results/jetson_results/sweep/build/*/model.engine
 
 .venv/
 .venv-desktop/
@@ -31,6 +30,8 @@ __pycache__/
 .coverage
 htmlcov/
 build/
+!/results/jetson_results/sweep/build/
+!/results/jetson_results/sweep/logs/build/
 dist/
 *.egg-info/
 .ipynb_checkpoints/

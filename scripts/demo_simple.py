@@ -18,7 +18,7 @@ def main():
     args = parser.parse_args()
     defaults = {
         'baseline': 'checkpoints/converted/community-skipadd-pruned.pth',
-        'student': 'results/training/2026-11-16-latency-176/checkpoint.pth',
+        'student': 'results/training/width_176/checkpoint.pth',
     }
     checkpoint = args.checkpoint if args.checkpoint else ROOT / defaults[args.model]
     if not checkpoint.is_file():

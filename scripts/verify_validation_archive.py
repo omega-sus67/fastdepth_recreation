@@ -5,7 +5,7 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 archives=sorted((root/'data/nyu_depth_v2/raw').glob('val-*.tar'))
 expected=root/'data/nyu_depth_v2/extracted/val/official'
-out=root/'results/data/2026-11-13-source-verification/archive-parity.json'
+out=root/'results/data/source_and_preprocessing/archive-parity.json'
 if out.exists():raise SystemExit('Output exists')
 if len(archives)!=2:raise SystemExit('Expected two validation archives')
 seen=set();errors=[];counts={}

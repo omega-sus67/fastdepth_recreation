@@ -7,7 +7,7 @@ import numpy as np
 from PIL import Image
 from fastdepth_project.data import load_h5,preprocess
 p=argparse.ArgumentParser(description=__doc__)
-p.add_argument('--source',type=Path,default=ROOT/'results/data/2026-11-13-source-verification/scipy-pilutil-1.1.0.py')
+p.add_argument('--source',type=Path,default=ROOT/'results/data/source_and_preprocessing/scipy-pilutil-1.1.0.py')
 p.add_argument('--output',type=Path,required=True);a=p.parse_args()
 if a.output.exists():p.error('output exists')
 source=a.source.read_bytes()

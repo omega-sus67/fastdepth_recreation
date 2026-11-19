@@ -1,7 +1,7 @@
 {
   "purpose": "Post-hoc exploratory smaller teacher weight after 0.5 distillation underperformed the matched supervised control",
   "manifest": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/manifest.json",
-  "overlap_report": "results/data/2026-11-14-diverse-regrouped-overlap.json",
+  "overlap_report": "results/data/training_tuning_overlap.json",
   "baseline": "checkpoints/converted/community-skipadd-pruned.pth",
   "pruning": {
     "stage": "first",

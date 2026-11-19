@@ -19,9 +19,9 @@ from fastdepth_project.data import preprocess
 from fastdepth_project.models import load_converted
 
 CHECKPOINTS = {
-    'width192': 'results/training/2026-11-16-simple-distilled-alpha01/checkpoint.pth',
-    'width176': 'results/training/2026-11-16-latency-176/checkpoint.pth',
-    'width160': 'results/training/2026-11-16-latency-160/checkpoint.pth',
+    'width192': 'results/training/width_192/checkpoint.pth',
+    'width176': 'results/training/width_176/checkpoint.pth',
+    'width160': 'results/training/width_160/checkpoint.pth',
 }
 
 

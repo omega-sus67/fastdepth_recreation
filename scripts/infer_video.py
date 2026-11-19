@@ -18,7 +18,7 @@ from fastdepth_project.video import adapt_frame
 
 CHECKPOINTS = {
     'baseline': ROOT / 'checkpoints/converted/community-skipadd-pruned.pth',
-    'student': ROOT / 'results/training/2026-11-16-latency-176/checkpoint.pth',
+    'student': ROOT / 'results/training/width_176/checkpoint.pth',
 }
 
 

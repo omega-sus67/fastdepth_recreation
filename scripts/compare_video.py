@@ -18,7 +18,7 @@ from fastdepth_project.models import load_converted, sha256
 from fastdepth_project.video import adapt_frame
 
 BASELINE = ROOT / 'checkpoints/converted/community-skipadd-pruned.pth'
-STUDENT = ROOT / 'results/training/2026-11-16-latency-176/checkpoint.pth'
+STUDENT = ROOT / 'results/training/width_176/checkpoint.pth'
 HEADER = 52
 
 

@@ -1,6 +1,6 @@
 {
   "manifest": "data/nyu_depth_v2/diverse_2026-11-14-regrouped/manifest.json",
-  "overlap_report": "results/data/2026-11-14-diverse-regrouped-overlap.json",
+  "overlap_report": "results/data/training_tuning_overlap.json",
   "group": "tune",
   "models": [
     {
@@ -10,17 +10,17 @@
     },
     {
       "name": "width192",
-      "checkpoint": "results/training/2026-11-16-simple-distilled-alpha01/checkpoint.pth",
+      "checkpoint": "results/training/width_192/checkpoint.pth",
       "description": "width192 fixed candidate; teacher weight 0.1 for pruned models"
     },
     {
       "name": "width176",
-      "checkpoint": "results/training/2026-11-16-latency-176/checkpoint.pth",
+      "checkpoint": "results/training/width_176/checkpoint.pth",
       "description": "width176 fixed candidate; teacher weight 0.1 for pruned models"
     },
     {
       "name": "width160",
-      "checkpoint": "results/training/2026-11-16-latency-160/checkpoint.pth",
+      "checkpoint": "results/training/width_160/checkpoint.pth",
       "description": "width160 fixed candidate; teacher weight 0.1 for pruned models"
     }
   ],
